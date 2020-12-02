@@ -1,6 +1,6 @@
-Package: encfr
+Package: encftr
 Title: Funciones para trabajar con la ENCFT
-Version: 0.0.0.9000
+Version: 0.0.4.9000
 Authors@R: 
     person(given = "Daniel E.",
            family = "de la Rosa",
@@ -14,6 +14,14 @@ LazyData: true
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.1
 Imports: 
-    magrittr
-URL: https://github.com/drdsdaniel/encfr
-BugReports: https://github.com/drdsdaniel/encfr/issues
+    magrittr,
+    keyring,
+    DBI,
+    RPostgres,
+    sjlabelled,
+    dplyr
+URL: https://github.com/drdsdaniel/encftr
+BugReports: https://github.com/drdsdaniel/encftr/issues
+Suggests: 
+    knitr
+VignetteBuilder: knitr
