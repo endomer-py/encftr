@@ -1,1 +1,1 @@
-utils::globalVariables(c("ZONA", "region", "SEXO"))
+utils::globalVariables(c("ZONA", "region", "SEXO", "pobreza_zona"))

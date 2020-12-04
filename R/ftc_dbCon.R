@@ -1,12 +1,12 @@
-#' Conexion a bases de datos
+#' Conexión a bases de datos
 #'
 #' @param k_service_id keyring service id. Vea \code{keyring::\link[keyring:key_list]{key_list}}
-#    para m\u00E1s detalles
+#    para más detalles
 #' @param db_name nombre de la base de datos
-#' @param db_host direccion del host de la base de datos
+#' @param db_host dirección del host de la base de datos
 #' @param db_port puerto de la base de datos
 #'
-#' @return conexion de base de datos
+#' @return conexión de base de datos
 #' @export
 #'
 #' @examples

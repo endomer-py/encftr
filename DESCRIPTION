@@ -1,6 +1,6 @@
 Package: encftr
 Title: Funciones para trabajar con la ENCFT
-Version: 0.0.4.9002
+Version: 0.0.4.9005
 Authors@R: 
     person(given = "Daniel E.",
            family = "de la Rosa",
@@ -19,7 +19,8 @@ Imports:
     DBI,
     RPostgres,
     sjlabelled,
-    dplyr
+    dplyr,
+    httr
 URL: https://github.com/drdsdaniel/encftr
 BugReports: https://github.com/drdsdaniel/encftr/issues
 Suggests: 

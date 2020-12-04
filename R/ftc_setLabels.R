@@ -1,4 +1,18 @@
-
+#' Etiquetas de datos
+#'
+#'   Asigna etiquetas de datos a todas las variables que aplica.
+#'
+#' @param tbl Conexión a base de datos o dataframe con los datos de la ENCFT.
+#' @param vars Si especificado, solo se asignaran las etiquetas a esas variables.
+#'
+#' @return Conexión a base de datos o dataframe según input.
+#'
+#' @export
+#'
+#' @examples
+#' \dontrun{
+#'   encft <- ftc_setLabels(encft)
+#' }
 ftc_setLabels <- function(tbl, vars = NULL){
   if(is.null(vars)){
     for (name in names(tbl)) {
@@ -12,6 +26,21 @@ ftc_setLabels <- function(tbl, vars = NULL){
   }
 }
 
+#' Etiquetas de datos variable SEXO
+#'
+#'   Asigna las etiquetas de datos a la variable SEXO. Se puede utilizar por
+#'   separado o a través de la variable \code{\link{ftc_setLabels}}
+#'
+#' @param tbl Conexión a base de datos o dataframe con los datos de la ENCFT.
+#'
+#' @return Conexión a base de datos o dataframe según input.
+#'
+#' @export
+#'
+#' @examples
+#' \dontrun{
+#'   encft <- ftc_setLabels_sexo(encft)
+#' }
 ftc_setLabels_sexo <- function(tbl){
   tbl %>%
     sjlabelled::set_labels(SEXO, labels = c(
@@ -20,6 +49,21 @@ ftc_setLabels_sexo <- function(tbl){
     ))
 }
 
+#' Etiquetas de datos variable ZONA
+#'
+#'   Asigna las etiquetas de datos a la variable ZONA Se puede utilizar por
+#'   separado o a través de la variable \code{\link{ftc_setLabels}}
+#'
+#' @param tbl Conexión a base de datos o dataframe con los datos de la ENCFT.
+#'
+#' @return Conexión a base de datos o dataframe según input.
+#'
+#' @export
+#'
+#' @examples
+#' \dontrun{
+#'   encft <- ftc_setLabels_zona(encft)
+#' }
 ftc_setLabels_zona <- function(tbl){
   tbl %>%
     sjlabelled::set_labels(ZONA, labels = c(
@@ -28,6 +72,21 @@ ftc_setLabels_zona <- function(tbl){
     ))
 }
 
+#' Etiquetas de datos variable región
+#'
+#'   Asigna las etiquetas de datos a la variable región Se puede utilizar por
+#'   separado o a través de la variable \code{\link{ftc_setLabels}}
+#'
+#' @param tbl Conexión a base de datos o dataframe con los datos de la ENCFT.
+#'
+#' @return Conexión a base de datos o dataframe según input.
+#'
+#' @export
+#'
+#' @examples
+#' \dontrun{
+#'   encft <- ftc_setLabels_region(encft)
+#' }
 ftc_setLabels_region <- function(tbl){
   tbl %>% sjlabelled::set_labels(region, labels = c(
     'Cibao Norte' = 1,
@@ -40,6 +99,31 @@ ftc_setLabels_region <- function(tbl){
     'Yuma' = 8,
     'Higuamo' = 9,
     'Ozama o Metropolitana' = 10
+  )
+  )
+}
+
+
+#' Etiquetas de datos variable pobreza monetaria
+#'
+#'   Asigna las etiquetas de datos a la variable pobreza_zona. Se puede utilizar
+#'    por separado o a través de la variable \code{\link{ftc_setLabels}}
+#'
+#' @param tbl Conexión a base de datos o dataframe con los datos de la ENCFT.
+#'
+#' @return Conexión a base de datos o dataframe según input.
+#'
+#' @export
+#'
+#' @examples
+#' \dontrun{
+#'   encft <- ftc_setLabels_pobreza_zona(encft)
+#' }
+ftc_setLabels_pobreza_zona <- function(tbl){
+  tbl %>% sjlabelled::set_labels(pobreza_zona, labels = c(
+    "Pobre extremo" = 1,
+    "Pobre moderado" = 2,
+    "No pobre" = 3
   )
   )
 }

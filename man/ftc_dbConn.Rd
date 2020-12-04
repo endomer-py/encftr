@@ -2,7 +2,7 @@
 % Please edit documentation in R/ftc_dbCon.R
 \name{ftc_dbConn}
 \alias{ftc_dbConn}
-\title{Conexion a bases de datos}
+\title{Conexión a bases de datos}
 \usage{
 ftc_dbConn(
   k_service_id = "postgre",
@@ -16,15 +16,15 @@ ftc_dbConn(
 
 \item{db_name}{nombre de la base de datos}
 
-\item{db_host}{direccion del host de la base de datos}
+\item{db_host}{dirección del host de la base de datos}
 
 \item{db_port}{puerto de la base de datos}
 }
 \value{
-conexion de base de datos
+conexión de base de datos
 }
 \description{
-Conexion a bases de datos
+Conexión a bases de datos
 }
 \examples{
 \dontrun{
