@@ -16,6 +16,9 @@ knitr::opts_chunk$set(
 # encftr
 
 <!-- badges: start -->
+[![R build status](https://github.com/drdsdaniel/encftr/workflows/R-CMD-check/badge.svg)](https://github.com/drdsdaniel/encftr/actions)
+[![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
+[![CRAN status](https://www.r-pkg.org/badges/version/encftr)](https://CRAN.R-project.org/package=encftr)
 <!-- badges: end -->
 
 The goal of encfr is to ...

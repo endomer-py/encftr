@@ -9,3 +9,8 @@
 * Nueva función ftc_setLabels_region
 * Nueva función ftc_useLabels
 * Nueva función ftc_asLabels
+
+# encftr 0.0.4.9005
+
+* Mejor documentación de las funciones
+* Nueva función ftc_setLabels_pobreza_zona
