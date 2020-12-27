@@ -13,7 +13,7 @@ ftc_setLabels_region(tbl)
 Conexión a base de datos o dataframe según input.
 }
 \description{
-Asigna las etiquetas de datos a la variable región Se puede utilizar por
+Asigna las etiquetas de datos a la variable región. Se puede utilizar por
 separado o a través de la variable \code{\link{ftc_setLabels}}
 }
 \examples{

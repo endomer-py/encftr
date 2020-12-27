@@ -2,9 +2,11 @@
 
 export("%>%")
 export(ftc_asLabels)
+export(ftc_compute_pobreza_zona)
 export(ftc_compute_region)
 export(ftc_dbConn)
 export(ftc_setLabels)
+export(ftc_setLabels_nivel_ultimo_ano_aprobado)
 export(ftc_setLabels_pobreza_zona)
 export(ftc_setLabels_region)
 export(ftc_setLabels_sexo)

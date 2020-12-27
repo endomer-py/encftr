@@ -2,7 +2,7 @@
 title: "encftr"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{encfr}
+  %\VignetteIndexEntry{encftr}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---

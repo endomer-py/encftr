@@ -1,1 +1,31 @@
-utils::globalVariables(c("ZONA", "region", "SEXO", "pobreza_zona"))
+utils::globalVariables(
+  c(
+    "ZONA",
+    "region",
+    "SEXO",
+    "pobreza_zona",
+    "CATEGORIA_PRINCIPAL",
+    "EDAD",
+    "FACTOR_EXPANSION",
+    "FACTOR_EXPANSION2",
+    "HOGAR",
+    "INGRESOS_OTROS_TRABAJOS_MONTO",
+    "INGRESO_ASALARIADO",
+    "INGRESO_ASALARIADO_SECUN",
+    "INGRESO_INDEPENDIENTES",
+    "INGRESO_INDEPENDIENTES_SECUN",
+    "MIEMBRO",
+    "NIVEL_ULTIMO_ANO_APROBADO",
+    "OCUPADO",
+    "TRIMESTRE",
+    "VIVIENDA",
+    "decil",
+    "decil_fea",
+    "decil_lag",
+    "faltante",
+    "fea",
+    "fea_diff",
+    "fea_diff_lag",
+    "ingreso_total"
+  )
+)
