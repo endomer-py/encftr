@@ -13,46 +13,42 @@ experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](h
 status](https://www.r-pkg.org/badges/version/encftr)](https://CRAN.R-project.org/package=encftr)
 <!-- badges: end -->
 
-The goal of encfr is to …
+encftr es una interfaz para trabajar con la base de datos de la Encuesta
+Nacional Continua de Fuerza de Trabajo (ENCFT) en R.
 
 ## Installation
 
-You can install the released version of encfr from
-[CRAN](https://CRAN.R-project.org) with:
+Rmdx aun no está en CRAN.
+
+<!-- You can install the released version of encftr from [CRAN](https://CRAN.R-project.org) with: -->
+
+<!-- ``` r -->
+
+<!-- install.packages("encftr") -->
+
+<!-- ``` -->
+
+Pero puedes intalar la versión de desarrollo desde
+[GitHub](https://github.com/) con:
 
 ``` r
-install.packages("encftr")
+tryCatch(
+  library(devtools),
+  error = function(e){
+    install.packages('devtools')
+  }
+)
+devtools::install_github("endomer/encftr")
 ```
 
-## Example
+## Contributing
 
-This is a basic example which shows you how to solve a common problem:
+Tienes comentarios o quieres contribuir?
 
-``` r
-library(encftr)
-## basic example code
-```
+Por favor, revisa las [gias de contribución (en
+inglés)](https://endomer.github.io/encftr/CONTRIBUTING.html) antes de
+iniciar un issue o pull request.
 
-What is special about using `README.Rmd` instead of just `README.md`?
-You can include R chunks like so:
-
-``` r
-summary(cars)
-#>      speed           dist       
-#>  Min.   : 4.0   Min.   :  2.00  
-#>  1st Qu.:12.0   1st Qu.: 26.00  
-#>  Median :15.0   Median : 36.00  
-#>  Mean   :15.4   Mean   : 42.98  
-#>  3rd Qu.:19.0   3rd Qu.: 56.00  
-#>  Max.   :25.0   Max.   :120.00
-```
-
-You’ll still need to render `README.Rmd` regularly, to keep `README.md`
-up-to-date.
-
-You can also embed plots, for example:
-
-<img src="man/figures/README-pressure-1.png" width="100%" />
-
-In that case, don’t forget to commit and push the resulting figure
-files, so they display on GitHub\!
+Por favor, observa que el proyecto encftr está sujeto a un [Código del
+contribuyente](https://contributor-covenant.org/es/version/2/0/CODE_OF_CONDUCT.html).
+Contribuyendo con el proyecto aceptas las términos y condiciones.

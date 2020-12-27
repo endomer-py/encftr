@@ -13,5 +13,6 @@
 # encftr 0.0.5
 
 * Mejor documentación de las funciones
+* Nueva función ftc_compute_pobreza_zona
 * Nueva función ftc_setLabels_pobreza_zona
 * Nueva función ftc_setLabels_nivel_ultimo_ano_aprobado
