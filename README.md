@@ -16,7 +16,7 @@ status](https://www.r-pkg.org/badges/version/encftr)](https://CRAN.R-project.org
 encftr es una interfaz para trabajar con la base de datos de la Encuesta
 Nacional Continua de Fuerza de Trabajo (ENCFT) en R.
 
-## Installation
+## Instalación
 
 Rmdx aun no está en CRAN.
 
@@ -41,7 +41,7 @@ tryCatch(
 devtools::install_github("endomer/encftr")
 ```
 
-## Contributing
+## Contribuir
 
 Tienes comentarios o quieres contribuir?
 
