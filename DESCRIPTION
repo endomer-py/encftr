@@ -21,7 +21,6 @@ Imports:
     sjlabelled,
     dplyr,
     httr,
-    Dmisc (>= 0.1.2.9003),
     purrr,
     Hmisc
 URL: https://github.com/drdsdaniel/encftr
