@@ -21,11 +21,11 @@ knitr::opts_chunk$set(
 [![CRAN status](https://www.r-pkg.org/badges/version/encftr)](https://CRAN.R-project.org/package=encftr)
 <!-- badges: end -->
 
-encftr es una interfaz para trabajar con la base de datos de la Encuesta Nacional Continua de Fuerza de Trabajo (ENCFT) en R.
+encftr es una interfaz en R para trabajar con la base de datos de la Encuesta Nacional Continua de Fuerza de Trabajo (ENCFT).
 
-## Installation
+## Instalación
 
-Rmdx aun no está en CRAN.
+encftr aun no está en CRAN.
 
 <!-- You can install the released version of encftr from [CRAN](https://CRAN.R-project.org) with: -->
 
@@ -45,10 +45,15 @@ tryCatch(
 devtools::install_github("endomer/encftr")
 ```
 
-## Contributing
+## Contribuir
 
 Tienes comentarios o quieres contribuir?
 
 Por favor, revisa las [gias de contribución (en inglés)](https://endomer.github.io/encftr/CONTRIBUTING.html) antes de iniciar un issue o pull request.
 
 Por favor, observa que el proyecto encftr está sujeto a un [Código del contribuyente](https://contributor-covenant.org/es/version/2/0/CODE_OF_CONDUCT.html). Contribuyendo con el proyecto aceptas las términos y condiciones.
+
+```{r, include=FALSE}
+source('contributors.R')
+```
+
