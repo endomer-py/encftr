@@ -21,7 +21,7 @@ knitr::opts_chunk$set(
 [![CRAN status](https://www.r-pkg.org/badges/version/encftr)](https://CRAN.R-project.org/package=encftr)
 <!-- badges: end -->
 
-encftr es una interfaz en R para trabajar con la base de datos de la Encuesta Nacional Continua de Fuerza de Trabajo (ENCFT).
+<strong>encftr</strong> es una interfaz en R para trabajar con la base de datos de la Encuesta Nacional Continua de Fuerza de Trabajo (ENCFT).
 
 ## Instalación
 
@@ -45,7 +45,7 @@ tryCatch(
 devtools::install_github("endomer/encftr")
 ```
 
-## Contribuir
+## Como contribuir
 
 Tienes comentarios o quieres contribuir?
 
