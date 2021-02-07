@@ -4,13 +4,17 @@
 \alias{ftc_compute_pobreza_zona}
 \title{Pobreza monetaria por zona de residencia}
 \usage{
-ftc_compute_pobreza_zona(tbl, conn)
+ftc_compute_pobreza_zona(tbl, conn, tbl_name = "pobreza_monetaria")
 }
 \arguments{
-\item{tbl}{los datos de la ENCFT}
+\item{tbl}{Un data.frame con los datos de la encuesta}
 
-\item{conn}{una conexión a base de datos donde existe una tabla que se
-llama pobreza_monetaria}
+\item{conn}{Una conexión a base de datos donde existe una tabla con los datos
+de pobreza monetaria}
+
+\item{tbl_name}{El nombre de la tabla en la base de datos;
+type: character;
+default: "pobreza_monetaria"}
 }
 \value{
 los datos de la ENCFT más las variables de pobreza

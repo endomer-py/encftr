@@ -2,10 +2,10 @@
 #'
 #'   Crea la variable Regiones de desarrollo según el decreto 710-04.
 #'
-#' @param tbl Conexión a base de datos o dataframe con los datos de la ENCFT.
+#' @param tbl Conexión a base de datos o dataframe
 #'
 #' @return Conexión a base de datos o dataframe según input con la variable
-#'   Regiones de desarrollo agregada
+#'   \code{region} agregada
 #'
 #' @export
 #'
