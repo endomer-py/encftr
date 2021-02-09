@@ -15,17 +15,10 @@ Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.1
 Imports: 
     magrittr,
-    keyring,
-    DBI,
-    RPostgres,
-    sjlabelled,
-    dplyr,
-    httr,
-    Dmisc (>= 0.1.2.9003),
-    purrr,
-    Hmisc
-URL: https://github.com/drdsdaniel/encftr
-BugReports: https://github.com/drdsdaniel/encftr/issues
+    Dmisc (>= 0.1.5.9000),
+Remotes:  
+    drdsdaniel/Dmisc,
 Suggests: 
-    knitr
+    knitr,
+    covr
 VignetteBuilder: knitr
