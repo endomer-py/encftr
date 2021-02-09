@@ -1,13 +1,13 @@
 Package: encftr
 Title: Funciones para trabajar con la ENCFT
-Version: 0.0.5.9000
+Version: 0.0.6.9000
 Authors@R: 
     person(given = "Daniel E.",
            family = "de la Rosa",
            role = c("aut", "cre"),
            email = "drdsdaniel@gmail.com")
-Description: Esta packete contiene funciones para trabajar con los datos de la 
-  Encuesta Nacional de Fuerza de Trabajo (ENCFT).
+Description: Esta paquete contiene funciones para trabajar con los datos de la 
+  Encuesta Nacional Continua de Fuerza de Trabajo (ENCFT).
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
@@ -16,9 +16,17 @@ RoxygenNote: 7.1.1
 Imports: 
     magrittr,
     Dmisc (>= 0.1.5.9000),
+    endomer (>= 0.0.1.9000)
 Remotes:  
     drdsdaniel/Dmisc,
+    endomer/endomer
 Suggests: 
     knitr,
+    rmarkdown,
     covr
+Depends: 
+    R (>= 2.10)
+URL: https://github.com/endomer/encftr
+BugReports: https://github.com/endomer/encftr/issues
 VignetteBuilder: knitr
+RdMacros: lifecycle
