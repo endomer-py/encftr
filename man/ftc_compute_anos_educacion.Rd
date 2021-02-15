@@ -18,7 +18,7 @@ ftc_compute_anos_educacion(tbl, breaks = NULL, labels = NULL)
 la variable \code{anos_educacion} adicionada.
 }
 \description{
-Años de educación
+\ifelse{html}{\out{<a href='https://www.tidyverse.org/lifecycle/#experimental'><img src='figures/lifecycle-experimental.svg' alt='Experimental lifecycle'></a>}}{\strong{Experimental}}
 }
 \examples{
 \dontrun{

@@ -1,5 +1,7 @@
 #' Años de educación
 #'
+#'   `r lifecycle::badge("experimental")`
+#'
 #' @param tbl una conexión a base de datos o data.frame con los datos
 #' @param breaks Puntos de corte para la variable. Vea \code{See also} para más detalles.
 #' @param labels [character]: Nombres para los grupos de la variable.  Vea \code{See also} para más detalles.
@@ -21,11 +23,11 @@ ftc_compute_anos_educacion <- function(tbl, breaks = NULL, labels = NULL) {
     ftc_compute_nivel_educativo() %>%
     dplyr::mutate(
       anos_educacion = dplyr::case_when(
-        EDAD >= 3 & nivel_educativo <= 1 ~ 0,
+        EDAD >= 3 & nivel_educativo %in% c(0, 1, 9, 10) ~ 0,
         EDAD >= 3 & nivel_educativo == 2 ~ ULTIMO_ANO_APROBADO,
         EDAD >= 3 & nivel_educativo %in% c(3, 4) ~ 8 + ULTIMO_ANO_APROBADO,
         EDAD >= 3 & nivel_educativo == 5 ~ 12 + ULTIMO_ANO_APROBADO,
-        EDAD >= 3 & nivel_educativo == 6 ~ 16 + ULTIMO_ANO_APROBADO
+        EDAD >= 3 & nivel_educativo %in% c(6, 7, 8) ~ 16 + ULTIMO_ANO_APROBADO
       )
     )
 
@@ -34,19 +36,7 @@ ftc_compute_anos_educacion <- function(tbl, breaks = NULL, labels = NULL) {
   } else {
     tbl %>%
       dplyr::mutate(
-        anos_educacion = Dmisc::cut3(anos_educacion, breaks, labels)
+        anos_educacion = Dmisc::cut3(anos_educacion, breaks, labels = labels)
       )
   }
-}
-
-############################ NIVEL EDU###############################
-ftc_compute_nivel_educativo <- function(tbl) {
-  tbl %>%
-    dplyr::mutate(
-      nivel_educativo = dplyr::case_when(
-        EDAD >= 3 & dplyr::between(NIVEL_ULTIMO_ANO_APROBADO, 6, 8) ~ 6,
-        EDAD >= 3 & NIVEL_ULTIMO_ANO_APROBADO %in% c(9, 10) ~ 0,
-        EDAD >= 3 & NIVEL_ULTIMO_ANO_APROBADO >= 1 ~ NIVEL_ULTIMO_ANO_APROBADO
-      )
-    )
 }
