@@ -1,5 +1,7 @@
 #' Regiones de desarrollo
 #'
+#'   `r lifecycle::badge("stable")`
+#'
 #'   Crea la variable Regiones de desarrollo según el decreto 710-04.
 #'
 #' @param tbl Conexión a base de datos o dataframe

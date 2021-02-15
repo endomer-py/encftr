@@ -7,14 +7,14 @@
 ftc_compute_factor_exp_anual(tbl)
 }
 \arguments{
-\item{tbl}{Conexión a base de datos o dataframe con los datos.}
+\item{tbl}{\link{data.frame}: Conexión a base de datos o dataframe con los datos.}
 }
 \value{
 Conexión a base de datos o dataframe según input con la variable
 \code{factor_exp_anual} agregada.
 }
 \description{
-Factor de expansión anual
+\ifelse{html}{\out{<a href='https://www.tidyverse.org/lifecycle/#stable'><img src='figures/lifecycle-stable.svg' alt='Stable lifecycle'></a>}}{\strong{Stable}}
 }
 \examples{
   encft <- data.frame(FACTOR_EXPANSION = c(1028, 848, 400))

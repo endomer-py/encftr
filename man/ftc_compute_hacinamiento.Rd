@@ -18,11 +18,11 @@ ftc_compute_hacinamiento(tbl, breaks = NULL, labels = NULL)
 la variable \code{hacinamiento} adicionada.
 }
 \description{
-Nivel de hacinamiento del hogar
+\ifelse{html}{\out{<a href='https://www.tidyverse.org/lifecycle/#experimental'><img src='figures/lifecycle-experimental.svg' alt='Experimental lifecycle'></a>}}{\strong{Experimental}}
 }
 \examples{
 \dontrun{
-  encft <- ftc_compute_hacinamiento(encft)
+encft <- ftc_compute_hacinamiento(encft)
 }
 }
 \seealso{

@@ -1,5 +1,7 @@
 #' Pobreza monetaria por zona de residencia
 #'
+#'   `r lifecycle::badge("experimental")`
+#'
 #'   Esta función es temporal, entre tanto paso el script que genera pobreza
 #'   a una función R.
 #'

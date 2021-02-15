@@ -1,6 +1,8 @@
 #' Factor de expansión anual
 #'
-#' @param tbl Conexión a base de datos o dataframe con los datos.
+#'   `r lifecycle::badge("stable")`
+#'
+#' @param tbl [data.frame]: Conexión a base de datos o dataframe con los datos.
 #'
 #' @return Conexión a base de datos o dataframe según input con la variable
 #'   \code{factor_exp_anual} agregada.

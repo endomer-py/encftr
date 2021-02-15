@@ -20,6 +20,9 @@ default: "pobreza_monetaria"}
 los datos de la ENCFT más las variables de pobreza
 }
 \description{
+\ifelse{html}{\out{<a href='https://www.tidyverse.org/lifecycle/#experimental'><img src='figures/lifecycle-experimental.svg' alt='Experimental lifecycle'></a>}}{\strong{Experimental}}
+}
+\details{
 Esta función es temporal, entre tanto paso el script que genera pobreza
 a una función R.
 }
