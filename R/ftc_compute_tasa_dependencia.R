@@ -7,15 +7,23 @@
 #'   15 años o más de 65 años en el hogar como porcentaje de las personas con
 #'   entre 15 y 65 años del hogar.
 #'
+#'   Si \code{limit} se especifica en un uno de los valores que no sea \code{both}
+#'   entonces el numerador solo se limita en la ubicación indicada, de esta forma
+#'   se puede calcular la dependencia de menores (\code{below}) o de mayores (\code{above})
+#'   en el hogar.
+#'
 #' @param tbl [data.frame]: una dataframe con los datos de la ENCFT
-#' @param breaks si se especifica convierte la variable númerica resultante en
-#'   categorica. Vea \code{Dmisc::\link[Dmisc:cut3]{cut3}}
 #' @param min_edad [numeric]: edad mínima para el cálculo de dependencia
 #' @param max_edad [numeric]: edad máxima para el cálculo de la dependencia
+#' @param limit [character]: uno de \code{c("both", "above", "below")} mira en
+#'   detalles para saber más
+#' @param percent [logical]: indica si el resultado es multiplicado por 100 o no
+#' @param breaks si se especifica convierte la variable númerica resultante en
+#'   categorica. Vea \code{Dmisc::\link[Dmisc:cut3]{cut3}}
+#' @param labels Etiquetas para los grupos si se especifica breaks.
+#'   Vea \code{Dmisc::\link[Dmisc:cut3]{cut3}}
 #'
 #' @return un data frame con la variable \code{tasa_dependencia} agregada
-#'
-#' @importFrom rlang :=
 #'
 #' @export
 #'
@@ -28,28 +36,10 @@ ftc_compute_tasa_dependencia <- function(tbl,
                                          max_edad = 64,
                                          limit = c("both", "above", "below"),
                                          percent = TRUE,
-                                         name_subfix = NULL,
                                          breaks = NULL,
                                          labels = NULL) {
   if (length(limit) > 1) {
     limit <- limit[[1]]
-  }
-
-  if (is.null(name_subfix)) {
-    if (limit == "both") {
-      new_name <- glue::glue("tasa_dependencia_{min_edad}_{max_edad}")
-    } else if (limit %in% c("below", "b")) {
-      new_name <- glue::glue("tasa_dependencia_{min_edad}")
-    } else if (limit %in% c("above", "a")) {
-      new_name <- glue::glue("tasa_dependencia_{max_edad}")
-    }
-  } else if (is.character(name_subfix)) {
-    new_name <- glue::glue("tasa_dependencia_{name_subfix}")
-  } else if (!name_subfix) {
-    new_name <- "tasa_dependencia"
-  } else {
-    warning("name_subfix invalido.")
-    new_name <- "tasa_dependencia"
   }
 
   tbl <- tbl %>%
@@ -81,17 +71,9 @@ ftc_compute_tasa_dependencia <- function(tbl,
       )
   }
 
-  tbl <- Dmisc::cut3(tbl, 'tasa_dependencia', breaks, labels, weights = 'FACTOR_EXPANSION', groups = 'TRIMESTRE')
-
-  if(new_name %in% names(tbl)){
-    tbl <- tbl %>%
-      dplyr::select(
-        -!!new_name
-      )
+  if (!is.null(breaks)) {
+    tbl <- Dmisc::cut3(tbl, "tasa_dependencia", breaks, labels = labels, weights = "FACTOR_EXPANSION", groups = "TRIMESTRE")
   }
 
-  tbl %>%
-    dplyr::rename(
-      !!new_name := "tasa_dependencia"
-    )
+  tbl
 }

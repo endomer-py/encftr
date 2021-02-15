@@ -10,7 +10,6 @@ ftc_compute_tasa_dependencia(
   max_edad = 64,
   limit = c("both", "above", "below"),
   percent = TRUE,
-  name_subfix = NULL,
   breaks = NULL,
   labels = NULL
 )
@@ -22,8 +21,16 @@ ftc_compute_tasa_dependencia(
 
 \item{max_edad}{\link{numeric}: edad máxima para el cálculo de la dependencia}
 
+\item{limit}{\link{character}: uno de \code{c("both", "above", "below")} mira en
+detalles para saber más}
+
+\item{percent}{\link{logical}: indica si el resultado es multiplicado por 100 o no}
+
 \item{breaks}{si se especifica convierte la variable númerica resultante en
 categorica. Vea \code{Dmisc::\link[Dmisc:cut3]{cut3}}}
+
+\item{labels}{Etiquetas para los grupos si se especifica breaks.
+Vea \code{Dmisc::\link[Dmisc:cut3]{cut3}}}
 }
 \value{
 un data frame con la variable \code{tasa_dependencia} agregada
@@ -36,6 +43,11 @@ Calcula la tasa de dependencia de un hogar. Esto es, si se toma la edad mínima
 de 15 años y máxima de 65 años, entonces calcula las personas con menos de
 15 años o más de 65 años en el hogar como porcentaje de las personas con
 entre 15 y 65 años del hogar.
+
+Si \code{limit} se especifica en un uno de los valores que no sea \code{both}
+entonces el numerador solo se limita en la ubicación indicada, de esta forma
+se puede calcular la dependencia de menores (\code{below}) o de mayores (\code{above})
+en el hogar.
 }
 \examples{
 \dontrun{
