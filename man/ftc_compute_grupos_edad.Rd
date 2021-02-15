@@ -4,20 +4,23 @@
 \alias{ftc_compute_grupos_edad}
 \title{Grupos de edad}
 \usage{
-ftc_compute_grupos_edad(tbl, breaks = 20, labels = NULL)
+ftc_compute_grupos_edad(tbl, breaks = 10, labels = NULL)
 }
 \arguments{
 \item{tbl}{\link{data.frame}: Conexión a base de datos o data.frame con los datos}
 
 \item{breaks}{Puntos de corte para la variable. Vea \code{See also} para más detalles.}
 
-\item{labels}{\link{character}: Nombres para los grupos de la variable.  Vea \code{See also} para más detalles.}
+\item{labels}{Nombres para los grupos de la variable.  Vea \code{See also} para más detalles.}
 }
 \value{
 \link{data.frame}: Los datos suministrados en el argumento \code{tbl} con
 la variable \code{grupos_edad} adicionada.
 }
 \description{
+\ifelse{html}{\out{<a href='https://www.tidyverse.org/lifecycle/#experimental'><img src='figures/lifecycle-experimental.svg' alt='Experimental lifecycle'></a>}}{\strong{Experimental}}
+}
+\details{
 Divide la variable \code{EDAD} en el número o los grupos especificados.
 }
 \examples{
