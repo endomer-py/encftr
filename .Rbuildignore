@@ -9,3 +9,5 @@
 ^CODE_OF_CONDUCT\.md$
 ^codecov\.yml$
 ^data-raw$
+^contributors\.R$
+^contributors\.csv$
