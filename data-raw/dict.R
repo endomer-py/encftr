@@ -1,4 +1,7 @@
-dict <- list(
+# El diccionario de las variables originales y las nuevas creadas en el paquete
+# se mantienen por separado.
+
+dict0 <- list(
   BONO_ESCOLAR_ESTUDIANTE_PROG = list(
     lab = "¿Actualmente usted o algún miembro del hogar es beneficiario de Bono Escolar Estudiante Progreso?",
     labs = c("Si" = 1, "No" = 2)
@@ -70,14 +73,41 @@ dict <- list(
   ZONA = list(
     lab = "Zona de residencia",
     labs = c("Zona urbana" = 1, "Zona rural" = 2)
+  )
+)
+
+
+
+
+
+
+dict1 <- list(
+  alfabetizacion = list(
+    lab = "¿Sabe leer y escribir?",
+    labs = c("Si" = 1, "No" = 0)
+  ),
+  anos_educacion = list(
+    lab = "Número de años de educación de la persona"
+  ),
+  asistencia_escolar = list(
+    lab = "¿Asiste actualmente a un centro educativo?",
+    labs = c("Si" = 1, "No" = 2)
+  ),
+  factor_exp_anual = list(
+    lab = "Factor de expansión anual"
+  ),
+  grupos_edad = list(
+    lab = "Grupos de edad"
+  ),
+  hacinamiento = list(
+    lab = "Nivel de hacinamiento del hogar"
+  ),
+  matriculacion_escolar = list(
+    lab = "¿Se matriculó en un centro educativo este año?"
   ),
   pobreza_zona = list(
     lab = "Pobreza monetaria por zona de residencia",
     labs = c("Pobre extremo" = 1, "Pobre moderado" = 2, "No pobre" = 3)
-  ),
-  alfabetizacion = list(
-    lab = "¿Sabe leer y escribir?",
-    labs = c("Si" = 1, "No" = 0)
   ),
   precariedad_agua = list(
     lab = "Agua dentro de la vivienda",
@@ -102,10 +132,18 @@ dict <- list(
   region = list(
     lab = "Regiones de desarrollo",
     labs = c('Cibao Norte' = 1, 'Cibao Sur' = 2, 'Cibao Nordeste' = 3, 'Cibao Noroeste' = 4, 'Valdesia' = 5, 'Enriquillo' = 6, 'El Valle' = 7, 'Yuma' = 8, 'Higuamo' = 9, 'Ozama o Metropolitana' = 10)
+  ),
+  tasa_alfabetizacion_hogar = list(
+    lab = "Tasa de alfabetizacion del hogar"
+  ),
+  tasa_dependencia = list(
+    lab = "Tasa de dependencia del hogar"
   )
 )
 
+dict = append(dict0, dict1)
+
+
 usethis::use_data(dict, overwrite = TRUE, internal = TRUE)
-rm(dict)
 
 
