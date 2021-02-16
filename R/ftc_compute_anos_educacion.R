@@ -19,8 +19,10 @@
 #'   encft <- ftc_compute_anos_educacion(encft)
 #' }
 ftc_compute_anos_educacion <- function(tbl, breaks = NULL, labels = NULL) {
+  EDAD <- NULL
+  ULTIMO_ANO_APROBADO <- NULL
+  anos_educacion <- NULL
   tbl <- tbl %>%
-    ftc_compute_nivel_educativo() %>%
     dplyr::mutate(
       anos_educacion = dplyr::case_when(
         EDAD >= 3 & nivel_educativo %in% c(0, 1, 9, 10) ~ 0,

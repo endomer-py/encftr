@@ -13,6 +13,7 @@
 #'   encft <- data.frame(FACTOR_EXPANSION = c(1028, 848, 400))
 #'   ftc_compute_factor_exp_anual(encft)
 ftc_compute_factor_exp_anual <- function(tbl){
+  FACTOR_EXPANSION <- NULL
   tbl %>%
     dplyr::mutate(
       factor_exp_anual = FACTOR_EXPANSION/4

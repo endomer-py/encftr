@@ -1,6 +1,6 @@
 Package: encftr
 Title: Funciones para trabajar con la ENCFT
-Version: 0.0.6.9000
+Version: 0.0.7.9000
 Authors@R: 
     person(given = "Daniel E.",
            family = "de la Rosa",
@@ -11,8 +11,10 @@ Description: Esta paquete contiene funciones para trabajar con los datos de la
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
-Imports: 
+Imports:
+    dplyr,
     magrittr,
+    glue,
     lifecycle,
     knitr,
     Dmisc (>= 0.1.5.9000),

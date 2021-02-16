@@ -22,5 +22,5 @@
 ftc_compute_grupos_edad <- function(tbl, breaks = 10, labels = NULL){
   EDAD <- NULL
   tbl <- dplyr::mutate(tbl, grupos_edad = EDAD)
-    Dmisc::cut3(tbl, "grupos_edad", breaks, labels = labels)
+  Dmisc::cut3(tbl, "grupos_edad", breaks, labels = labels)
 }

@@ -4,15 +4,15 @@
 \alias{ftc_compute_alfabetizacion}
 \title{Alfabetización de la población}
 \usage{
-ftc_compute_alfabetizacion(tbl, edad_min = 0, edad_max = Inf)
+ftc_compute_alfabetizacion(tbl, min_edad = 0, max_edad = Inf)
 }
 \arguments{
 \item{tbl}{\link{data.frame}: Conexión a base de datos o data.frame.}
 
-\item{edad_min}{\link{numeric}: edad mínima del grupo para el que se quiere calcular
+\item{min_edad}{\link{numeric}: edad mínima del grupo para el que se quiere calcular
 la alfabetización}
 
-\item{edad_max}{\link{numeric}: edad máxima del grupo para el que se quiere calcular
+\item{max_edad}{\link{numeric}: edad máxima del grupo para el que se quiere calcular
 la alfabetización}
 }
 \value{

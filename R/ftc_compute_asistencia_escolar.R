@@ -24,11 +24,15 @@
 #'  ftc_compute_asistencia_escolar(encft)
 #'  ftc_compute_asistencia_escolar(encft, summer_fix = TRUE)
 ftc_compute_asistencia_escolar <- function(tbl, min_edad = 6, max_edad = 17, summer_fix = FALSE){
+  EDAD <- NULL
+  TANDA_ASISTE <- NULL
+  MES <- NULL
+  PORQUE_NO_ESTUDIA <- NULL
   if(min_edad > max_edad){
-    stop(glue::glue("ftc_compute_asistencia_escolar: Edad mínima ({min_edad}) mayor que edad máxima ({max_edad})"))
+    stop(glue::glue("ftc_compute_asistencia_escolar: Edad m\u00EDnima ({min_edad}) mayor que edad m\u00E1xima ({max_edad})"))
   }
   if(min_edad < 3){
-    warning("ftc_compute_asistencia_escolar: La encuesta solo recoge información educativa para miembros mayores de 2 años.")
+    warning("ftc_compute_asistencia_escolar: La encuesta solo recoge informaci\u00F3n educativa para miembros mayores de 2 a\u00F1os.")
   }
   tbl %>%
     dplyr::mutate(

@@ -16,6 +16,7 @@
 #'   encft <- ftc_compute_region(encft)
 #' }
 ftc_compute_region <- function(tbl){
+  ID_PROVINCIA <- NULL
   tbl %>%
     dplyr::mutate(
       region = dplyr::case_when(

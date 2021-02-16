@@ -20,6 +20,11 @@ la variable \code{hacinamiento} adicionada.
 \description{
 \ifelse{html}{\out{<a href='https://www.tidyverse.org/lifecycle/#experimental'><img src='figures/lifecycle-experimental.svg' alt='Experimental lifecycle'></a>}}{\strong{Experimental}}
 }
+\details{
+Se define como el número de personas que habitan el hogar entre el número
+de dormitorios de la vivienda. Se suele considerar hacinado un hogar con
+2.5 o más personas por dormitorio.
+}
 \examples{
 \dontrun{
 encft <- ftc_compute_hacinamiento(encft)

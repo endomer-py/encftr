@@ -15,6 +15,9 @@ variable \code{MATERIAL_PARED_EXTERIOR} recodificada en función de la
 variable \code{MATERIAL_PARED_EXTERIOR_ESP}.
 }
 \description{
+\ifelse{html}{\out{<a href='https://www.tidyverse.org/lifecycle/#experimental'><img src='figures/lifecycle-experimental.svg' alt='Experimental lifecycle'></a>}}{\strong{Experimental}}
+}
+\details{
 La variable \code{MATERIAL_PARED_EXTERIOR_ESP} contiene muchas respuestas
 que indican materialidad de calidad en la construcción de las paredes
 exteriores de la vivienda.

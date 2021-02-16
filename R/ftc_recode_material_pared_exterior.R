@@ -1,5 +1,7 @@
 #' Recode material pared exterior
 #'
+#'   `r lifecycle::badge("experimental")`
+#'
 #'   La variable \code{MATERIAL_PARED_EXTERIOR_ESP} contiene muchas respuestas
 #'   que indican materialidad de calidad en la construcción de las paredes
 #'   exteriores de la vivienda.
