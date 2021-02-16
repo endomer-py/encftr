@@ -9,7 +9,6 @@ ftc_compute_tasa_dependencia(
   min_edad = 15,
   max_edad = 64,
   limit = c("both", "above", "below"),
-  percent = TRUE,
   breaks = NULL,
   labels = NULL
 )
@@ -23,8 +22,6 @@ ftc_compute_tasa_dependencia(
 
 \item{limit}{\link{character}: uno de \code{c("both", "above", "below")} mira en
 detalles para saber más}
-
-\item{percent}{\link{logical}: indica si el resultado es multiplicado por 100 o no}
 
 \item{breaks}{si se especifica convierte la variable númerica resultante en
 categorica. Vea \code{Dmisc::\link[Dmisc:cut3]{cut3}}}

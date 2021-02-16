@@ -17,7 +17,6 @@
 #' @param max_edad [numeric]: edad máxima para el cálculo de la dependencia
 #' @param limit [character]: uno de \code{c("both", "above", "below")} mira en
 #'   detalles para saber más
-#' @param percent [logical]: indica si el resultado es multiplicado por 100 o no
 #' @param breaks si se especifica convierte la variable númerica resultante en
 #'   categorica. Vea \code{Dmisc::\link[Dmisc:cut3]{cut3}}
 #' @param labels Etiquetas para los grupos si se especifica breaks.
@@ -35,9 +34,14 @@ ftc_compute_tasa_dependencia <- function(tbl,
                                          min_edad = 15,
                                          max_edad = 64,
                                          limit = c("both", "above", "below"),
-                                         percent = TRUE,
                                          breaks = NULL,
                                          labels = NULL) {
+  TRIMESTRE <- NULL
+  VIVIENDA <- NULL
+  HOGAR <- NULL
+  EDAD <- NULL
+  independientes <- NULL
+  dependientes <- NULL
   if (length(limit) > 1) {
     limit <- limit[[1]]
   }
@@ -56,7 +60,7 @@ ftc_compute_tasa_dependencia <- function(tbl,
         dplyr::if_else(limit %in% c("both", "above", "a"), max_edad, Inf)
       )),
       tasa_dependencia = dplyr::case_when(
-        independientes != 0 ~ dependientes / independientes
+        independientes != 0 ~ dependientes / independientes * 100
       )
     ) %>%
     dplyr::select(
@@ -64,12 +68,6 @@ ftc_compute_tasa_dependencia <- function(tbl,
     ) %>%
     dplyr::ungroup()
 
-  if (percent) {
-    tbl <- tbl %>%
-      dplyr::mutate(
-        tasa_dependencia = tasa_dependencia * 100
-      )
-  }
 
   if (!is.null(breaks)) {
     tbl <- Dmisc::cut3(tbl, "tasa_dependencia", breaks, labels = labels, weights = "FACTOR_EXPANSION", groups = "TRIMESTRE")
