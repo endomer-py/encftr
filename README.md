@@ -8,14 +8,14 @@
 [![Project Status: WIP – Initial development is in progress, but there
 has not yet been a stable, usable release suitable for the
 public.](https://www.repostatus.org/badges/latest/wip.svg)](https://www.repostatus.org/#wip)
-[![R build
-status](https://github.com/endomer/encftr/workflows/R-CMD-check/badge.svg)](https://github.com/endomer/encftr/actions)
 [![Lifecycle:
 experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
-[![CRAN
-status](https://www.r-pkg.org/badges/version/encftr)](https://CRAN.R-project.org/package=encftr)
+[![R build
+status](https://github.com/endomer/encftr/workflows/R-CMD-check/badge.svg)](https://github.com/endomer/encftr/actions)
 [![Codecov test
 coverage](https://codecov.io/gh/endomer/encftr/branch/master/graph/badge.svg)](https://codecov.io/gh/endomer/encftr?branch=master)
+[![CRAN
+status](https://www.r-pkg.org/badges/version/encftr)](https://CRAN.R-project.org/package=encftr)
 <!-- badges: end -->
 
 `encftr` es una interfaz para trabajar con la base de datos de la
@@ -68,9 +68,9 @@ color: #fff;
 text-align: center;
 box-shadow: inset 0 -1px 0 rgb(0 0 0 / 15%);
 transition: width .6s ease;
-background-color: #d9534f;  width: 4.1%;">
+background-color: #d9534f;  width: 5.5%;">
 
-4.1%
+5.5%
 
 </div>
 
@@ -81,6 +81,8 @@ background-color: #d9534f;  width: 4.1%;">
 2.  Agregar una función para calcular la pobreza monetaria.
 3.  Agregar una función para el cálculo del ICV.
 4.  Completar viñeta de uso básico de la librería.
+5.  Agregar validadores a las funciones para garantizar que las
+    variables son del tipo y con el contenido esperado en los cálculos.
 
 ## Contribuye
 
