@@ -23,7 +23,7 @@
 #'   str(ftc_setLabels(encft))
 #'}
 ftc_setLabels <- function(tbl, vars = NULL) {
-  endomer::setLabels(tbl, vars, dict)
+  endomer::setLabels(tbl, vars, encftr::dict)
 }
 
 
@@ -50,6 +50,6 @@ ftc_setLabels <- function(tbl, vars = NULL) {
 #'   ftc_useLabels(encft)
 #'}
 ftc_useLabels <- function(tbl, vars = NULL) {
-  endomer::useLabels(tbl, vars, dict)
+  endomer::useLabels(tbl, vars, encftr::dict)
 }
 
