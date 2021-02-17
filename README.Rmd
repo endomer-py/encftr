@@ -23,7 +23,7 @@ knitr::opts_chunk$set(
 [![CRAN status](https://www.r-pkg.org/badges/version/encftr)](https://CRAN.R-project.org/package=encftr)
 <!-- badges: end -->
 
-`encftr` es una interfaz para trabajar con la base de datos de la Encuesta Nacional Continua de Fuerza de Trabajo (ENCFT) en R.
+`encftr` es una interfaz para trabajar con la base de datos de la Encuesta Nacional Continua de Fuerza de Trabajo (ENCFT) en R. Esta paquete es parte de [endomer](https://endomer.github.io/) un proyecto de código abierto que busca ofrecer interfaces en R para las principales encuestas de la República Dominicana.
 
 ## Instalación
 
@@ -61,6 +61,7 @@ rm(dict, dict0, dict1)
 2. Agregar una función para el cálculo del ICV.
 2. Completar viñeta de uso básico de la librería.
 2. Agregar validadores a las funciones para garantizar que las variables son del tipo y con el contenido esperado en los cálculos.
+2. Escribir tests
 
 ## Contribuye
 
@@ -75,6 +76,6 @@ Ten en cuenta que el proyecto `encftr` está sujeto a un [Código del contribuye
 <hr/>
 
 ```{r echo=FALSE}
-Dmisc::big_button("Guía de inicio rápido")
+Dmisc::big_button("Guía de inicio rápido", "./articles/encftr.html")
 ```
 

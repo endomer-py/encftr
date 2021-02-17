@@ -1,6 +1,6 @@
 Package: encftr
 Title: Funciones para trabajar con la ENCFT
-Version: 0.0.7.9000
+Version: 0.0.8.9000
 Authors@R: 
     person(given = "Daniel E.",
            family = "de la Rosa",
@@ -19,7 +19,7 @@ Imports:
     knitr,
     Dmisc (>= 0.1.5.9000),
     endomer (>= 0.0.1.9000)
-Remotes:  
+Remotes: 
     drdsdaniel/Dmisc,
     endomer/endomer
 Roxygen: list(markdown = TRUE)
@@ -30,3 +30,5 @@ VignetteBuilder: knitr
 RdMacros: lifecycle
 Depends: 
     R (>= 2.10)
+Suggests: 
+    rmarkdown
