@@ -37,7 +37,7 @@ ftc_compute_matriculacion_escolar <- function(tbl, min_edad = 6, max_edad = 17, 
     dplyr::mutate(
       matriculacion_escolar = dplyr::case_when(
         dplyr::between(EDAD, min_edad, max_edad) & dplyr::between(NIVEL_SE_MATRICULO, 1, 8) ~ 1,
-        dplyr::between(EDAD, min_edad, max_edad) & dplyr::between(MES, 6, 8) & PORQUE_NO_ESTUDIA == 1 ~ 1*as.numeric(summer_fix),
+        dplyr::between(EDAD, min_edad, max_edad) & dplyr::between(MES, 6, 8) & PORQUE_NO_ESTUDIA == 1 ~ dplyr::if_else(summer_fix, 1, 0),
         dplyr::between(EDAD, min_edad, max_edad) ~ 0
       )
     )
