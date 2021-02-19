@@ -10,6 +10,10 @@ dict0 <- list(
     lab = "¿Actualmente usted o algún miembro del hogar es beneficiario de Bono Gas para Choferes?",
     labs = c("Si" = 1, "No" = 2)
   ),
+  COMBUSTIBLE_PARA_COCINAR = list(
+    lab = "¿Qué combustible utiliza principalmente para cocinar?",
+    labs = c("Gas en cilindro" = 1, "Gas (kerosene)" = 2, "Electricidad" = 3, "Leña" = 4, "Carbón" = 5, "No cocina" = 6, "Otro - (Especifique)" = 99)
+  ),
   FONDO_ASISTENCIA_SOLIDARIA_EMP = list(
     lab = "¿Actualmente usted o algún miembro del hogar es beneficiario de Fondo de Asistencia Solidaria a Empleados (FASE)?",
     labs = c("Si" = 1, "No" = 2)
@@ -138,6 +142,10 @@ dict1 <- list(
   ),
   tasa_dependencia = list(
     lab = "Tasa de dependencia del hogar"
+  ),
+  trabajo_infantil = list(
+    lab = "Trabajo infantil",
+    labs = c("Trabaja y estudia" = 1, "Solo trabajo" = 2, "Solo estudia" = 3, "No trabaja ni estudia" = 4)
   )
 )
 
