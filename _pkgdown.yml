@@ -1,0 +1,22 @@
+reference:
+  - title: "Etiquetas de datos"
+    desc: "Estas funciones permiten agregar y utilizar las etiquedas de datos de las variables"
+    contents:
+      - ftc_asLabels
+      - ftc_useLabels
+      - starts_with("ftc_setLabels")
+  - title: "Variables sociodemográficas"
+    contents:
+      - ftc_compute_region
+  - title: "Pobreza monetaria"
+    desc: "Estas funciones calculan indicadores relativos a la pobreza monetaria"
+    contents:
+      - ftc_compute_pobreza_zona
+  - title: "Misc"
+    desc: "Otras funciones que pueden ser útiles a unos y otros no"
+    contents:
+      - ftc_dbConn
+
+template:
+  params:
+    ganalytics: G-MZ6Q9WX373
