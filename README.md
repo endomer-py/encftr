@@ -71,9 +71,9 @@ color: #fff;
 text-align: center;
 box-shadow: inset 0 -1px 0 rgb(0 0 0 / 15%);
 transition: width .6s ease;
-background-color: #d9534f;  width: 5.5%;">
+background-color: #d9534f;  width: 5.8%;">
 
-5.5%
+5.8%
 
 </div>
 
@@ -83,10 +83,11 @@ background-color: #d9534f;  width: 5.5%;">
 
 2.  Agregar una función para calcular la pobreza monetaria.
 3.  Agregar una función para el cálculo del ICV.
-4.  Completar viñeta de uso básico de la librería.
-5.  Agregar validadores a las funciones para garantizar que las
+4.  Agregar validadores a las funciones para garantizar que las
     variables son del tipo y con el contenido esperado en los cálculos.
-6.  Escribir tests
+5.  Escribir tests
+6.  Hacer que todas las funciones trabajen con conexiones a base de
+    datos (Las que usan cut3 específicamente).
 
 ## Contribuye
 
