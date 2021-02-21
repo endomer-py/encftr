@@ -7,13 +7,16 @@
 ftc_compute_region(tbl)
 }
 \arguments{
-\item{tbl}{Conexión a base de datos o dataframe con los datos de la ENCFT.}
+\item{tbl}{Conexión a base de datos o dataframe}
 }
 \value{
 Conexión a base de datos o dataframe según input con la variable
-Regiones de desarrollo agregada
+\code{region} agregada
 }
 \description{
+\ifelse{html}{\out{<a href='https://www.tidyverse.org/lifecycle/#stable'><img src='figures/lifecycle-stable.svg' alt='Stable lifecycle'></a>}}{\strong{Stable}}
+}
+\details{
 Crea la variable Regiones de desarrollo según el decreto 710-04.
 }
 \examples{

@@ -1,11 +1,13 @@
 #' Regiones de desarrollo
 #'
+#'   `r lifecycle::badge("stable")`
+#'
 #'   Crea la variable Regiones de desarrollo según el decreto 710-04.
 #'
-#' @param tbl Conexión a base de datos o dataframe con los datos de la ENCFT.
+#' @param tbl Conexión a base de datos o dataframe
 #'
 #' @return Conexión a base de datos o dataframe según input con la variable
-#'   Regiones de desarrollo agregada
+#'   \code{region} agregada
 #'
 #' @export
 #'
@@ -14,6 +16,7 @@
 #'   encft <- ftc_compute_region(encft)
 #' }
 ftc_compute_region <- function(tbl){
+  ID_PROVINCIA <- NULL
   tbl %>%
     dplyr::mutate(
       region = dplyr::case_when(
