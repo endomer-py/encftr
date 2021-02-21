@@ -18,7 +18,8 @@ Imports:
     lifecycle,
     knitr,
     Dmisc (>= 0.1.5.9000),
-    endomer (>= 0.0.1.9000)
+    endomer (>= 0.0.1.9000),
+    haven
 Remotes: 
     drdsdaniel/Dmisc,
     endomer/endomer
