@@ -68,6 +68,10 @@ jobs:
         if: runner.os == 'Linux'
         run: sudo apt-get install libsodium-dev
 
+      - name: Install curl
+        if: runner.os == 'Linux'
+        run: sudo apt-get install curl
+
       - name: Install dependencies
         run: |
           remotes::install_deps(dependencies = TRUE)
