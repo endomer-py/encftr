@@ -3,71 +3,71 @@
 
 dict0 <- list(
   BONO_ESCOLAR_ESTUDIANTE_PROG = list(
-    lab = "¿Actualmente usted o algún miembro del hogar es beneficiario de Bono Escolar Estudiante Progreso?",
+    lab = "¿Actualmente usted o alg\u00fan miembro del hogar es beneficiario de Bono Escolar Estudiante Progreso?",
     labs = c("Si" = 1, "No" = 2)
   ),
   BONO_GAS_CHOFERES = list(
-    lab = "¿Actualmente usted o algún miembro del hogar es beneficiario de Bono Gas para Choferes?",
+    lab = "¿Actualmente usted o alg\u00fan miembro del hogar es beneficiario de Bono Gas para Choferes?",
     labs = c("Si" = 1, "No" = 2)
   ),
   COMBUSTIBLE_PARA_COCINAR = list(
-    lab = "¿Qué combustible utiliza principalmente para cocinar?",
-    labs = c("Gas en cilindro" = 1, "Gas (kerosene)" = 2, "Electricidad" = 3, "Leña" = 4, "Carbón" = 5, "No cocina" = 6, "Otro - (Especifique)" = 99)
+    lab = "¿Qu\u00e9 combustible utiliza principalmente para cocinar?",
+    labs = c("Gas en cilindro" = 1, "Gas (kerosene)" = 2, "Electricidad" = 3, "Le\\u00f1a" = 4, "Carb\\u00f3n" = 5, "No cocina" = 6, "Otro - (Especifique)" = 99)
   ),
   FONDO_ASISTENCIA_SOLIDARIA_EMP = list(
-    lab = "¿Actualmente usted o algún miembro del hogar es beneficiario de Fondo de Asistencia Solidaria a Empleados (FASE)?",
+    lab = "¿Actualmente usted o alg\u00fan miembro del hogar es beneficiario de Fondo de Asistencia Solidaria a Empleados (FASE)?",
     labs = c("Si" = 1, "No" = 2)
   ),
   INCENTIVO_EDUCACION_SUPERIOR = list(
-    lab = "¿Actualmente usted o algún miembro del hogar es beneficiario de Incentivo a la Educación Superior, con la Tarjeta Solidaridad?",
+    lab = "¿Actualmente usted o alg\u00fan miembro del hogar es beneficiario de Incentivo a la Educaci\u00f3n Superior, con la Tarjeta Solidaridad?",
     labs = c("Si" = 1, "No" = 2)
   ),
   NIVEL_ULTIMO_ANO_APROBADO = list(
-    lab = "¿A qué nivel corresponde ese último año o curso aprobado?",
+    lab = "¿A qu\u00e9 nivel corresponde ese \u00faltimo a\u00f1o o curso aprobado?",
     labs = c("Pre-escolar" = 1, "Primario" = 2, "Secundario" = 3, "Secundario-Tecnico" = 4, "Universitario" = 5, "Post-Grado" = 6, "Maestria" = 7, "Doctorado" = 8, "Ninguno" = 9, "Quisqueya Aprende" = 10, "Otro" = 99)
   ),
   PROG_INCENTIVO_ALIST_MARINA = list(
-    lab = "¿Actualmente usted o algún miembro del hogar es beneficiario de Programa Incentivo Alistados Marina de Guerra?",
+    lab = "¿Actualmente usted o alg\u00fan miembro del hogar es beneficiario de Programa Incentivo Alistados Marina de Guerra?",
     labs = c("Si" = 1, "No" = 2)
   ),
   PROG_INCENTIVO_POLICIA_PREV = list(
-    lab = "¿Actualmente usted o algún miembro del hogar es beneficiario de Programa Incentivo a la Policía Preventiva?",
+    lab = "¿Actualmente usted o alg\u00fan miembro del hogar es beneficiario de Programa Incentivo a la Polic\u00eda Preventiva?",
     labs = c("Si" = 1, "No" = 2)
   ),
   PROGRAMA_APOYO_TRABAJADORES_IN = list(
-    lab = "¿Actualmente usted o algún miembro del hogar es beneficiario de Programa de apoyo a trabajadores informales (Pa' Ti)?",
+    lab = "¿Actualmente usted o alg\u00fan miembro del hogar es beneficiario de Programa de apoyo a trabajadores informales (Pa' Ti)?",
     labs = c("Si" = 1, "No" = 2)
   ),
   PROGRAMA_QUEDATE_CASA = list(
-    lab = "¿Actualmente usted o algún miembro del hogar es beneficiario de Programa Quédate en Casa?",
+    lab = "¿Actualmente usted o alg\u00fan miembro del hogar es beneficiario de Programa Qu\u00e9date en Casa?",
     labs = c("Si" = 1, "No" = 2)
   ),
   PS_COMER_ES_PRIMERO = list(
-    lab = "¿Actualmente usted o algún miembro del hogar es beneficiario de Programa Solidaridad: Comer es Primero?",
+    lab = "¿Actualmente usted o alg\u00fan miembro del hogar es beneficiario de Programa Solidaridad: Comer es Primero?",
     labs = c("Si" = 1, "No" = 2)
   ),
   PS_BONO_GAS = list(
-    lab = "¿Actualmente usted o algún miembro del hogar es beneficiario de Programa Solidaridad: Bono Gas?",
+    lab = "¿Actualmente usted o alg\u00fan miembro del hogar es beneficiario de Programa Solidaridad: Bono Gas?",
     labs = c("Si" = 1, "No" = 2)
   ),
   PS_BONO_LUZ = list(
-    lab = "¿Actualmente usted o algún miembro del hogar es beneficiario de Programa Solidaridad: Bono Luz?",
+    lab = "¿Actualmente usted o alg\u00fan miembro del hogar es beneficiario de Programa Solidaridad: Bono Luz?",
     labs = c("Si" = 1, "No" = 2)
   ),
   PS_APOYO_ADULTOS_MAYORES = list(
-    lab = "¿Actualmente usted o algún miembro del hogar es beneficiario de Programa Solidaridad: Protección a la vejez?",
+    lab = "¿Actualmente usted o alg\u00fan miembro del hogar es beneficiario de Programa Solidaridad: Protecci\u00f3n a la vejez?",
     labs = c("Si" = 1, "No" = 2)
   ),
   PS_CHISPITA_SOLIDARIDAD = list(
-    lab = "¿Actualmente usted o algún miembro del hogar es beneficiario de Programa Solidaridad: Chispita Solidaridad?",
+    lab = "¿Actualmente usted o alg\u00fan miembro del hogar es beneficiario de Programa Solidaridad: Chispita Solidaridad?",
     labs = c("Si" = 1, "No" = 2)
   ),
   PS_INCENTIVO_ASIST_ESCOLAR = list(
-    lab = "¿Actualmente usted o algún miembro del hogar es beneficiario de Programa Solidaridad: Incentivo a la Asistencia Escolar?",
+    lab = "¿Actualmente usted o alg\u00fan miembro del hogar es beneficiario de Programa Solidaridad: Incentivo a la Asistencia Escolar?",
     labs = c("Si" = 1, "No" = 2)
   ),
   SEXO = list(
-    lab = "¿Cuántos de edad cumplidos tiene?",
+    lab = "¿Cu\u00e1ntos de edad cumplidos tiene?",
     labs = c('Masculino' = 1, 'Femenino' = 2)
   ),
   TIPO_SANITARIO = list(
@@ -91,14 +91,14 @@ dict1 <- list(
     labs = c("Si" = 1, "No" = 0)
   ),
   anos_educacion = list(
-    lab = "Número de años de educación de la persona"
+    lab = "N\u00famero de a\u00f1os de educaci\u00f3n de la persona"
   ),
   asistencia_escolar = list(
     lab = "¿Asiste actualmente a un centro educativo?",
     labs = c("Si" = 1, "No" = 2)
   ),
   factor_exp_anual = list(
-    lab = "Factor de expansión anual"
+    lab = "Factor de expansi\u00f3n anual"
   ),
   grupos_edad = list(
     lab = "Grupos de edad"
@@ -107,7 +107,7 @@ dict1 <- list(
     lab = "Nivel de hacinamiento del hogar"
   ),
   matriculacion_escolar = list(
-    lab = "¿Se matriculó en un centro educativo este año?"
+    lab = "¿Se matricul\u00f3 en un centro educativo este a\u00f1o?"
   ),
   pobreza_zona = list(
     lab = "Pobreza monetaria por zona de residencia",
