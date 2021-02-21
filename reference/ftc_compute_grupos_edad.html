@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Pobreza monetaria por zona de residencia — ftc_compute_pobreza_zona • encftr</title>
+<title>Grupos de edad — ftc_compute_grupos_edad • encftr</title>
 
 <!-- favicons -->
 <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
@@ -46,7 +46,7 @@
 
 
 
-<meta property="og:title" content="Pobreza monetaria por zona de residencia — ftc_compute_pobreza_zona" />
+<meta property="og:title" content="Grupos de edad — ftc_compute_grupos_edad" />
 <meta property="og:description" content="" />
 <meta property="og:image" content="/logo.png" />
 
@@ -129,51 +129,150 @@
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>Pobreza monetaria por zona de residencia</h1>
-    <small class="dont-index">Source: <a href='https://github.com/endomer/encftr/blob/master/R/ftc_compute_pobreza_zona.R'><code>R/ftc_compute_pobreza_zona.R</code></a></small>
-    <div class="hidden name"><code>ftc_compute_pobreza_zona.Rd</code></div>
+    <h1>Grupos de edad</h1>
+    <small class="dont-index">Source: <a href='https://github.com/endomer/encftr/blob/master/R/ftc_compute_grupos_edad.R'><code>R/ftc_compute_grupos_edad.R</code></a></small>
+    <div class="hidden name"><code>ftc_compute_grupos_edad.Rd</code></div>
     </div>
 
     <div class="ref-description">
     <p><a href='https://www.tidyverse.org/lifecycle/#experimental'><img src='figures/lifecycle-experimental.svg' alt='Experimental lifecycle'></a></p>
     </div>
 
-    <pre class="usage"><span class='fu'>ftc_compute_pobreza_zona</span><span class='op'>(</span><span class='va'>tbl</span>, <span class='va'>conn</span>, tbl_name <span class='op'>=</span> <span class='st'>"pobreza_monetaria"</span><span class='op'>)</span></pre>
+    <pre class="usage"><span class='fu'>ftc_compute_grupos_edad</span><span class='op'>(</span><span class='va'>tbl</span>, breaks <span class='op'>=</span> <span class='fl'>10</span>, labels <span class='op'>=</span> <span class='cn'>NULL</span><span class='op'>)</span></pre>
 
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
     <colgroup><col class="name" /><col class="desc" /></colgroup>
     <tr>
       <th>tbl</th>
-      <td><p>Un data.frame con los datos de la encuesta</p></td>
+      <td><p><a href='https://rdrr.io/r/base/data.frame.html'>data.frame</a>: Conexión a base de datos o data.frame con los datos</p></td>
     </tr>
     <tr>
-      <th>conn</th>
-      <td><p>Una conexión a base de datos donde existe una tabla con los datos
-de pobreza monetaria</p></td>
+      <th>breaks</th>
+      <td><p>Puntos de corte para la variable. Vea <code>See also</code> para más detalles.</p></td>
     </tr>
     <tr>
-      <th>tbl_name</th>
-      <td><p>El nombre de la tabla en la base de datos;
-type: character;
-default: "pobreza_monetaria"</p></td>
+      <th>labels</th>
+      <td><p>Nombres para los grupos de la variable.  Vea <code>See also</code> para más detalles.</p></td>
     </tr>
     </table>
 
     <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
 
-    <p>los datos de la ENCFT más las variables de pobreza</p>
+    <p><a href='https://rdrr.io/r/base/data.frame.html'>data.frame</a>: Los datos suministrados en el argumento <code>tbl</code> con
+la variable <code>grupos_edad</code> adicionada.</p>
     <h2 class="hasAnchor" id="details"><a class="anchor" href="#details"></a>Details</h2>
 
-    <p>Esta función es temporal, entre tanto paso el script que genera pobreza
-a una función R.</p>
+    <p>Divide la variable <code>EDAD</code> en el número o los grupos especificados.</p>
+    <h2 class="hasAnchor" id="see-also"><a class="anchor" href="#see-also"></a>See also</h2>
+
+    <div class='dont-index'><p>Vea <code>Dmisc::<a href='https://drdsdaniel.github.io/Dmisc/reference/cut3.html'>cut3</a></code></p></div>
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><div class='input'><span class='kw'>if</span> <span class='op'>(</span><span class='cn'>FALSE</span><span class='op'>)</span> <span class='op'>{</span>
-  <span class='va'>encft</span> <span class='op'>&lt;-</span> <span class='fu'>ftc_compute_pobreza_zona</span><span class='op'>(</span><span class='va'>encft</span>, <span class='va'>conn</span><span class='op'>)</span>
-<span class='op'>}</span>
-
-</div></pre>
+    <pre class="examples"><div class='input'>  <span class='va'>encft</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/data.frame.html'>data.frame</a></span><span class='op'>(</span>EDAD <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='fl'>0</span><span class='op'>:</span><span class='fl'>100</span><span class='op'>)</span><span class='op'>)</span>
+  <span class='fu'>ftc_compute_grupos_edad</span><span class='op'>(</span><span class='va'>encft</span><span class='op'>)</span>
+</div><div class='output co'>#&gt;     EDAD grupos_edad
+#&gt; 1      0   (-0.1,10]
+#&gt; 2      1   (-0.1,10]
+#&gt; 3      2   (-0.1,10]
+#&gt; 4      3   (-0.1,10]
+#&gt; 5      4   (-0.1,10]
+#&gt; 6      5   (-0.1,10]
+#&gt; 7      6   (-0.1,10]
+#&gt; 8      7   (-0.1,10]
+#&gt; 9      8   (-0.1,10]
+#&gt; 10     9   (-0.1,10]
+#&gt; 11    10   (-0.1,10]
+#&gt; 12    11     (10,20]
+#&gt; 13    12     (10,20]
+#&gt; 14    13     (10,20]
+#&gt; 15    14     (10,20]
+#&gt; 16    15     (10,20]
+#&gt; 17    16     (10,20]
+#&gt; 18    17     (10,20]
+#&gt; 19    18     (10,20]
+#&gt; 20    19     (10,20]
+#&gt; 21    20     (10,20]
+#&gt; 22    21     (20,30]
+#&gt; 23    22     (20,30]
+#&gt; 24    23     (20,30]
+#&gt; 25    24     (20,30]
+#&gt; 26    25     (20,30]
+#&gt; 27    26     (20,30]
+#&gt; 28    27     (20,30]
+#&gt; 29    28     (20,30]
+#&gt; 30    29     (20,30]
+#&gt; 31    30     (20,30]
+#&gt; 32    31     (30,40]
+#&gt; 33    32     (30,40]
+#&gt; 34    33     (30,40]
+#&gt; 35    34     (30,40]
+#&gt; 36    35     (30,40]
+#&gt; 37    36     (30,40]
+#&gt; 38    37     (30,40]
+#&gt; 39    38     (30,40]
+#&gt; 40    39     (30,40]
+#&gt; 41    40     (30,40]
+#&gt; 42    41     (40,50]
+#&gt; 43    42     (40,50]
+#&gt; 44    43     (40,50]
+#&gt; 45    44     (40,50]
+#&gt; 46    45     (40,50]
+#&gt; 47    46     (40,50]
+#&gt; 48    47     (40,50]
+#&gt; 49    48     (40,50]
+#&gt; 50    49     (40,50]
+#&gt; 51    50     (40,50]
+#&gt; 52    51     (50,60]
+#&gt; 53    52     (50,60]
+#&gt; 54    53     (50,60]
+#&gt; 55    54     (50,60]
+#&gt; 56    55     (50,60]
+#&gt; 57    56     (50,60]
+#&gt; 58    57     (50,60]
+#&gt; 59    58     (50,60]
+#&gt; 60    59     (50,60]
+#&gt; 61    60     (50,60]
+#&gt; 62    61     (60,70]
+#&gt; 63    62     (60,70]
+#&gt; 64    63     (60,70]
+#&gt; 65    64     (60,70]
+#&gt; 66    65     (60,70]
+#&gt; 67    66     (60,70]
+#&gt; 68    67     (60,70]
+#&gt; 69    68     (60,70]
+#&gt; 70    69     (60,70]
+#&gt; 71    70     (60,70]
+#&gt; 72    71     (70,80]
+#&gt; 73    72     (70,80]
+#&gt; 74    73     (70,80]
+#&gt; 75    74     (70,80]
+#&gt; 76    75     (70,80]
+#&gt; 77    76     (70,80]
+#&gt; 78    77     (70,80]
+#&gt; 79    78     (70,80]
+#&gt; 80    79     (70,80]
+#&gt; 81    80     (70,80]
+#&gt; 82    81     (80,90]
+#&gt; 83    82     (80,90]
+#&gt; 84    83     (80,90]
+#&gt; 85    84     (80,90]
+#&gt; 86    85     (80,90]
+#&gt; 87    86     (80,90]
+#&gt; 88    87     (80,90]
+#&gt; 89    88     (80,90]
+#&gt; 90    89     (80,90]
+#&gt; 91    90     (80,90]
+#&gt; 92    91    (90,100]
+#&gt; 93    92    (90,100]
+#&gt; 94    93    (90,100]
+#&gt; 95    94    (90,100]
+#&gt; 96    95    (90,100]
+#&gt; 97    96    (90,100]
+#&gt; 98    97    (90,100]
+#&gt; 99    98    (90,100]
+#&gt; 100   99    (90,100]
+#&gt; 101  100    (90,100]</div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <nav id="toc" data-toggle="toc" class="sticky-top">

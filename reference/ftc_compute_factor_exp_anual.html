@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Pipe operator — %&gt;% • encftr</title>
+<title>Factor de expansión anual — ftc_compute_factor_exp_anual • encftr</title>
 
 <!-- favicons -->
 <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
@@ -46,8 +46,8 @@
 
 
 
-<meta property="og:title" content="Pipe operator — %&gt;%" />
-<meta property="og:description" content="See magrittr::%&amp;gt;% for details." />
+<meta property="og:title" content="Factor de expansión anual — ftc_compute_factor_exp_anual" />
+<meta property="og:description" content="" />
 <meta property="og:image" content="/logo.png" />
 
 
@@ -129,19 +129,38 @@
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>Pipe operator</h1>
-    <small class="dont-index">Source: <a href='https://github.com/endomer/encftr/blob/master/R/utils-pipe.R'><code>R/utils-pipe.R</code></a></small>
-    <div class="hidden name"><code>pipe.Rd</code></div>
+    <h1>Factor de expansión anual</h1>
+    <small class="dont-index">Source: <a href='https://github.com/endomer/encftr/blob/master/R/ftc_compute_factor_exp_anual.R'><code>R/ftc_compute_factor_exp_anual.R</code></a></small>
+    <div class="hidden name"><code>ftc_compute_factor_exp_anual.Rd</code></div>
     </div>
 
     <div class="ref-description">
-    <p>See <code>magrittr::%&gt;%</code> for details.</p>
+    <p><a href='https://www.tidyverse.org/lifecycle/#stable'><img src='figures/lifecycle-stable.svg' alt='Stable lifecycle'></a></p>
     </div>
 
-    <pre class="usage"><span class='va'>lhs</span> <span class='op'>%&gt;%</span> <span class='va'>rhs</span></pre>
+    <pre class="usage"><span class='fu'>ftc_compute_factor_exp_anual</span><span class='op'>(</span><span class='va'>tbl</span><span class='op'>)</span></pre>
 
+    <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
+    <table class="ref-arguments">
+    <colgroup><col class="name" /><col class="desc" /></colgroup>
+    <tr>
+      <th>tbl</th>
+      <td><p><a href='https://rdrr.io/r/base/data.frame.html'>data.frame</a>: Conexión a base de datos o dataframe con los datos.</p></td>
+    </tr>
+    </table>
 
+    <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
 
+    <p>Conexión a base de datos o dataframe según input con la variable
+<code>factor_exp_anual</code> agregada.</p>
+
+    <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
+    <pre class="examples"><div class='input'>  <span class='va'>encft</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/data.frame.html'>data.frame</a></span><span class='op'>(</span>FACTOR_EXPANSION <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='fl'>1028</span>, <span class='fl'>848</span>, <span class='fl'>400</span><span class='op'>)</span><span class='op'>)</span>
+  <span class='fu'>ftc_compute_factor_exp_anual</span><span class='op'>(</span><span class='va'>encft</span><span class='op'>)</span>
+</div><div class='output co'>#&gt;   FACTOR_EXPANSION factor_exp_anual
+#&gt; 1             1028              257
+#&gt; 2              848              212
+#&gt; 3              400              100</div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <nav id="toc" data-toggle="toc" class="sticky-top">

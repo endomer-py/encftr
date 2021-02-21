@@ -8,6 +8,13 @@
 
 <title>Regiones de desarrollo — ftc_compute_region • encftr</title>
 
+<!-- favicons -->
+<link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+<link rel="apple-touch-icon" type="image/png" sizes="180x180" href="../apple-touch-icon.png" />
+<link rel="apple-touch-icon" type="image/png" sizes="120x120" href="../apple-touch-icon-120x120.png" />
+<link rel="apple-touch-icon" type="image/png" sizes="76x76" href="../apple-touch-icon-76x76.png" />
+<link rel="apple-touch-icon" type="image/png" sizes="60x60" href="../apple-touch-icon-60x60.png" />
 
 <!-- jquery -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
@@ -40,7 +47,8 @@
 
 
 <meta property="og:title" content="Regiones de desarrollo — ftc_compute_region" />
-<meta property="og:description" content="Crea la variable Regiones de desarrollo según el decreto 710-04." />
+<meta property="og:description" content="" />
+<meta property="og:image" content="/logo.png" />
 
 
 
@@ -82,7 +90,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">encftr</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.0.5.9000</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.0.9.9000</span>
       </span>
     </div>
 
@@ -100,13 +108,10 @@
 <li>
   <a href="../reference/index.html">Reference</a>
 </li>
-<li>
-  <a href="../news/index.html">Changelog</a>
-</li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li>
-  <a href="https://github.com/drdsdaniel/encftr/">
+  <a href="https://github.com/endomer/encftr/">
     <span class="fab fa-github fa-lg"></span>
      
   </a>
@@ -125,12 +130,12 @@
   <div class="col-md-9 contents">
     <div class="page-header">
     <h1>Regiones de desarrollo</h1>
-    <small class="dont-index">Source: <a href='https://github.com/drdsdaniel/encftr/blob/master/R/ftc_compute_region.R'><code>R/ftc_compute_region.R</code></a></small>
+    <small class="dont-index">Source: <a href='https://github.com/endomer/encftr/blob/master/R/ftc_compute_region.R'><code>R/ftc_compute_region.R</code></a></small>
     <div class="hidden name"><code>ftc_compute_region.Rd</code></div>
     </div>
 
     <div class="ref-description">
-    <p>Crea la variable Regiones de desarrollo según el decreto 710-04.</p>
+    <p><a href='https://www.tidyverse.org/lifecycle/#stable'><img src='figures/lifecycle-stable.svg' alt='Stable lifecycle'></a></p>
     </div>
 
     <pre class="usage"><span class='fu'>ftc_compute_region</span><span class='op'>(</span><span class='va'>tbl</span><span class='op'>)</span></pre>
@@ -140,14 +145,17 @@
     <colgroup><col class="name" /><col class="desc" /></colgroup>
     <tr>
       <th>tbl</th>
-      <td><p>Conexión a base de datos o dataframe con los datos de la ENCFT.</p></td>
+      <td><p>Conexión a base de datos o dataframe</p></td>
     </tr>
     </table>
 
     <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
 
     <p>Conexión a base de datos o dataframe según input con la variable
-Regiones de desarrollo agregada</p>
+<code>region</code> agregada</p>
+    <h2 class="hasAnchor" id="details"><a class="anchor" href="#details"></a>Details</h2>
+
+    <p>Crea la variable Regiones de desarrollo según el decreto 710-04.</p>
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'><span class='kw'>if</span> <span class='op'>(</span><span class='cn'>FALSE</span><span class='op'>)</span> <span class='op'>{</span>
@@ -165,7 +173,7 @@ Regiones de desarrollo agregada</p>
 
       <footer>
       <div class="copyright">
-  <p>Developed by Daniel E. de la Rosa, dataRget.</p>
+  <p>Developed by Daniel E. de la Rosa.</p>
 </div>
 
 <div class="pkgdown">

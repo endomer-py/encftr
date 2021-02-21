@@ -5,14 +5,21 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>encftr • encftr</title>
+<title>Encuesta Nacional Continua de Fuerza de Trabajo (ENCFT) en R • encftr</title>
+<!-- favicons --><link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+<link rel="apple-touch-icon" type="image/png" sizes="180x180" href="../apple-touch-icon.png">
+<link rel="apple-touch-icon" type="image/png" sizes="120x120" href="../apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" type="image/png" sizes="76x76" href="../apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" type="image/png" sizes="60x60" href="../apple-touch-icon-60x60.png">
 <!-- jquery --><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script><!-- Bootstrap --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha256-bZLfwXAP04zRMK2BjiO8iu9pf4FbLqX6zitd+tIvLhE=" crossorigin="anonymous">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha256-nuL8/2cJ5NDSSwnKD8VqreErSWHtnEP9E7AySL+1ev4=" crossorigin="anonymous"></script><!-- bootstrap-toc --><link rel="stylesheet" href="../bootstrap-toc.css">
 <script src="../bootstrap-toc.js"></script><!-- Font Awesome icons --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/v4-shims.min.css" integrity="sha256-wZjR52fzng1pJHwx4aV2AO3yyTOXrcDW7jBpJtTwVxw=" crossorigin="anonymous">
 <!-- clipboard.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><!-- headroom.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js" integrity="sha256-AsUX4SJE1+yuDu5+mAVzJbuYNPHj/WroHuZ8Ir/CkE0=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script><!-- pkgdown --><link href="../pkgdown.css" rel="stylesheet">
-<script src="../pkgdown.js"></script><meta property="og:title" content="encftr">
+<script src="../pkgdown.js"></script><meta property="og:title" content="Encuesta Nacional Continua de Fuerza de Trabajo (ENCFT) en R">
 <meta property="og:description" content="encftr">
+<meta property="og:image" content="/logo.png">
 <!-- mathjax --><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js" integrity="sha256-nvJJv9wWKEm88qvoQl9ekL2J+k/RWIsaSScxxlsrv8k=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/config/TeX-AMS-MML_HTMLorMML.js" integrity="sha256-84DKXVJXs0/F8OTMzX4UR909+jtl4G7SPypPavF+GfA=" crossorigin="anonymous"></script><!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
 <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
@@ -37,7 +44,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">encftr</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.0.5.9000</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.0.9.9000</span>
       </span>
     </div>
 
@@ -55,13 +62,10 @@
 <li>
   <a href="../reference/index.html">Reference</a>
 </li>
-<li>
-  <a href="../news/index.html">Changelog</a>
-</li>
       </ul>
 <ul class="nav navbar-nav navbar-right">
 <li>
-  <a href="https://github.com/drdsdaniel/encftr/">
+  <a href="https://github.com/endomer/encftr/">
     <span class="fab fa-github fa-lg"></span>
      
   </a>
@@ -79,31 +83,240 @@
       </header><script src="encftr_files/accessible-code-block-0.0.1/empty-anchor.js"></script><div class="row">
   <div class="col-md-9 contents">
     <div class="page-header toc-ignore">
-      <h1 data-toc-skip>encftr</h1>
+      <h1 data-toc-skip>Encuesta Nacional Continua de Fuerza de Trabajo (ENCFT) en R</h1>
             
       
-      <small class="dont-index">Source: <a href="https://github.com/drdsdaniel/encftr/blob/master/vignettes/encftr.Rmd"><code>vignettes/encftr.Rmd</code></a></small>
+      <small class="dont-index">Source: <a href="https://github.com/endomer/encftr/blob/master/vignettes/encftr.Rmd"><code>vignettes/encftr.Rmd</code></a></small>
       <div class="hidden name"><code>encftr.Rmd</code></div>
 
     </div>
 
     
     
+<p>“<em>El objetivo general de la Encuesta Nacional Continua de Fuerza de Trabajo (ENCFT) consiste en proporcionar información estadística amplia y precisa sobre las distintas variables laborales, sociodemográficas y económicas que permita caracterizar y analizar la dinámica y heterogeneidad del mercado de trabajo en la República Dominicana y por consiguiente fortalecer y mejorar el diseño y formulación de las políticas y programas socio laborales del país. Además, tiene el propósito de dar seguimiento a la estimación de la pobreza monetaria estimada a través del ingreso de los hogares y las líneas oficiales de pobreza consensuadas para medir la misma en el país.</em>” (BCRD, 2016)</p>
+<p>A continuación, se presentan una tabla resumen con algunos detalles de interés acerca de la encuesta. Para mayor especificiada consulta el <a href="https://github.com/endomer/encftr/tree/master/Files">Diseño muestral</a> y el <a href="https://github.com/endomer/encftr/tree/master/Files">Manual del Encuestador</a>. También están disponibles las <a href="https://github.com/endomer/encftr/tree/master/Files">Presetaciones de lanzamiento</a> de la encuesta donde además podrás encontrar la forma correcta de realizar algunos cálculos, aunque la mayoría, sino todos, ya se encuentran implementados en las funciones de esta librería.</p>
+<table class="table">
+<caption><strong>Diseño de Muestra de la Encuesta Nacional Continua de Fuerza de Trabajo (ENCFT)</strong></caption>
+<colgroup>
+<col width="24%">
+<col width="75%">
+</colgroup>
+<thead><tr class="header">
+<th>Especificaciones del Diseño</th>
+<th>Encuesta Nacional Continua de Fuerza de Trabajo (ENCFT)</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td>Población objeto de estudio</td>
+<td>Las personas residentes en los hogares de las viviendas particulares ocupadas de la República Dominicana.</td>
+</tr>
+<tr class="even">
+<td>Cobertura geográfica</td>
+<td>Todo el territorio nacional, incluyendo las islas aledañas.</td>
+</tr>
+<tr class="odd">
+<td>Marco censal de referencia</td>
+<td>IX Censo Nacional de Población y Vivienda realizado en diciembre del año 2010.</td>
+</tr>
+<tr class="even">
+<td>Distribución geográfica de la población</td>
+<td>75.0% en al área urbana y 25.0% en la zona rural.</td>
+</tr>
+<tr class="odd">
+<td>Tipo de muestreo</td>
+<td>Probabilístico, estratificado, continuo, replicado y bietápico.</td>
+</tr>
+<tr class="even">
+<td>Variable de diseño</td>
+<td>Tasa de desocupación abierta y otras variables del mercado de trabajo.</td>
+</tr>
+<tr class="odd">
+<td>Nivel de confianza</td>
+<td>90% de confianza en la muestra (Z=1.645) para indicadores laborales.</td>
+</tr>
+<tr class="even">
+<td>Máximo error esperado</td>
+<td>Error de 2% en la estimación de los indicadores laborales.</td>
+</tr>
+<tr class="odd">
+<td>Tasa de no respuesta mínima esperada</td>
+<td>Tasa de no respuesta de 22%, basado en la ENFT anteriores.</td>
+</tr>
+<tr class="even">
+<td>Dominio de estimación o inferencia estadística</td>
+<td>a) Gran Santo Domingo, Norte o Cibao, Este y Sur. <br> b) Total país, zona urbana y zona rural. <br> c) Gran Santo Domingo, resto urbano y resto rural.</td>
+</tr>
+<tr class="odd">
+<td>Estratificación geográfica</td>
+<td>23 estratos geográficos con 5 réplicas o submuestras en cada uno; formado en base a la zona de residencia reportada por el Censo Nacional 2010.</td>
+</tr>
+<tr class="even">
+<td>Asignación o distribución de la muestra por dominio</td>
+<td>Asignación óptima en los dominios de estudios y proporcional a la población por zona de residencia en los estratos geográficos.</td>
+</tr>
+<tr class="odd">
+<td>Tamaño de muestra</td>
+<td>Se escogen 8,480 viviendas por trimestre en 1,060 segmentos censales o UPM’s.</td>
+</tr>
+<tr class="even">
+<td>Selección de la muestra</td>
+<td>a) Los segmentos censales se definieron como las unidades primarias de muestreo (UPM) y se seleccionaron con probabilidad proporcional al tamaño (PPT). <br> b) Las unidades secundarias de muestreo (USM) son las viviendas y se seleccionan 8 por UPM con igual probabilidad, tanto en zona urbana como rural.</td>
+</tr>
+<tr class="odd">
+<td>Traslape o solapamiento de viviendas</td>
+<td>80% de las viviendas son comunes en dos trimestres consecutivos y un 20% en el mismo trimestre de dos años contiguos. Se rota 1 réplica equivalente al 20% del total de viviendas del trimestre.</td>
+</tr>
+<tr class="even">
+<td>Levantamiento en campo</td>
+<td>Forma continua a lo largo de 48 semanas durante el año y 12 semanas en el trimestre.</td>
+</tr>
+<tr class="odd">
+<td>Período de referencia de estimación</td>
+<td>A mitad del trimestre de levantamiento de la Encuesta.</td>
+</tr>
+<tr class="even">
+<td>Factores de expansión</td>
+<td>1,060 factores de expansión por trimestre calculados en base a: muestra efectiva, tasa de respuesta, actualizaciones cartográficas en las UPM’s y las proyecciones oficiales de población por zona de residencia realizadas por la ONE (2014-2015).</td>
+</tr>
+<tr class="odd">
+<td>Nomenclaturas</td>
+<td>a) Clasificación Internacional Uniforme de Ocupaciones (CIUO-08). <br> b) Clasificación Industrial Internacional Uniforme de todas las Actividades Económicas (CIIU, Rev.4).</td>
+</tr>
+<tr class="even">
+<td>Divulgación de resultados</td>
+<td>Trimestrales.</td>
+</tr>
+</tbody>
+</table>
+<div id="dónde-puedo-conseguir-los-datos-de-la-encuesta" class="section level3 unnumbered">
+<h3 class="hasAnchor">
+<a href="#d%C3%B3nde-puedo-conseguir-los-datos-de-la-encuesta" class="anchor"></a>¿Dónde puedo conseguir los datos de la encuesta?</h3>
+<p>Para conseguir los datos de la encuesta es necesario hacer una solicitud vía correo electrónico al Banco Central de la República Dominicana.</p>
+</div>
+<div id="algunos-cruces-básicos-y-detalles-finales-utilizando-la-librería" class="section level2">
+<h2 class="hasAnchor">
+<a href="#algunos-cruces-b%C3%A1sicos-y-detalles-finales-utilizando-la-librer%C3%ADa" class="anchor"></a>Algunos cruces básicos y detalles finales utilizando la librería</h2>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/drdsdaniel/encftr">encftr</a></span><span class="op">)</span></code></pre></div>
-<p><a href="https://db.rstudio.com/best-practices/managing-credentials/#encrypt-credentials-with-keyring" class="uri">https://db.rstudio.com/best-practices/managing-credentials/#encrypt-credentials-with-keyring</a></p>
+<code class="sourceCode R"><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/endomer/encftr">encftr</a></span><span class="op">)</span>
+<span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://dplyr.tidyverse.org">dplyr</a></span><span class="op">)</span>
+<span class="co">#&gt; </span>
+<span class="co">#&gt; Attaching package: 'dplyr'</span>
+<span class="co">#&gt; The following objects are masked from 'package:stats':</span>
+<span class="co">#&gt; </span>
+<span class="co">#&gt;     filter, lag</span>
+<span class="co">#&gt; The following objects are masked from 'package:base':</span>
+<span class="co">#&gt; </span>
+<span class="co">#&gt;     intersect, setdiff, setequal, union</span></code></pre></div>
+<p>Para mostrar algunas funcionalidades de la librería utilizaremos un pequeña data.frame que simulará los datos de la encuesta. El archivo tiene la siguiente estructura.</p>
+<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="va">encft</span> <span class="op">&lt;-</span> <span class="fu">encftr</span><span class="fu">::</span><span class="va"><a href="../reference/encft.html">encft</a></span>
+<span class="fu"><a href="https://tibble.tidyverse.org/reference/glimpse.html">glimpse</a></span><span class="op">(</span><span class="va">encft</span><span class="op">)</span>
+<span class="co">#&gt; Rows: 256</span>
+<span class="co">#&gt; Columns: 5</span>
+<span class="co">#&gt; Groups: TRIMESTRE, ANO, SEXO [8]</span>
+<span class="co">#&gt; $ TRIMESTRE        &lt;dbl&gt; 20161, 20161, 20161, 20161, 20161, 20161, 20161, 201…</span>
+<span class="co">#&gt; $ ANO              &lt;dbl&gt; 2016, 2016, 2016, 2016, 2016, 2016, 2016, 2016, 2016…</span>
+<span class="co">#&gt; $ SEXO             &lt;dbl&gt; 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1…</span>
+<span class="co">#&gt; $ ID_PROVINCIA     &lt;dbl&gt; 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 1…</span>
+<span class="co">#&gt; $ FACTOR_EXPANSION &lt;dbl&gt; 529286.00, 126833.66, 48703.15, 99383.29, 39469.04, …</span></code></pre></div>
+<p>Para el procesamiento de la encuesta puedes utilizar las funiones suministradas de la forma convencional o utilizar operadores pipe como <code><a href="../reference/%&gt;%.html">%&gt;%</a></code>.</p>
+<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="va">res</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/ftc_compute_region.html">ftc_compute_region</a></span><span class="op">(</span><span class="va">encft</span><span class="op">)</span>
+<span class="fu"><a href="https://rdrr.io/r/utils/head.html">head</a></span><span class="op">(</span><span class="va">res</span><span class="op">)</span>
+<span class="co">#&gt; # A tibble: 6 x 6</span>
+<span class="co">#&gt; # Groups:   TRIMESTRE, ANO, SEXO [1]</span>
+<span class="co">#&gt;   TRIMESTRE   ANO  SEXO ID_PROVINCIA FACTOR_EXPANSION region</span>
+<span class="co">#&gt;       &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;        &lt;dbl&gt;            &lt;dbl&gt;  &lt;dbl&gt;</span>
+<span class="co">#&gt; 1     20161  2016     1            1          529286.     10</span>
+<span class="co">#&gt; 2     20161  2016     1            2          126834.      5</span>
+<span class="co">#&gt; 3     20161  2016     1            3           48703.      6</span>
+<span class="co">#&gt; 4     20161  2016     1            4           99383.      6</span>
+<span class="co">#&gt; 5     20161  2016     1            5           39469.      4</span>
+<span class="co">#&gt; 6     20161  2016     1            6          148962.      3</span>
+
+
+
+<span class="va">encft</span> <span class="op">%&gt;%</span> 
+  <span class="fu"><a href="../reference/ftc_compute_region.html">ftc_compute_region</a></span><span class="op">(</span><span class="op">)</span> <span class="op">%&gt;%</span> 
+  <span class="fu"><a href="https://rdrr.io/r/utils/head.html">head</a></span><span class="op">(</span><span class="op">)</span>
+<span class="co">#&gt; # A tibble: 6 x 6</span>
+<span class="co">#&gt; # Groups:   TRIMESTRE, ANO, SEXO [1]</span>
+<span class="co">#&gt;   TRIMESTRE   ANO  SEXO ID_PROVINCIA FACTOR_EXPANSION region</span>
+<span class="co">#&gt;       &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;        &lt;dbl&gt;            &lt;dbl&gt;  &lt;dbl&gt;</span>
+<span class="co">#&gt; 1     20161  2016     1            1          529286.     10</span>
+<span class="co">#&gt; 2     20161  2016     1            2          126834.      5</span>
+<span class="co">#&gt; 3     20161  2016     1            3           48703.      6</span>
+<span class="co">#&gt; 4     20161  2016     1            4           99383.      6</span>
+<span class="co">#&gt; 5     20161  2016     1            5           39469.      4</span>
+<span class="co">#&gt; 6     20161  2016     1            6          148962.      3</span></code></pre></div>
+<p>Como se mencionó antes la ENCFT es una encuestra trimestral por lo que el factor de expansión<!-- ^[Si quieres leer sobre como trabajar con datos de encuesta en R. Lee la siguiente publicación: []()] --> es trimestral.</p>
+<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="va">encft</span> <span class="op">%&gt;%</span> 
+  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/group_by.html">group_by</a></span><span class="op">(</span><span class="va">TRIMESTRE</span><span class="op">)</span> <span class="op">%&gt;%</span> 
+  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/summarise.html">summarise</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/sum.html">sum</a></span><span class="op">(</span><span class="va">FACTOR_EXPANSION</span><span class="op">)</span><span class="op">)</span>
+<span class="co">#&gt; # A tibble: 4 x 2</span>
+<span class="co">#&gt;   TRIMESTRE `sum(FACTOR_EXPANSION)`</span>
+<span class="co">#&gt; *     &lt;dbl&gt;                   &lt;dbl&gt;</span>
+<span class="co">#&gt; 1     20161               10039487.</span>
+<span class="co">#&gt; 2     20162               10062657.</span>
+<span class="co">#&gt; 3     20163               10086474.</span>
+<span class="co">#&gt; 4     20164               10110143.</span></code></pre></div>
+<p>Para trabajar con los datos en frecuencia anual debes transformar el factor de expansión.</p>
+<div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="va">encft</span> <span class="op">%&gt;%</span> 
+  <span class="fu"><a href="../reference/ftc_compute_factor_exp_anual.html">ftc_compute_factor_exp_anual</a></span><span class="op">(</span><span class="op">)</span> <span class="op">%&gt;%</span> 
+  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/group_by.html">group_by</a></span><span class="op">(</span><span class="va">ANO</span><span class="op">)</span> <span class="op">%&gt;%</span> 
+  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/summarise.html">summarise</a></span><span class="op">(</span>
+    <span class="fu"><a href="https://rdrr.io/r/base/sum.html">sum</a></span><span class="op">(</span><span class="va">FACTOR_EXPANSION</span><span class="op">)</span>,
+    <span class="fu"><a href="https://rdrr.io/r/base/sum.html">sum</a></span><span class="op">(</span><span class="va">factor_exp_anual</span><span class="op">)</span>
+  <span class="op">)</span>
+<span class="co">#&gt; # A tibble: 1 x 3</span>
+<span class="co">#&gt;     ANO `sum(FACTOR_EXPANSION)` `sum(factor_exp_anual)`</span>
+<span class="co">#&gt; * &lt;dbl&gt;                   &lt;dbl&gt;                   &lt;dbl&gt;</span>
+<span class="co">#&gt; 1  2016               40298761.               10074690.</span></code></pre></div>
+<p>En el primer caso, que usa el factor trimestral, el total poblacional está resultando en más de 40 millones de personas, mientras que en el segundo caso optenemos un total representativo de 10 millones aproximadamente.</p>
+<p>También puedes asignar y utilizar etiquetas de datos para la variables. Lea más sobre las <a href="https://endomer.github.io/endomer/articles/labels.html">Etiquetas de datos</a> en el ecosistema <code>endomer</code>.</p>
+<div class="sourceCode" id="cb6"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="va">encft</span> <span class="op">%&gt;%</span> 
+  <span class="fu"><a href="../reference/ftc_compute_factor_exp_anual.html">ftc_compute_factor_exp_anual</a></span><span class="op">(</span><span class="op">)</span> <span class="op">%&gt;%</span> 
+  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/group_by.html">group_by</a></span><span class="op">(</span><span class="va">ANO</span>, <span class="va">SEXO</span><span class="op">)</span> <span class="op">%&gt;%</span> 
+  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/summarise.html">summarise</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/sum.html">sum</a></span><span class="op">(</span><span class="va">factor_exp_anual</span><span class="op">)</span><span class="op">)</span>
+<span class="co">#&gt; `summarise()` has grouped output by 'ANO'. You can override using the `.groups` argument.</span>
+<span class="co">#&gt; # A tibble: 2 x 3</span>
+<span class="co">#&gt; # Groups:   ANO [1]</span>
+<span class="co">#&gt;     ANO  SEXO `sum(factor_exp_anual)`</span>
+<span class="co">#&gt;   &lt;dbl&gt; &lt;dbl&gt;                   &lt;dbl&gt;</span>
+<span class="co">#&gt; 1  2016     1                4956106.</span>
+<span class="co">#&gt; 2  2016     2                5118584.</span>
+
+
+<span class="va">encft</span> <span class="op">%&gt;%</span> 
+  <span class="fu"><a href="../reference/ftc_compute_factor_exp_anual.html">ftc_compute_factor_exp_anual</a></span><span class="op">(</span><span class="op">)</span> <span class="op">%&gt;%</span> 
+  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/group_by.html">group_by</a></span><span class="op">(</span><span class="va">ANO</span>, <span class="va">SEXO</span><span class="op">)</span> <span class="op">%&gt;%</span> 
+  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/summarise.html">summarise</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/sum.html">sum</a></span><span class="op">(</span><span class="va">factor_exp_anual</span><span class="op">)</span><span class="op">)</span> <span class="op">%&gt;%</span> 
+  <span class="fu"><a href="../reference/ftc_useLabels.html">ftc_useLabels</a></span><span class="op">(</span><span class="op">)</span>
+<span class="co">#&gt; `summarise()` has grouped output by 'ANO'. You can override using the `.groups` argument.</span>
+<span class="co">#&gt; # A tibble: 2 x 3</span>
+<span class="co">#&gt; # Groups:   ANO [1]</span>
+<span class="co">#&gt;     ANO SEXO      `sum(factor_exp_anual)`</span>
+<span class="co">#&gt;   &lt;dbl&gt; &lt;fct&gt;                       &lt;dbl&gt;</span>
+<span class="co">#&gt; 1  2016 Masculino                4956106.</span>
+<span class="co">#&gt; 2  2016 Femenino                 5118584.</span></code></pre></div>
+</div>
   </div>
 
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
 
-      </div>
+        <nav id="toc" data-toggle="toc"><h2 data-toc-skip>Contents</h2>
+    </nav>
+</div>
 
 </div>
 
 
 
       <footer><div class="copyright">
-  <p>Developed by Daniel E. de la Rosa, dataRget.</p>
+  <p>Developed by Daniel E. de la Rosa.</p>
 </div>
 
 <div class="pkgdown">
