@@ -1,6 +1,6 @@
 Package: encftr
 Title: Funciones para trabajar con la ENCFT
-Version: 0.0.9.9000
+Version: 0.1.0.9000
 Authors@R: 
     person(given = "Daniel E.",
            family = "de la Rosa",

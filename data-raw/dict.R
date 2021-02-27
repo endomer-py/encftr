@@ -106,6 +106,10 @@ dict1 <- list(
   hacinamiento = list(
     lab = "Nivel de hacinamiento del hogar"
   ),
+  icv_siuben = list(
+    lab = "Índice de Calidad de Vida 2A (ICV 2A) del SIUBEN",
+    labs = c("ICV 1" = 1, "ICV 2" = 2, "ICV 3" = 3, "ICV 4" = 4)
+  ),
   matriculacion_escolar = list(
     lab = "¿Se matricul\u00f3 en un centro educativo este a\u00f1o?"
   ),
