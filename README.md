@@ -29,8 +29,11 @@ encuestas de la República Dominicana.
 `encftr` aun no está en CRAN.
 
 <!-- You can install the released version of encftr from [CRAN](https://CRAN.R-project.org) with: -->
+
 <!-- ``` r -->
+
 <!-- install.packages("encftr") -->
+
 <!-- ``` -->
 
 Pero puedes intalar la versión de desarrollo desde
@@ -49,8 +52,6 @@ remotes::install_github("endomer/encftr")
 ## Roadmap
 
 1.  Completar el diccionario.
-
-<!--html_preserve-->
 
 <div style="display:inline-block;
              vertical-align:baseline;
@@ -71,15 +72,12 @@ color: #fff;
 text-align: center;
 box-shadow: inset 0 -1px 0 rgb(0 0 0 / 15%);
 transition: width .6s ease;
-background-color: #d9534f;  width: 5.8%;">
+background-color: #5cb85c;  width: 98.7%;">
 
-5.8%
-
-</div>
+  98.7%
 
 </div>
-
-<!--/html_preserve-->
+  </div>
 
 2.  Agregar una función para calcular la pobreza monetaria.
 3.  Agregar una función para el cálculo del ICV.
@@ -101,7 +99,6 @@ contribuyente](https://contributor-covenant.org/es/version/2/0/CODE_OF_CONDUCT.h
 Contribuyendo con el proyecto aceptas los términos y condiciones.
 
 <hr/>
-<!--html_preserve-->
 
 <a href="./articles/encftr.html"><button type="button"
 style = "
@@ -118,5 +115,5 @@ style = "
     font-weight: 900;
     text-align: center;
     white-space: nowrap;
-    vertical-align: middle;"> Guía de inicio
-rápido</button></a><!--/html_preserve-->
+    vertical-align: middle;">
+    Guía de inicio rápido</button></a>
