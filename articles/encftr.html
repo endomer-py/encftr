@@ -44,7 +44,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">encftr</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.0.9.9000</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.1.0.9000</span>
       </span>
     </div>
 
@@ -210,15 +210,15 @@
 <p>Para mostrar algunas funcionalidades de la librería utilizaremos un pequeña data.frame que simulará los datos de la encuesta. El archivo tiene la siguiente estructura.</p>
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="va">encft</span> <span class="op">&lt;-</span> <span class="fu">encftr</span><span class="fu">::</span><span class="va"><a href="../reference/encft.html">encft</a></span>
-<span class="fu"><a href="https://tibble.tidyverse.org/reference/glimpse.html">glimpse</a></span><span class="op">(</span><span class="va">encft</span><span class="op">)</span>
+<span class="fu"><a href="https://pillar.r-lib.org/reference/glimpse.html">glimpse</a></span><span class="op">(</span><span class="va">encft</span><span class="op">)</span>
 <span class="co">#&gt; Rows: 256</span>
 <span class="co">#&gt; Columns: 5</span>
 <span class="co">#&gt; Groups: TRIMESTRE, ANO, SEXO [8]</span>
-<span class="co">#&gt; $ TRIMESTRE        &lt;dbl&gt; 20161, 20161, 20161, 20161, 20161, 20161, 20161, 201…</span>
-<span class="co">#&gt; $ ANO              &lt;dbl&gt; 2016, 2016, 2016, 2016, 2016, 2016, 2016, 2016, 2016…</span>
-<span class="co">#&gt; $ SEXO             &lt;dbl&gt; 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1…</span>
-<span class="co">#&gt; $ ID_PROVINCIA     &lt;dbl&gt; 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 1…</span>
-<span class="co">#&gt; $ FACTOR_EXPANSION &lt;dbl&gt; 529286.00, 126833.66, 48703.15, 99383.29, 39469.04, …</span></code></pre></div>
+<span class="co">#&gt; $ TRIMESTRE        &lt;dbl&gt; 20161, 20161, 20161, 20161, 20161, 20161, 20161, 2016…</span>
+<span class="co">#&gt; $ ANO              &lt;dbl&gt; 2016, 2016, 2016, 2016, 2016, 2016, 2016, 2016, 2016,…</span>
+<span class="co">#&gt; $ SEXO             &lt;dbl&gt; 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,…</span>
+<span class="co">#&gt; $ ID_PROVINCIA     &lt;dbl&gt; 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16…</span>
+<span class="co">#&gt; $ FACTOR_EXPANSION &lt;dbl&gt; 529286.00, 126833.66, 48703.15, 99383.29, 39469.04, 1…</span></code></pre></div>
 <p>Para el procesamiento de la encuesta puedes utilizar las funiones suministradas de la forma convencional o utilizar operadores pipe como <code><a href="../reference/%&gt;%.html">%&gt;%</a></code>.</p>
 <div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="va">res</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/ftc_compute_region.html">ftc_compute_region</a></span><span class="op">(</span><span class="va">encft</span><span class="op">)</span>
