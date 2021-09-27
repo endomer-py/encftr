@@ -29,11 +29,8 @@ encuestas de la República Dominicana.
 `encftr` aun no está en CRAN.
 
 <!-- You can install the released version of encftr from [CRAN](https://CRAN.R-project.org) with: -->
-
 <!-- ``` r -->
-
 <!-- install.packages("encftr") -->
-
 <!-- ``` -->
 
 Pero puedes intalar la versión de desarrollo desde
@@ -99,7 +96,6 @@ contribuyente](https://contributor-covenant.org/es/version/2/0/CODE_OF_CONDUCT.h
 Contribuyendo con el proyecto aceptas los términos y condiciones.
 
 <hr/>
-
 <a href="./articles/encftr.html"><button type="button"
 style = "
     border: 1px solid transparent;

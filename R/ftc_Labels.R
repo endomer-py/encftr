@@ -20,10 +20,14 @@
 #' \dontrun{
 #'   encft <- data.frame(ZONA = c(1, 2))
 #'   str(encft)
-#'   str(ftc_setLabels(encft))
+#'   str(ftc_set_labels(encft))
 #'}
+ftc_set_labels <- function(tbl, vars = NULL) {
+  endomer::set_labels(tbl, vars, encftr::dict)
+}
 ftc_setLabels <- function(tbl, vars = NULL) {
-  endomer::setLabels(tbl, vars, encftr::dict)
+  deprecate_warn("0.1.1", "encftr::ftc_SetLabels", "ftc_set_labels()")
+  ftc_set_labels(tbl, vars)
 }
 
 
@@ -49,7 +53,11 @@ ftc_setLabels <- function(tbl, vars = NULL) {
 #'   encft
 #'   ftc_useLabels(encft)
 #'}
+ftc_use_labels <- function(tbl, vars = NULL) {
+  endomer::use_labels(tbl, vars, encftr::dict)
+}
 ftc_useLabels <- function(tbl, vars = NULL) {
-  endomer::useLabels(tbl, vars, encftr::dict)
+  deprecate_warn("0.1.1", "encftr::ftc_useLabels", "ftc_use_labels()")
+  ftc_use_labels(tbl, vars)
 }
 

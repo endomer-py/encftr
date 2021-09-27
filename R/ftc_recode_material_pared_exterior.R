@@ -19,6 +19,8 @@
 #'   encft <- ftc_recode_material_pared_exterior(encft)
 #' }
 ftc_recode_material_pared_exterior <- function(tbl) {
+  MATERIAL_PARED_EXTERIOR <- NULL
+  MATERIAL_PARED_EXTERIOR_ESP <- NULL
   tbl <- tbl %>%
     dplyr::mutate(
       MATERIAL_PARED_EXTERIOR = dplyr::case_when(
