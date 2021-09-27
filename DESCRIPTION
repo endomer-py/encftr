@@ -18,11 +18,11 @@ Imports:
     lifecycle,
     knitr,
     Dmisc (>= 0.1.5.9000),
-    endomer (>= 0.0.1.9000),
+    labeler (>= 0.0.1.9000),
     haven
 Remotes: 
     drdsdaniel/Dmisc,
-    endomer/endomer
+    adatar-do/labeler
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.1
 URL: https://github.com/endomer/encftr
