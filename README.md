@@ -51,30 +51,30 @@ remotes::install_github("endomer/encftr")
 1.  Completar el diccionario.
 
 <div style="display:inline-block;
-             vertical-align:baseline;
-             width:100%;
-             height:20px;
-             margin-bottom:20px;
-             overflow:hidden;
-             background-color:#f5f5f5;
-             border-radius:4px;
-             -webkit-box-shadow:inset 0 1px 2px rgba(0,0,0,.1);
-             box-shadow:inset 0 1px 2px rgba(0,0,0,.1);">
+                 vertical-align:baseline;
+                 width:100%;
+                 height:20px;
+                 margin-bottom:20px;
+                 overflow:hidden;
+                 background-color:#f5f5f5;
+                 border-radius:4px;
+                 -webkit-box-shadow:inset 0 1px 2px rgba(0,0,0,.1);
+                 box-shadow:inset 0 1px 2px rgba(0,0,0,.1);">
 
-<div style="float: left;
-height: 100%;
-font-size: 16px;
-line-height: 20px;
-color: #fff;
-text-align: center;
-box-shadow: inset 0 -1px 0 rgb(0 0 0 / 15%);
-transition: width .6s ease;
-background-color: #5cb85c;  width: 98.7%;">
+    <div style="float: left;
+    height: 100%;
+    font-size: 16px;
+    line-height: 20px;
+    color: #fff;
+    text-align: center;
+    box-shadow: inset 0 -1px 0 rgb(0 0 0 / 15%);
+    transition: width .6s ease;
+    background-color: #5cb85c;  width: 98.7%;">
 
-  98.7%
+      98.7%
 
-</div>
-  </div>
+    </div>
+      </div>
 
 2.  Agregar una función para calcular la pobreza monetaria.
 3.  Agregar una función para el cálculo del ICV.
@@ -96,6 +96,7 @@ contribuyente](https://contributor-covenant.org/es/version/2/0/CODE_OF_CONDUCT.h
 Contribuyendo con el proyecto aceptas los términos y condiciones.
 
 <hr/>
+
 <a href="./articles/encftr.html"><button type="button"
 style = "
     border: 1px solid transparent;
