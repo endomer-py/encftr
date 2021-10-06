@@ -12,7 +12,7 @@
 #'   o equivalente, a partir del diccionario de la encuesta.
 #'
 #' @seealso
-#'   Etiquetas de datos \code{vignette("labels", package = "endomer")}
+#'   Etiquetas de datos \code{vignette("labels", package = "labeler")}
 #'
 #' @export
 #'
@@ -23,7 +23,7 @@
 #'   str(ftc_set_labels(encft))
 #'}
 ftc_set_labels <- function(tbl, vars = NULL) {
-  endomer::set_labels(tbl, vars, encftr::dict)
+  labeler::set_labels(tbl, vars, encftr::dict)
 }
 ftc_setLabels <- function(tbl, vars = NULL) {
   deprecate_warn("0.1.1", "encftr::ftc_SetLabels", "ftc_set_labels()")
@@ -43,7 +43,7 @@ ftc_setLabels <- function(tbl, vars = NULL) {
 #'   valores utilizando las etiquetas de datos correspondientes
 #'
 #' @seealso
-#'   Etiquetas de datos \code{vignette("labels", package = "endomer")}
+#'   Etiquetas de datos \code{vignette("labels", package = "labeler")}
 #'
 #' @export
 #'
@@ -54,7 +54,7 @@ ftc_setLabels <- function(tbl, vars = NULL) {
 #'   ftc_useLabels(encft)
 #'}
 ftc_use_labels <- function(tbl, vars = NULL) {
-  endomer::use_labels(tbl, vars, encftr::dict)
+  labeler::use_labels(tbl, vars, encftr::dict)
 }
 ftc_useLabels <- function(tbl, vars = NULL) {
   deprecate_warn("0.1.1", "encftr::ftc_useLabels", "ftc_use_labels()")
