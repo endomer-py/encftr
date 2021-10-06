@@ -29,5 +29,8 @@ info_all <- bind_rows(info_old, info_new)
 
 contribs_all <- contribs_all %>%
   left_join(info_all) %>%
-  arrange(login)
+  arrange(n) %>%
+  filter(!duplicated(login))
+
 write_csv(contribs_all, "contributors.csv")
+
