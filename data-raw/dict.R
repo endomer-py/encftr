@@ -12,26 +12,26 @@ si le hubieran ofrecido uno?",
     labs = c("S\\u00ed" = 1, "No" = 2)
   ),
   AFILIADO_AFP_PRINC = list(
-    lab = "\\u00bfPor ese trabajo ... tiene acceso o se encuentra afiliado a Plan de pensi\\u00f3n?",
+    lab = "\\u00bfPor ese trabajo \\u2026 tiene acceso o se encuentra afiliado a Plan de pensi\\u00f3n?",
     labs = c("S\\u00ed" = 1, "No" = 2, "No sabe" = 98)
   ),
   AFILIADO_OTROS_PRINC = list(
-    lab = "\\u00bfPor ese trabajo ... tiene acceso o se encuentra afiliado a Otros?",
+    lab = "\\u00bfPor ese trabajo \\u2026 tiene acceso o se encuentra afiliado a Otros?",
     labs = c("S\\u00ed" = 1, "No" = 2, "No sabe" = 98)
   ),
   AFILIADO_OTROS_PRINC_ESP = list(
-    lab = "\\u00bfPor ese trabajo ... tiene acceso o se encuentra afiliado a Otros? (especifique)"
+    lab = "\\u00bfPor ese trabajo \\u2026 tiene acceso o se encuentra afiliado a Otros? (especifique)"
   ),
   AFILIADO_SEGURO_SALUD = list(
     lab = "\\u00bfEst\\u00e1 afiliado a alg\\u00fan seguro de salud?",
     labs = c("S\\u00ed" = 1, "No" = 2)
   ),
   AFILIADO_SEGURO_SALUD_PRINC = list(
-    lab = "\\u00bfPor ese trabajo ... tiene acceso o se encuentra afiliado a Seguro de Salud?",
+    lab = "\\u00bfPor ese trabajo \\u2026 tiene acceso o se encuentra afiliado a Seguro de Salud?",
     labs = c("S\\u00ed" = 1, "No" = 2, "No sabe" = 98)
   ),
   AFILIADO_SEGURO_VIDA_PRINC = list(
-    lab = "\\u00bfPor ese trabajo ... tiene acceso o se encuentra afiliado a Seguro de Vida?",
+    lab = "\\u00bfPor ese trabajo \\u2026 tiene acceso o se encuentra afiliado a Seguro de Vida?",
     labs = c("S\\u00ed" = 1, "No" = 2, "No sabe" = 98)
   ),
   AIRE_ACONDICIONADO = list(
@@ -39,7 +39,7 @@ si le hubieran ofrecido uno?",
     labs = c("S\\u00ed" = 1, "No" = 2)
   ),
   ALIMENTACION_ESPECIE_AP = list(
-    lab = "\\u00bfDurante el mes pasado en su empleo principal ... recibi\\u00f3 pagos en especie por alimentaci\\u00f3n? (asalariados)",
+    lab = "\\u00bfDurante el mes pasado en su empleo principal \\u2026 recibi\\u00f3 pagos en especie por alimentaci\\u00f3n? (asalariados)",
     labs = c("S\\u00ed" = 1, "No" = 2)
   ),
   ALIMENTACION_ESPECIE_AP_MONTO = list(
@@ -49,14 +49,14 @@ si le hubieran ofrecido uno?",
     lab = "Ingreso mensual por alimentos en escuela p\\u00fablica"
   ),
   ALIMENTOS_ESCUELA_NAC = list(
-    lab = "En el mes pasado, \\u00bf... recibi\\u00f3 ingresos por concepto de alimentos en escuela p\\u00fablica?",
+    lab = "En el mes pasado, \\u00bf \\u2026 recibi\\u00f3 ingresos por concepto de alimentos en escuela p\\u00fablica?",
     labs = c("S\\u00ed" = 1, "No" = 2)
   ),
   ALIMENTOS_ESCUELA_NAC_MONTO = list(
     lab = "Ingreso por alimentos en escuela p\\u00fablica durante el mes pasado"
   ),
   ALIMENTOS_NO_REMUN = list(
-    lab = "Durante las \\u00faltimas cuatro semanas, ... trabaj\\u00f3 sin ninguna remuneraci\\u00f3n, principalmente para el consumo de la familia, por lo menos una hora, en: Preparaci\\u00f3n de alimentos para el almacenamiento, como queso, mantequilla, mermeladas, pasta de tomate y otros alimentos y bebidas",
+    lab = "Durante las \\u00faltimas cuatro semanas, \\u2026 trabaj\\u00f3 sin ninguna remuneraci\\u00f3n, principalmente para el consumo de la familia, por lo menos una hora, en: Preparaci\\u00f3n de alimentos para el almacenamiento, como queso, mantequilla, mermeladas, pasta de tomate y otros alimentos y bebidas",
     labs = c("S\\u00ed" = 1, "No" = 2)
   ),
   ALIMENTOS_NO_REMUN_HORAS = list(
@@ -86,7 +86,7 @@ si le hubieran ofrecido uno?",
     lab = "Alquiler o renta de equipos, maquinaria o propiedades del exterior durante el mes pasado: Pa\\u00eds"
   ),
   ALQUILER_NAC = list(
-    lab = "En el mes pasado, \\u00bf... recibi\\u00f3 ingresos por concepto de alquiler o renta de equipos, maquinaria o propiedades?",
+    lab = "En el mes pasado, \\u00bf\\u2026 recibi\\u00f3 ingresos por concepto de alquiler o renta de equipos, maquinaria o propiedades?",
     labs = c("S\\u00ed" = 1, "No" = 2)
   ),
   ALQUILER_NAC_A = list(
@@ -96,7 +96,7 @@ si le hubieran ofrecido uno?",
     lab = "Ingreso nacional por alquiler (mensualizado)"
   ),
   ALQUILER_NAC_ANO = list(
-    lab = "\\u00bfAdem\\u00e1s recibi\\u00f3 en los \\u00faltimos 12 meses ... ingresos por concepto de alquiler o renta de equipos, maquinaria o propiedades?",
+    lab = "\\u00bfAdem\\u00e1s recibi\\u00f3 en los \\u00faltimos 12 meses \\u2026 ingresos por concepto de alquiler o renta de equipos, maquinaria o propiedades?",
     labs = c("S\\u00ed" = 1, "No" = 2)
   ),
   ALQUILER_NAC_ANO_MONTO = list(
@@ -117,7 +117,7 @@ si le hubieran ofrecido uno?",
     labs = c("Lujosa" = 1, "Muy buena" = 2, "Buena" = 3, "Modesta" = 4, "Precaria" = 5)
   ),
   APRENDIZ_NO_REMUN = list(
-    lab = "Durante las \\u00faltimas cuatro semanas, ... trabaj\\u00f3 sin remuneraci\\u00f3n, por lo menos una hora, en alguna de las siguientes actividades: Aprendiz o pasante sin remuneraci\\u00f3n ni en dinero ni en especie",
+    lab = "Durante las \\u00faltimas cuatro semanas, \\u2026 trabaj\\u00f3 sin remuneraci\\u00f3n, por lo menos una hora, en alguna de las siguientes actividades: Aprendiz o pasante sin remuneraci\\u00f3n ni en dinero ni en especie",
     labs = c("S\\u00ed" = 1, "No" = 2)
   ),
   APRENDIZ_NO_REMUN_HORAS = list(
@@ -136,7 +136,7 @@ si le hubieran ofrecido uno?",
     labs = c("S\\u00ed" = 1, "No" = 2)
   ),
   AYUDA_EMPRESAS_NAC = list(
-    lab = "En el mes pasado, \\u00bf... recibi\\u00f3 ingresos por concepto de ayuda de empresas o instituciones?",
+    lab = "En el mes pasado, \\u00bf\\u2026 recibi\\u00f3 ingresos por concepto de ayuda de empresas o instituciones?",
     labs = c("S\\u00ed" = 1, "No" = 2)
   ),
   AYUDA_EMPRESAS_NAC_A = list(
@@ -146,30 +146,30 @@ si le hubieran ofrecido uno?",
     lab = "Ingreso por ayuda de empresas o instituciones (mensualizado)"
   ),
   AYUDA_EMPRESAS_NAC_ANO = list(
-    lab = "\\u00bfAdem\\u00e1s recibi\\u00f3 en los \\u00faltimos 12 meses ... ingresos por concepto de ayuda de empresas o instituciones?",
+    lab = "\\u00bfAdem\\u00e1s recibi\\u00f3 en los \\u00faltimos 12 meses \\u2026 ingresos por concepto de ayuda de empresas o instituciones?",
     labs = c("S\\u00ed" = 1, "No" = 2)
   ),
   AYUDA_EMPRESAS_NAC_ANO_ESP = list(
-    lab = "\\u00bfAdem\\u00e1s recibi\\u00f3 en los \\u00faltimos 12 meses ... ingresos por concepto de ayuda de empresas o instituciones? (especifique)"
+    lab = "\\u00bfAdem\\u00e1s recibi\\u00f3 en los \\u00faltimos 12 meses \\u2026 ingresos por concepto de ayuda de empresas o instituciones? (especifique)"
   ),
   AYUDA_EMPRESAS_NAC_ANO_MONTO = list(
     lab = "Ingreso por ayuda de empresas o instituciones durante los \\u00faltimos 12 meses"
   ),
   AYUDA_EMPRESAS_NAC_ESP = list(
-    lab = "En el mes pasado, \\u00bf... recibi\\u00f3 ingresos por concepto de ayuda o transferencias de programas del Gobierno? (especifique)"
+    lab = "En el mes pasado, \\u00bf\\u2026 recibi\\u00f3 ingresos por concepto de ayuda o transferencias de programas del Gobierno? (especifique)"
   ),
   AYUDA_EMPRESAS_NAC_MONTO = list(
     lab = "Ingreso por ayuda de empresas o instituciones durante el mes pasado"
   ),
   AYUDA_ESPECIE_NAC = list(
-    lab = "En el mes pasado ... recibi\\u00f3 ingresos por concepto de ayuda en especies de familiares, no familiares o instituciones?",
+    lab = "En el mes pasado \\u2026 recibi\\u00f3 ingresos por concepto de ayuda en especies de familiares, no familiares o instituciones?",
     labs = c("S\\u00ed" = 1, "No" = 2)
   ),
   AYUDA_ESPECIE_NAC_A = list(
     lab = "Ingreso mensual por ayuda en especies de familiares, no familiares o instituciones"
   ),
   AYUDA_ESPECIE_NAC_ANO = list(
-    lab = "\\u00bfAdem\\u00e1s recibi\\u00f3 en los \\u00faltimos 12 meses ... ingresos por concepto de ayuda en especie de familiares, no familiares o instituciones?",
+    lab = "\\u00bfAdem\\u00e1s recibi\\u00f3 en los \\u00faltimos 12 meses \\u2026 ingresos por concepto de ayuda en especie de familiares, no familiares o instituciones?",
     labs = c("S\\u00ed" = 1, "No" = 2)
   ),
   AYUDA_ESPECIE_NAC_ANO_MONTO = list(
@@ -179,48 +179,48 @@ si le hubieran ofrecido uno?",
     lab = "Ingreso recibido por ayuda en especie de familiares, no familiares o instituciones durante el mes pasado"
   ),
   AYUDO_FAMILIAR_CONOCIDO = list(
-    lab = "\\u00bfLa semana pasada ... Ayud\\u00f3 en el negocio, empresa o finca de un familiar, amigo o conocido por lo menos una hora, sin recibir pago ni en dinero ni especie?",
+    lab = "\\u00bfLa semana pasada \\u2026 Ayud\\u00f3 en el negocio, empresa o finca de un familiar, amigo o conocido por lo menos una hora, sin recibir pago ni en dinero ni especie?",
     labs = c("S\\u00ed" = 1, "No" = 2)
   ),
   BARRIO_SECCION = list(
     lab = "Barrio de residencia"
   ),
   BENEFICIOS_HORAS_EXTRAS_PRINC = list(
-    lab = "\\u00bfEn este trabajo ... disfruta de los siguiente beneficios socio laborales?: Pago de horas extras (ocupaci\\u00f3n principal, asalariados)",
+    lab = "\\u00bfEn este trabajo \\u2026 disfruta de los siguiente beneficios socio laborales?: Pago de horas extras (ocupaci\\u00f3n principal, asalariados)",
     labs = c("S\\u00ed" = 1, "No" = 2, "No sabe" = 98)
   ),
   BENEFICIOS_LICENCIA_PRINC = list(
-    lab = "\\u00bfEn este trabajo ... disfruta de los siguiente beneficios socio laborales?: Licencia por enfermedad con disfrute de sueldo (ocupaci\\u00f3n principal, asalariados)",
+    lab = "\\u00bfEn este trabajo \\u2026 disfruta de los siguiente beneficios socio laborales?: Licencia por enfermedad con disfrute de sueldo (ocupaci\\u00f3n principal, asalariados)",
     labs = c("S\\u00ed" = 1, "No" = 2, "No sabe" = 98)
   ),
   BENEFICIOS_MARGINALES_AP = list(
-    lab = "\\u00bfDurante los \\u00faltimos 12 meses, en el empleo principal ... recibi\\u00f3 beneficios marginales? (asalariados)",
+    lab = "\\u00bfDurante los \\u00faltimos 12 meses, en el empleo principal \\u2026 recibi\\u00f3 beneficios marginales? (asalariados)",
     labs = c("S\\u00ed" = 1, "No" = 2)
   ),
   BENEFICIOS_MARGINALES_AP_MONTO = list(
     lab = "Monto recibido por beneficios marginales durante los \\u00faltimos 12 meses, en el empleo principal (asalariados)"
   ),
   BENEFICIOS_OTROS_PRINC = list(
-    lab = "\\u00bfEn este trabajo ... disfruta de los siguiente beneficios socio laborales?: Otros (ocupaci\\u00f3n principal, asalariados)",
+    lab = "\\u00bfEn este trabajo \\u2026 disfruta de los siguiente beneficios socio laborales?: Otros (ocupaci\\u00f3n principal, asalariados)",
     labs = c("S\\u00ed" = 1, "No" = 2, "No sabe" = 98)
   ),
   BENEFICIOS_OTROS_PRINC_ESP = list(
-    lab = "\\u00bfEn este trabajo ... disfruta de los siguiente beneficios socio laborales?: Otros (especifique) (ocupaci\\u00f3n principal, asalariados)"
+    lab = "\\u00bfEn este trabajo \\u2026 disfruta de los siguiente beneficios socio laborales?: Otros (especifique) (ocupaci\\u00f3n principal, asalariados)"
   ),
   BENEFICIOS_PREAVISO_PRINC = list(
-    lab = "\\u00bfEn este trabajo ... disfruta de los siguiente beneficios socio laborales?: Preaviso y Cesant\\u00eda? (ocupaci\\u00f3n principal, asalariados)",
+    lab = "\\u00bfEn este trabajo \\u2026 disfruta de los siguiente beneficios socio laborales?: Preaviso y Cesant\\u00eda? (ocupaci\\u00f3n principal, asalariados)",
     labs = c("S\\u00ed" = 1, "No" = 2, "No sabe" = 98)
   ),
   BENEFICIOS_REGALIA_PRINC = list(
-    lab = "\\u00bfEn este trabajo ... disfruta de los siguiente beneficios socio laborales?: Regal\\u00eda Pascual (ocupaci\\u00f3n principal, asalariados)",
+    lab = "\\u00bfEn este trabajo \\u2026 disfruta de los siguiente beneficios socio laborales?: Regal\\u00eda Pascual (ocupaci\\u00f3n principal, asalariados)",
     labs = c("S\\u00ed" = 1, "No" = 2, "No sabe" = 98)
   ),
   BENEFICIOS_VACACIONES_PRINC = list(
-    lab = "\\u00bfEn este trabajo ... disfruta de los siguiente beneficios socio laborales?: Vacaciones con disfrute de sueldo (ocupaci\\u00f3n principal, asalariados)",
+    lab = "\\u00bfEn este trabajo \\u2026 disfruta de los siguiente beneficios socio laborales?: Vacaciones con disfrute de sueldo (ocupaci\\u00f3n principal, asalariados)",
     labs = c("S\\u00ed" = 1, "No" = 2, "No sabe" = 98)
   ),
   BONIFICACION_AP = list(
-    lab = "\\u00bfDurante los \\u00faltimos 12 meses, en el empleo principal ... recibi\\u00f3 bonificaci\\u00f3n? (asalariados)",
+    lab = "\\u00bfDurante los \\u00faltimos 12 meses, en el empleo principal \\u2026 recibi\\u00f3 bonificaci\\u00f3n? (asalariados)",
     labs = c("S\\u00ed" = 1, "No" = 2)
   ),
   BONIFICACION_AP_MONTO = list(
@@ -275,7 +275,7 @@ si le hubieran ofrecido uno?",
     lab = "De estos cuartos, \\u00bfcu\\u00e1ntos utiliza solamente para dormitorios?"
   ),
   CANTIDAD_HORAS_ADICIONALES = list(
-    lab = "\\u00bfCu\\u00e1ntas horas adicionales a las que ya trabaja ..., desea y est\\u00e1 disponible para trabajar?"
+    lab = "\\u00bfCu\\u00e1ntas horas adicionales a las que ya trabaja \\u2026, desea y est\\u00e1 disponible para trabajar?"
   ),
   CANTIDAD_MIEMBROS_HOGAR = list(
     lab = "\\u00bfCu\\u00e1ntos miembros en total tiene este hogar?"
@@ -284,15 +284,15 @@ si le hubieran ofrecido uno?",
     lab = "\\u00bfCu\\u00e1ntas personas en total trabajan regularmente donde labora?: De 1 a 10 personas (especificar cantidad)"
   ),
   CATEGORIA_CESANTIA = list(
-    lab = "En la empresa o negocio donde ... trabajaba \\u00bfera?",
+    lab = "En la empresa o negocio donde \\u2026 trabajaba \\u00bfera?",
     labs = c("Empleado u obrero del Gobierno central" = 1, "Empleado u obrero de empresa p\\u00fablica" = 2, "Empleado u obrero de empresas privadas" = 3, "Empleado u obrero de Zona Franca" = 4, "Empleado en hogar privado" = 5, "Empleador o patr\\u00f3n" = 6, "Trabajador por cuenta propia" = 7, "Trabajador familiar no remunerado (auxiliar)" = 8)
   ),
   CATEGORIA_PRINCIPAL = list(
-    lab = "\\u00bfEn ese trabajo u ocupaci\\u00f3n, ... es? (ocupaci\\u00f3n principal)",
+    lab = "\\u00bfEn ese trabajo u ocupaci\\u00f3n, \\u2026 es? (ocupaci\\u00f3n principal)",
     labs = c("Empleado u obrero del Gobierno central" = 1, "Empleado u obrero de empresa p\\u00fablica" = 2, "Empleado u obrero de empresas privadas" = 3, "Empleado u obrero de Zona Franca" = 4, "Empleado en hogar privado" = 5, "Empleador o patr\\u00f3n" = 6, "Trabajador por cuenta propia" = 7, "Trabajador familiar no remunerado (auxiliar)" = 8)
   ),
   CATEGORIA_SECUNDARIA = list(
-    lab = "\\u00bfEn ese trabajo u ocupaci\\u00f3n, ... es? (ocupaci\\u00f3n secundaria)",
+    lab = "\\u00bfEn ese trabajo u ocupaci\\u00f3n, \\u2026 es? (ocupaci\\u00f3n secundaria)",
     labs = c("Empleado u obrero del Gobierno central" = 1, "Empleado u obrero de empresa p\\u00fablica" = 2, "Empleado u obrero de empresas privadas" = 3, "Empleado u obrero de Zona Franca" = 4, "Empleado en hogar privado" = 5, "Empleador o patr\\u00f3n" = 6, "Trabajador por cuenta propia" = 7, "Trabajador familiar no remunerado (auxiliar)" = 8)
   ),
   CELULAR = list(
@@ -300,7 +300,7 @@ si le hubieran ofrecido uno?",
     labs = c("S\\u00ed" = 1, "No" = 2)
   ),
   CELULAR_ESPECIE_AP = list(
-    lab = "\\u00bfDurante el mes pasado en su empleo principal ... recibi\\u00f3 pagos en especie por celular? (asalariados)",
+    lab = "\\u00bfDurante el mes pasado en su empleo principal \\u2026 recibi\\u00f3 pagos en especie por celular? (asalariados)",
     labs = c("S\\u00ed" = 2, "No" = 2)
   ),
   CELULAR_ESPECIE_AP_MONTO = list(
@@ -346,7 +346,7 @@ si le hubieran ofrecido uno?",
     lab = "Monto o estimaci\\u00f3n mensual: Construcci\\u00f3n o reparaci\\u00f3n importante de su vivienda"
   ),
   CONSTRUCCION_NO_REMUN = list(
-    lab = "Durante las \\u00faltimas cuatro semanas, ... trabaj\\u00f3 sin remuneraci\\u00f3n, por lo menos una hora, en alguna de las siguientes actividades: Construcci\\u00f3n o reparaci\\u00f3n importante de su vivienda",
+    lab = "Durante las \\u00faltimas cuatro semanas, \\u2026 trabaj\\u00f3 sin remuneraci\\u00f3n, por lo menos una hora, en alguna de las siguientes actividades: Construcci\\u00f3n o reparaci\\u00f3n importante de su vivienda",
     labs = c("S\\u00ed" = 1, "No" = 2)
   ),
   CONSTRUCCION_NO_REMUN_HORAS = list(
@@ -380,7 +380,7 @@ si le hubieran ofrecido uno?",
     labs = c("Escrito" = 1, "Verbal" = 2, "No sabe" = 98)
   ),
   CRIANZA_NO_REMUN = list(
-    lab = "Durante las \\u00faltimas cuatro semanas, ... trabaj\\u00f3 sin ninguna remuneraci\\u00f3n, principalmente para el consumo de la familia, por lo menos una hora, en: Crianza de animales o aves para obtener carne, huevos, leche, miel u otros productos.",
+    lab = "Durante las \\u00faltimas cuatro semanas, \\u2026 trabaj\\u00f3 sin ninguna remuneraci\\u00f3n, principalmente para el consumo de la familia, por lo menos una hora, en: Crianza de animales o aves para obtener carne, huevos, leche, miel u otros productos.",
     labs = c("S\\u00ed" = 1, "No" = 2)
   ),
   CRIANZA_NO_REMUN_HORAS = list(
@@ -403,7 +403,7 @@ si le hubieran ofrecido uno?",
     lab = "N\\u00famero de trabajos que tiene la persona"
   ),
   CULTIVO_NO_REMUN = list(
-    lab = "Durante las \\u00faltimas cuatro semanas, … trabaj\\u00f3 sin ninguna remuneraci\\u00f3n, principalmente para el consumo de la familia, por lo menos una hora, en: cultivo o cosecha",
+    lab = "Durante las \\u00faltimas cuatro semanas, \\u2026 trabaj\\u00f3 sin ninguna remuneraci\\u00f3n, principalmente para el consumo de la familia, por lo menos una hora, en: cultivo o cosecha",
     labs = c("S\\u00ed" = 1, "No" = 2)
   ),
   CULTIVO_NO_REMUN_HORAS = list(
@@ -428,11 +428,11 @@ si le hubieran ofrecido uno?",
     lab = "Nombre de la provincia de residencia"
   ),
   DESEA_TRABAJAR_MAS_HORAS = list(
-    lab = "Adem\\u00e1s de las horas que habitualmente trabaja en todas sus ocupaciones \\u00bfDesea ... trabajar m\\u00e1s horas?",
+    lab = "Adem\\u00e1s de las horas que habitualmente trabaja en todas sus ocupaciones \\u00bfDesea \\u2026 trabajar m\\u00e1s horas?",
     labs = c("S\\u00ed" = 1, "No" = 2, "No sabe" = 98)
   ),
   DESEA_TRABAJAR_MENOS_HORAS = list(
-    lab = "\\u00bf... Desea trabajar menos horas, aunque esto conlleve una reducci\\u00f3n de su salario o ingreso?",
+    lab = "\\u00bf\\u2026 Desea trabajar menos horas, aunque esto conlleve una reducci\\u00f3n de su salario o ingreso?",
     labs = c("S\\u00ed" = 1, "No" = 2)
   ),
   DESOCUPADO = list(
@@ -444,7 +444,7 @@ si le hubieran ofrecido uno?",
     labs = c("S\\u00ed" = 1, "No" = 0)
   ),
   DISP_HORAS_ADICIONALES = list(
-    lab = "\\u00bfEst\\u00e1 ... disponible para trabajar horas adicionales inmediatamente o en las pr\\u00f3ximas dos semanas?",
+    lab = "\\u00bfEst\\u00e1 \\u2026 disponible para trabajar horas adicionales inmediatamente o en las pr\\u00f3ximas dos semanas?",
     labs = c("S\\u00ed, inmediatamente" = 1, "S\\u00ed, en las pr\\u00f3ximas dos semanas" = 2, "No" = 3)
   ),
   DISP_SEMANA_PASADA = list(
@@ -452,7 +452,7 @@ si le hubieran ofrecido uno?",
     labs = c("S\\u00ed" = 1, "No" = 2)
   ),
   DIVIDENDOS_AP = list(
-    lab = "Durante los \\u00faltimos 12 meses, en el empleo principal ... recibi\\u00f3 dividendos? (asalariados)",
+    lab = "Durante los \\u00faltimos 12 meses, en el empleo principal \\u2026 recibi\\u00f3 dividendos? (asalariados)",
     labs = c("S\\u00ed" = 1, "No" = 2)
   ),
   DIVIDENDOS_AP_MONTO = list(
@@ -473,11 +473,11 @@ si le hubieran ofrecido uno?",
     lab = "\\u00bfQu\\u00e9 edad tiene en a\\u00f1os cumplidos?"
   ),
   EMPRESA_INSCRITA_RNC = list(
-    lab = "\\u00bfLa empresa o negocio donde ... trabaja se encuentra inscrita en el Registro Nacional de Contribuyente (RNC)?",
+    lab = "\\u00bfLa empresa o negocio donde \\u2026 trabaja se encuentra inscrita en el Registro Nacional de Contribuyente (RNC)?",
     labs = c("S\\u00ed" = 1, "No" = 2, "No sabe" = 98)
   ),
   EMPRESA_TIENE_LICENCIA = list(
-    lab = "\\u00bfLa empresa o negocio donde ... trabaja tiene licencia o permiso para operar?",
+    lab = "\\u00bfLa empresa o negocio donde \\u2026 trabaja tiene licencia o permiso para operar?",
     labs = c("S\\u00ed" = 1, "No" = 2, "No sabe" = 98)
   ),
   ENCUESTADO_ANTERIORMENTE = list(
@@ -521,7 +521,7 @@ si le hubieran ofrecido uno?",
     labs = c("S\\u00ed" = 1, "No" = 2)
   ),
   EXISTE_SINDICATO_EMPRESA = list(
-    lab = "\\u00bfEn la empresa donde trabaja ... existe sindicato?",
+    lab = "\\u00bfEn la empresa donde trabaja \\u2026 existe sindicato?",
     labs = c("S\\u00ed (especifique el nombre)" = 1, "No" = 2, "No sabe" = 98)
   ),
   EXISTE_SINDICATO_EMPRESA_ESP = list(
@@ -542,11 +542,11 @@ si le hubieran ofrecido uno?",
     labs = c("S\\u00ed" = 1, "No" = 2)
   ),
   FORMA_PAGAN_SALARIO_AP = list(
-    lab = "\\u00bfde qu\\u00e9 forma le pagan a ...? (en ocupaci\\u00f3n principal, asalariados)",
+    lab = "\\u00bfde qu\\u00e9 forma le pagan a \\u2026? (en ocupaci\\u00f3n principal, asalariados)",
     labs = c("Sueldo o salario" = 1, "Por comisi\\u00f3n o propinas" = 2, "S\\u00f3lo en especie" = 3)
   ),
   FORMA_TRABAJAR_HORAS_EXTRAS = list(
-    lab = "\\u00bfEstas horas adicionales ... Las desea trabajar de la siguiente forma?",
+    lab = "\\u00bfEstas horas adicionales \\u2026 Las desea trabajar de la siguiente forma?",
     labs = c("Mediante un trabajo adicional a los que actualmente tiene" = 1, "Trabajar horas adicionales en algunos de sus trabajos actuales" = 2, "Reemplazar cualquiera de sus trabajos actuales por otro" = 3, "Cualquiera otra posibilidad que aumente sus actuales horas de trabajo" = 4)
   ),
   FORMA_TRABAJO_REALIZO_IN = list(
@@ -558,13 +558,13 @@ si le hubieran ofrecido uno?",
     labs = c("Productor agropecuario" = 1, "Consultor o contratista" = 2, "Cuenta propia o patr\\u00f3n" = 99)
   ),
   FUNCIONES_OCUPACION = list(
-    lab = "\\u00bfQu\\u00e9 tareas o funciones realiza ... en ese trabajo? (ocupaci\\u00f3n principal)"
+    lab = "\\u00bfQu\\u00e9 tareas o funciones realiza \\u2026 en ese trabajo? (ocupaci\\u00f3n principal)"
   ),
   FUNCIONES_OCUPACION_CESANTIA = list(
-    lab = "\\u00bfQu\\u00e9 tareas o funciones realizaba ... en ese trabajo?"
+    lab = "\\u00bfQu\\u00e9 tareas o funciones realizaba \\u2026 en ese trabajo?"
   ),
   FUNCIONES_OCUPACION_SECUNDARIA = list(
-    lab = "\\u00bfQu\\u00e9 tareas o funciones realiza ... en ese trabajo? (ocupaci\\u00f3n secundaria)"
+    lab = "\\u00bfQu\\u00e9 tareas o funciones realiza \\u2026 en ese trabajo? (ocupaci\\u00f3n secundaria)"
   ),
   GANANCIA_IN_PRODUCTOR = list(
     lab = "En los \\u00faltimos 6 meses, \\u00bfcu\\u00e1l fue su ganancia despu\\u00e9s de descontar los gastos exclusivos de la producci\\u00f3n o negocio? (ocupaci\\u00f3n principal, independientes)",
@@ -596,7 +596,7 @@ descontar los gastos exclusivos de la producci\\u00f3n o negocio? (ocupaci\\u00f
     lab = "Ingreso imputado recibido por ocupaci\\u00f3n secundaria (trabajadores independientes)"
   ),
   GASOLINA_ESPECIE_AP = list(
-    lab = "\\u00bfDurante el mes pasado en su empleo principal ... recibi\\u00f3 pagos en especie por asignaci\\u00f3n de combustible? (asalariados)",
+    lab = "\\u00bfDurante el mes pasado en su empleo principal \\u2026 recibi\\u00f3 pagos en especie por asignaci\\u00f3n de combustible? (asalariados)",
     labs = c("S\\u00ed" = 1, "No" = 2)
   ),
   GASOLINA_ESPECIE_AP_MONTO = list(
@@ -649,7 +649,7 @@ descontar los gastos exclusivos de la producci\\u00f3n o negocio? (ocupaci\\u00f
     lab = "Ingreso recibido durante el mes pasado por concepto de ayuda o transferencias de programas del Gobierno: Programa Qu\\u00e9date en Casa "
   ),
   GOBIERNO_NAC = list(
-    lab = "En el mes pasado, \\u00bf... recibi\\u00f3 ingresos por concepto de ayuda o transferencias de programas del Gobierno?",
+    lab = "En el mes pasado, \\u00bf\\u2026 recibi\\u00f3 ingresos por concepto de ayuda o transferencias de programas del Gobierno?",
     labs = c("S\\u00ed" = 1, "No" = 2)
   ),
   GRUPO_CATEGORIA = list(
@@ -697,34 +697,34 @@ descontar los gastos exclusivos de la producci\\u00f3n o negocio? (ocupaci\\u00f
     lab = "Monto recibido por pago de horas extras el mes pasado en empleo principal (asalariados)"
   ),
   HORAS_TRABAJA_SEMANA_PRINCIPAL = list(
-    lab = "\\u00bfCu\\u00e1ntas horas trabaja ... regular o habitualmente por semana en su ocupaci\\u00f3n principal?"
+    lab = "\\u00bfCu\\u00e1ntas horas trabaja \\u2026 regular o habitualmente por semana en su ocupaci\\u00f3n principal?"
   ),
   HORAS_TRABAJO_EFECT_DOMINGO = list(
-    lab = "\\u00bfCu\\u00e1ntas horas trabaj\\u00f3 o le dedic\\u00f3 ... efectivamente a su trabajo durante la semana pasada?: Domingo (ocupaci\\u00f3n principal)"
+    lab = "\\u00bfCu\\u00e1ntas horas trabaj\\u00f3 o le dedic\\u00f3 \\u2026 efectivamente a su trabajo durante la semana pasada?: Domingo (ocupaci\\u00f3n principal)"
   ),
   HORAS_TRABAJO_EFECT_JUEVES = list(
-    lab = "\\u00bfCu\\u00e1ntas horas trabaj\\u00f3 o le dedic\\u00f3 ... efectivamente a su trabajo durante la semana pasada?: Jueves (ocupaci\\u00f3n principal)"
+    lab = "\\u00bfCu\\u00e1ntas horas trabaj\\u00f3 o le dedic\\u00f3 \\u2026 efectivamente a su trabajo durante la semana pasada?: Jueves (ocupaci\\u00f3n principal)"
   ),
   HORAS_TRABAJO_EFECT_LUNES = list(
-    lab = "\\u00bfCu\\u00e1ntas horas trabaj\\u00f3 o le dedic\\u00f3 ... efectivamente a su trabajo durante la semana pasada?: Lunes (ocupaci\\u00f3n principal)"
+    lab = "\\u00bfCu\\u00e1ntas horas trabaj\\u00f3 o le dedic\\u00f3 \\u2026 efectivamente a su trabajo durante la semana pasada?: Lunes (ocupaci\\u00f3n principal)"
   ),
   HORAS_TRABAJO_EFECT_MARTES = list(
-    lab = "\\u00bfCu\\u00e1ntas horas trabaj\\u00f3 o le dedic\\u00f3 ... efectivamente a su trabajo durante la semana pasada?: Martes (ocupaci\\u00f3n principal)"
+    lab = "\\u00bfCu\\u00e1ntas horas trabaj\\u00f3 o le dedic\\u00f3 \\u2026 efectivamente a su trabajo durante la semana pasada?: Martes (ocupaci\\u00f3n principal)"
   ),
   HORAS_TRABAJO_EFECT_MIERCOLES = list(
-    lab = "\\u00bfCu\\u00e1ntas horas trabaj\\u00f3 o le dedic\\u00f3 ... efectivamente a su trabajo durante la semana pasada?: Mi\\u00e9rcoles (ocupaci\\u00f3n principal)"
+    lab = "\\u00bfCu\\u00e1ntas horas trabaj\\u00f3 o le dedic\\u00f3 \\u2026 efectivamente a su trabajo durante la semana pasada?: Mi\\u00e9rcoles (ocupaci\\u00f3n principal)"
   ),
   HORAS_TRABAJO_EFECT_SABADO = list(
-    lab = "\\u00bfCu\\u00e1ntas horas trabaj\\u00f3 o le dedic\\u00f3 ... efectivamente a su trabajo durante la semana pasada?: S\\u00e1bado (ocupaci\\u00f3n principal)"
+    lab = "\\u00bfCu\\u00e1ntas horas trabaj\\u00f3 o le dedic\\u00f3 \\u2026 efectivamente a su trabajo durante la semana pasada?: S\\u00e1bado (ocupaci\\u00f3n principal)"
   ),
   HORAS_TRABAJO_EFECT_TOTAL = list(
-    lab = "\\u00bfCu\\u00e1ntas horas trabaj\\u00f3 o le dedic\\u00f3 ... efectivamente a su trabajo durante la semana pasada?: Total (ocupaci\\u00f3n principal)"
+    lab = "\\u00bfCu\\u00e1ntas horas trabaj\\u00f3 o le dedic\\u00f3 \\u2026 efectivamente a su trabajo durante la semana pasada?: Total (ocupaci\\u00f3n principal)"
   ),
   HORAS_TRABAJO_EFECT_VIERNES = list(
-    lab = "\\u00bfCu\\u00e1ntas horas trabaj\\u00f3 o le dedic\\u00f3 ... efectivamente a su trabajo durante la semana pasada?: Viernes (ocupaci\\u00f3n principal)"
+    lab = "\\u00bfCu\\u00e1ntas horas trabaj\\u00f3 o le dedic\\u00f3 \\u2026 efectivamente a su trabajo durante la semana pasada?: Viernes (ocupaci\\u00f3n principal)"
   ),
   HORAS_TRABAJO_OCUP_SECUN = list(
-    lab = "\\u00bfCu\\u00e1ntas horas trabaj\\u00f3 ... efectivamente durante la semana pasada en este trabajo secundario?"
+    lab = "\\u00bfCu\\u00e1ntas horas trabaj\\u00f3 \\u2026 efectivamente durante la semana pasada en este trabajo secundario?"
   ),
   HORNO_ELECTRICO = list(
     lab = "\\u00bfTiene usted o alg\\u00fan miembro de su hogar horno el\\u00e9ctrico?",
@@ -764,14 +764,14 @@ descontar los gastos exclusivos de la producci\\u00f3n o negocio? (ocupaci\\u00f
     lab = "Ingreso mensual por Incentivo a la Polici\\u00eda Preventiva"
   ),
   INCENTIVO_ANTIGUEDAD = list(
-    lab =  "Ingreso por incentivo por antigüedad mensualizado (asalariados)"
+    lab =  "Ingreso por incentivo por antiguedad mensualizado (asalariados)"
   ),
   INCENTIVO_ANTIGUEDAD_AP = list(
-    lab = "Durante los \\u00faltimos 12 meses, en el empleo principal ... recibi\\u00f3 incentivo por antigüedad (asalariados)",
+    lab = "Durante los \\u00faltimos 12 meses, en el empleo principal \\u2026 recibi\\u00f3 incentivo por antiguedad (asalariados)",
     labs = c("S\\u00ed" = 1, "No" = 2)
   ),
   INCENTIVO_ANTIGUEDAD_AP_MONTO = list(
-    lab = "Monto recibido por incentivo por antigüedad durante los \\u00faltimos 12 meses, en el empleo principal (asalariados)"
+    lab = "Monto recibido por incentivo por antiguedad durante los \\u00faltimos 12 meses, en el empleo principal (asalariados)"
   ),
   INCENTIVO_EDUCACION_SUPERIOR = list(
     lab = "\\u00bfActualmente usted o alg\u00fan miembro del hogar es beneficiario de Incentivo a la Educaci\u00f3n Superior, con la Tarjeta Solidaridad?",
@@ -826,7 +826,7 @@ descontar los gastos exclusivos de la producci\\u00f3n o negocio? (ocupaci\\u00f
     lab = "Ingreso mensual por ocupaci\\u00f3n secundaria (independientes)"
   ),
   INGRESOS_OTROS_TRABAJOS = list(
-    lab = "\\u00bfCu\\u00e1nto recibi\\u00f3 en promedio el mes pasado ... en dinero por sus otras ocupaciones y trabajos?",
+    lab = "\\u00bfCu\\u00e1nto recibi\\u00f3 en promedio el mes pasado \\u2026 en dinero por sus otras ocupaciones y trabajos?",
     labs = c("Inform\\u00f3" = 1, "No tiene otras ocupaciones/trabajos" = 2)
   ),
   INGRESOS_OTROS_TRABAJOS_MONTO = list(
@@ -854,11 +854,11 @@ descontar los gastos exclusivos de la producci\\u00f3n o negocio? (ocupaci\\u00f
     lab = "Ingreso nacional por intereses o dividendos"
   ),
   INTERESES_NAC = list(
-    lab = "En el mes pasado, \\u00bf... recibi\\u00f3 ingresos por concepto de intereses o dividendos?",
+    lab = "En el mes pasado, \\u00bf\\u2026 recibi\\u00f3 ingresos por concepto de intereses o dividendos?",
     labs = c("S\\u00ed" = 1, "No" = 2)
   ),
   INTERESES_NAC_ANO = list(
-    lab = "\\u00bfAdem\\u00e1s recibi\\u00f3 en los \\u00faltimos 12 meses ... ingresos por concepto de intereses o dividendos?",
+    lab = "\\u00bfAdem\\u00e1s recibi\\u00f3 en los \\u00faltimos 12 meses \\u2026 ingresos por concepto de intereses o dividendos?",
     labs = c("S\\u00ed" = 1, "No" = 2)
   ),
   INTERESES_NAC_ANO_MONTO = list(
@@ -1205,11 +1205,11 @@ descontar los gastos exclusivos de la producci\\u00f3n o negocio? (ocupaci\\u00f
     lab =  "\\u00bfCu\\u00e1nto est\\u00e1n pagando? (RD$)"
   ),
   MOTIVO_DEJO_ULTIMO_TRABAJO = list(
-    lab = "\\u00bfPor qu\\u00e9 motivo ... dej\\u00f3 su \\u00faltimo trabajo?",
+    lab = "\\u00bfPor qu\\u00e9 motivo \\u2026 dej\\u00f3 su \\u00faltimo trabajo?",
     labs = c( "Cerr\\u00f3 la empresa" = 1, "Lo despidieron" = 2, "Venci\\u00f3 el contrato y no lo renovaron" = 3, "Responsabilidades familiares" = 4, "Motivos de salud" = 5, "Renunci\\u00f3" = 6, "Estudios" = 7, "Jubilaci\\u00f3n o pensi\\u00f3n" = 8, "Falta de materia prima o problema con la maquinaria" = 9, "Otro (especifique)" = 99)
   ),
   MOTIVO_DEJO_ULTIMO_TRABAJO_ESP = list(
-    lab = "\\u00bfPor qu\\u00e9 motivo ... dej\\u00f3 su \\u00faltimo trabajo? Otro (especifique)"
+    lab = "\\u00bfPor qu\\u00e9 motivo \\u2026 dej\\u00f3 su \\u00faltimo trabajo? Otro (especifique)"
   ),
   MOTIVO_NO_BUSCA_TRABAJO = list(
     lab = "\\u00bfPor qu\\u00e9 motivo no ha buscado trabajo durante las \\u00faltimas 4 semanas?",
@@ -1268,7 +1268,7 @@ descontar los gastos exclusivos de la producci\\u00f3n o negocio? (ocupaci\\u00f
     labs = c("S\\u00ed" = 1, "No" = 2)
   ),
   NOMBRE_EMPRESA_TRABAJA = list(
-    lab = "\\u00bfCu\\u00e1l es el nombre de la empresa, establecimiento, negocio, industria, finca, oficina en la que ... trabaja?",
+    lab = "\\u00bfCu\\u00e1l es el nombre de la empresa, establecimiento, negocio, industria, finca, oficina en la que \\u2026 trabaja?",
     labs = c("Nombre de empresa" = 1, "Presta servicio en un hogar" = 2, "No tiene nombre" = 3, "No sabe" = 98)
   ),
   NOMBRE_EMPRESA_TRABAJA_ESP = list(
@@ -1291,7 +1291,7 @@ descontar los gastos exclusivos de la producci\\u00f3n o negocio? (ocupaci\\u00f
     lab = "N\\u00famero de l\\u00ednea del miembro informante"
   ),
   OCUPACION_CESANTIA = list(
-    lab = "\\u00bfQu\\u00e9 ocupaci\\u00f3n u oficio realizaba ... En su \\u00faltimo
+    lab = "\\u00bfQu\\u00e9 ocupaci\\u00f3n u oficio realizaba \\u2026 En su \\u00faltimo
 trabajo?"
   ),
   OCUPACION_CESANTIA_COD = list(
@@ -1300,13 +1300,13 @@ trabajo?"
   ),
   OCUPACION_PRINCIPAL = list(
     lab = "Hablemos de la ocupaci\\u00f3n principal. \\u00bfcu\\u00e1l es el oficio u
-    ocupaci\\u00f3n que realiza ... en ese trabajo?"
+    ocupaci\\u00f3n que realiza \\u2026 en ese trabajo?"
   ),
   OCUPACION_PRINCIPAL_COD = list(
     lab = "C\\u00f3digo de oficio u ocupaci\\u00f3n que realiza"
   ),
   OCUPACION_SECUNDARIA = list(
-    lab = "\\u00bfQu\\u00e9 ocupaci\\u00f3n u oficio realiza ... en este trabajo? (ocupaci\\u00f3n secundaria)"
+    lab = "\\u00bfQu\\u00e9 ocupaci\\u00f3n u oficio realiza \\u2026 en este trabajo? (ocupaci\\u00f3n secundaria)"
   ),
   OCUPACION_SECUNDARIA_COD = list(
     lab = "C\\u00f3digo de ocupaci\\u00f3n u oficio que realiza en ocupaci\\u00f3n secundaria"
@@ -1350,17 +1350,17 @@ trabajo?"
     lab = "Ingreso por otros beneficios mensualizado (asalariados)"
   ),
   OTROS_BENEFICIOS_AP = list(
-    lab = "\\u00bfDurante los \\u00faltimos 12 meses, en el empleo principal ... recibi\\u00f3 otros pagos o beneficios? (asalariados)",
+    lab = "\\u00bfDurante los \\u00faltimos 12 meses, en el empleo principal \\u2026 recibi\\u00f3 otros pagos o beneficios? (asalariados)",
     labs = c("S\\u00ed" = 1, "No" = 2)
   ),
   OTROS_BENEFICIOS_AP_ESP = list(
-    lab = "\\u00bfDurante los \\u00faltimos 12 meses, en el empleo principal ... recibi\\u00f3 otros pagos o beneficios? Especifique (asalariados)"
+    lab = "\\u00bfDurante los \\u00faltimos 12 meses, en el empleo principal \\u2026 recibi\\u00f3 otros pagos o beneficios? Especifique (asalariados)"
   ),
   OTROS_BENEFICIOS_AP_MONTO = list(
     lab = "Monto recibido por otros pagos o beneficios durante los \\u00faltimos 12 meses, en el empleo principal (asalariados)"
   ),
   OTROS_BENEFICIOS_AS = list(
-    lab = "Durante los \\u00faltimos 12 meses, \\u00bfen su empleo secundario... recibi\\u00f3 alg\\u00fan otro ingreso como vacaciones bonificadas bonificaciones, regal\\u00eda pascual u otros pagos o beneficios? (asalariados)",
+    lab = "Durante los \\u00faltimos 12 meses, \\u00bfen su empleo secundario\\u2026 recibi\\u00f3 alg\\u00fan otro ingreso como vacaciones bonificadas bonificaciones, regal\\u00eda pascual u otros pagos o beneficios? (asalariados)",
     labs = c("S\\u00ed" = 1, "No" = 2)
   ),
   OTROS_BENEFICIOS_AS_MONTO = list(
@@ -1373,11 +1373,11 @@ trabajo?"
     lab = "Ingreso mensual por otros en especie (asalariados)"
   ),
   OTROS_ESPECIE_AP = list(
-    lab = "\\u00bfDurante el mes pasado en su empleo principal ... recibi\\u00f3 otros pagos en especie? (asalariados)",
+    lab = "\\u00bfDurante el mes pasado en su empleo principal \\u2026 recibi\\u00f3 otros pagos en especie? (asalariados)",
     labs = c("S\\u00ed" = 1, "No" = 2)
   ),
   OTROS_ESPECIE_AP_ESP = list(
-    lab = "\\u00bfDurante el mes pasado en su empleo principal ... recibi\\u00f3 otros pagos en especie? Especifique (asalariados)"
+    lab = "\\u00bfDurante el mes pasado en su empleo principal \\u2026 recibi\\u00f3 otros pagos en especie? Especifique (asalariados)"
   ),
   OTROS_ESPECIE_AP_MONTO = list(
     lab = "Monto estipado por otros pagos en especie durante el mes pasado, en ocupaci\\u00f3n principal (asalariados)"
@@ -1404,7 +1404,7 @@ trabajo?"
     labs = c ()
   ),
   OTROS_INGRESOS_NAC = list(
-    lab = "En el mes pasado, \\u00bf... recibi\\u00f3 ingresos nacionales por otro concepto?",
+    lab = "En el mes pasado, \\u00bf\\u2026 recibi\\u00f3 ingresos nacionales por otro concepto?",
     labs = c("S\\u00ed" = 1, "No" = 2)
   ),
   OTROS_INGRESOS_NAC_A = list(
@@ -1414,23 +1414,23 @@ trabajo?"
     lab = "Otros ingresos nacionales (mensualizados)"
   ),
   OTROS_INGRESOS_NAC_ANO = list(
-    lab = "\\u00bfAdem\\u00e1s recibi\\u00f3 en los \\u00faltimos 12 meses ... ingresos nacionales por otro concepto?" ,
+    lab = "\\u00bfAdem\\u00e1s recibi\\u00f3 en los \\u00faltimos 12 meses \\u2026 ingresos nacionales por otro concepto?" ,
     labs = c("S\\u00ed" = 1, "No" = 2)
   ),
   OTROS_INGRESOS_NAC_ANO_ESP = list(
-    lab = "\\u00bfAdem\\u00e1s recibi\\u00f3 en los \\u00faltimos 12 meses ... ingresos nacionales por otro concepto? (especifique)"
+    lab = "\\u00bfAdem\\u00e1s recibi\\u00f3 en los \\u00faltimos 12 meses \\u2026 ingresos nacionales por otro concepto? (especifique)"
   ),
   OTROS_INGRESOS_NAC_ANO_MONTO = list(
     lab = "Otro ingreso nacional durante los \\u00faltimos 12 meses"
   ),
   OTROS_INGRESOS_NAC_ESP = list(
-    lab = "En el mes pasado, \\u00bf... recibi\\u00f3 ingresos nacionales por otro concepto? (especifique)"
+    lab = "En el mes pasado, \\u00bf\\u2026 recibi\\u00f3 ingresos nacionales por otro concepto? (especifique)"
   ),
   OTROS_INGRESOS_NAC_MONTO = list(
     lab = "Otro ingreso nacional durante el mes anterior"
   ),
   OTROS_PAGO_AS = list(
-    lab = "Durante el mes pasado, adem\\u00e1s del salario, sueldo o jornal, \\u00bf... recibi\\u00f3 en su empleo secundario alg\\u00fan otro pago como comisiones, propinas, horas extras, otros pagos? (asalariados)",
+    lab = "Durante el mes pasado, adem\\u00e1s del salario, sueldo o jornal, \\u00bf\\u2026 recibi\\u00f3 en su empleo secundario alg\\u00fan otro pago como comisiones, propinas, horas extras, otros pagos? (asalariados)",
     labs = c("S\\u00ed" = 1, "No" = 2)
   ),
   OTROS_PAGO_AS_MONTO = list(
@@ -1459,7 +1459,7 @@ trabajo?"
     lab = "Ingreso mensual por Programa de apoyo a trabajadores informales (Pa' Ti)"
   ),
   PAGO_EN_ESPECIE_AS = list(
-    lab = "Durante el mes pasado en su empleo secundario \\u00bf... recibi\\u00f3 alg\\u00fan pago en especie como alimento, vivienda, servicio de transporte, combustible, celular, etc.?",
+    lab = "Durante el mes pasado en su empleo secundario \\u00bf\\u2026 recibi\\u00f3 alg\\u00fan pago en especie como alimento, vivienda, servicio de transporte, combustible, celular, etc.?",
     labs = c("S\\u00ed" = 1, "No" = 2)
   ),
   PAGO_EN_ESPECIE_AS_MONTO = list(
@@ -1524,7 +1524,7 @@ trabajo?"
     lab = "Ingreso imputado por pensi\\u00f3n o jubilaci\\u00f3n en el mes pasado"
   ),
   PENSION_NAC = list(
-    lab = "En el mes pasado, \\u00bf... recibi\\u00f3 ingresos por concepto de pensi\\u00f3n o jubilaci\\u00f3n?",
+    lab = "En el mes pasado, \\u00bf\\u2026 recibi\\u00f3 ingresos por concepto de pensi\\u00f3n o jubilaci\\u00f3n?",
     labs = c("S\\u00ed" = 1, "No" = 2, "Se neg\\u00f3" = 3)
   ),
   PENSION_NAC_A = list(
@@ -1548,7 +1548,7 @@ trabajo?"
     lab = "Motivo por el que no pertenece al sindicato de la empresa"
   ),
   PESCA_NO_REMUN = list(
-    lab = "Durante las \\u00faltimas cuatro semanas, … trabaj\\u00f3 sin ninguna remuneraci\\u00f3n, principalmente para el consumo de la familia, por lo menos una hora, en: pesca",
+    lab = "Durante las \\u00faltimas cuatro semanas, \\u2026 trabaj\\u00f3 sin ninguna remuneraci\\u00f3n, principalmente para el consumo de la familia, por lo menos una hora, en: pesca",
     labs = c("S\\u00ed" = 1, "No" = 2)
   ),
   PESCA_NO_REMUN_HORAS = list(
@@ -1659,14 +1659,14 @@ trabajo?"
     lab = "Carrera que estudi\\u00f3"
   ),
   QUE_HIZO_BUSCAR_TRABAJO = list(
-    lab = "\\u00bfDurante las \\u00faltimas cuatro semanas, qu\\u00e9 hizo ... para buscar trabajo o establecer su propio negocio, actividad econ\\u00f3mica o empresa?",
+    lab = "\\u00bfDurante las \\u00faltimas cuatro semanas, qu\\u00e9 hizo \\u2026 para buscar trabajo o establecer su propio negocio, actividad econ\\u00f3mica o empresa?",
     labs = c("Envi\\u00f3 curr\\u00edculum, llen\\u00f3 solicitudes, asisti\\u00f3 a entrevistas, visit\\u00f3 f\\u00e1bricas, oficinas p\\u00fablicas" = 1, "Pidi\\u00f3 ayuda a terceras personas para que lo recomendaran  o le avisaran de alg\\u00fan trabajo" = 2, "Contest\\u00f3 anuncios en peri\\u00f3dicos, radio, TV" = 3, "Solicit\\u00f3 permisos o licencias para establecer un negocio, acondicion\\u00f3 local para iniciar un negocio, solicit\\u00f3 financiamiento para un negocio propio, busc\\u00f3 equipo o materiales para empezar un negocio" = 4, "Contest\\u00f3 anuncios por internet o en bolsa electr\\u00f3nica de empleo" = 5, "Nada" = 6, "Otro (especifique)" = 99)
   ),
   QUE_HIZO_BUSCAR_TRABAJO_ESP = list(
-    lab = "\\u00bfDurante las \\u00faltimas cuatro semanas, qu\\u00e9 hizo ... para buscar trabajo o establecer su propio negocio, actividad econ\\u00f3mica o empresa?: Otro (especifique)"
+    lab = "\\u00bfDurante las \\u00faltimas cuatro semanas, qu\\u00e9 hizo \\u2026 para buscar trabajo o establecer su propio negocio, actividad econ\\u00f3mica o empresa?: Otro (especifique)"
   ),
   QUE_HIZO_BUSCAR_TRABAJO_RESP = list(
-    lab = "\\u00bfDurante las \\u00faltimas cuatro semanas, qu\\u00e9 hizo ... para buscar trabajo o establecer su propio negocio, actividad econ\\u00f3mica o empresa? Respuesta"
+    lab = "\\u00bfDurante las \\u00faltimas cuatro semanas, qu\\u00e9 hizo \\u2026 para buscar trabajo o establecer su propio negocio, actividad econ\\u00f3mica o empresa? Respuesta"
   ),
   QUE_TIEMPO_BUSCA_TRABAJO = list(
     lab = "\\u00bfQu\\u00e9 tiempo hace que est\\u00e1 sin trabajo y buscando?",
@@ -1687,7 +1687,7 @@ trabajo?"
   ),
   RAMA_PRINCIPAL = list(
     lab = "\\u00bfQu\\u00e9 produce o a qu\\u00e9 actividad se dedica principalmente la empresa, establecimiento, negocio, industria, finca, oficina
-en la que ... trabaja? (ocupaci\\u00f3n principal)"
+en la que \\u2026 trabaja? (ocupaci\\u00f3n principal)"
   ),
   RAMA_PRINCIPAL_COD = list(
     lab = "C\\u00f3digo de la actividad a que se dedica principalmente la
@@ -1695,7 +1695,7 @@ en la que ... trabaja? (ocupaci\\u00f3n principal)"
     en la que trabaja (ocupaci\\u00f3n principal)"
   ),
   RAMA_SECUNDARIA = list(
-    lab = "\\u00bfQu\\u00e9 produce o a qu\\u00e9 actividad se dedica principalmente la empresa, establecimiento, negocio, industria, finca, oficina en la que ... realiza este trabajo secundario?"
+    lab = "\\u00bfQu\\u00e9 produce o a qu\\u00e9 actividad se dedica principalmente la empresa, establecimiento, negocio, industria, finca, oficina en la que \\u2026 realiza este trabajo secundario?"
   ),
   RAMA_SECUNDARIA_COD = list(
     lab = "C\\u00f3digo de la actividad a que se dedica principalmente la
@@ -1724,11 +1724,11 @@ en la que ... trabaja? (ocupaci\\u00f3n principal)"
     lab = "Curso t\\u00e9cnico o vocacional que est\\u00e1 realizando el miembro del hogar"
   ),
   REALIZO_ACTIVIDAD = list(
-    lab = "La semana pasada ... \\u00bfrealiz\\u00f3 alguna de las siguientes actividades, por lo menos durante una hora a cambio de un salario o con fines de generar ingresos en dinero o en especie?",
+    lab = "La semana pasada \\u2026 \\u00bfrealiz\\u00f3 alguna de las siguientes actividades, por lo menos durante una hora a cambio de un salario o con fines de generar ingresos en dinero o en especie?",
     labs = c("\\u00bfCultiv\\u00f3 o cosech\\u00f3, cri\\u00f3 o cuid\\u00f3 ganado o pesc\\u00f3 principalmente para la venta?" = 1, "\\u00bfElabor\\u00f3 comida, picadera, fritura, manualidades, artesan\\u00eda o tabaco principalmente para la venta?" = 2, "\\u00bfLimpi\\u00f3 finca, patio o solar por paga?"  = 3, "\\u00bfLimpi\\u00f3 casas, planch\\u00f3 o lav\\u00f3 ropa ajena y repar\\u00f3 o cosi\\u00f3 ropa, zapato o cartera por paga?" = 4, "\\u00bfVendi\\u00f3 productos de belleza, ropas, joyas, ventas por cat\\u00e1logo?" = 5, "\\u00bfRepar\\u00f3 equipos electrodom\\u00e9sticos (plancha, nevera, lavadora, abanico, celular, fabric\\u00f3 puertas o ventanas, mantenimiento de aires y veh\\u00edculos) por paga?" = 6, "\\u00bfTrabaj\\u00f3 como aprendiz o pasante con pago en dinero o en especie?" = 7, "Ninguna de las anteriores" = 8)
   ),
   REALIZO_TRABAJO_SECUNDARIO = list(
-    lab = "Adem\\u00e1s del trabajo principal, durante la semana pasada \\u00bf... Realiz\\u00f3 o tiene otro trabajo, negocio o empleo secundario?",
+    lab = "Adem\\u00e1s del trabajo principal, durante la semana pasada \\u00bf\\u2026 Realiz\\u00f3 o tiene otro trabajo, negocio o empleo secundario?",
     labs = c("S\\u00ed" = 1, "No" = 2, "No sabe" = 98)
   ),
   RECIBE_DESAYUNO_ESCOLAR = list(
@@ -1736,11 +1736,11 @@ en la que ... trabaja? (ocupaci\\u00f3n principal)"
     labs = c("Desayuno, almuerzo y merienda" = 1, "Desayuno" = 2, "Merienda" = 3, "Almuerzo" = 4, "Ninguno" = 5)
   ),
   RECIBIO_AUMENTO_SALARIAL_AP = list(
-    lab = "En los \\u00faltimos 3 meses ... \\u00bfrecibi\\u00f3 aumento salarial? (asalariados)",
+    lab = "En los \\u00faltimos 3 meses \\u2026 \\u00bfrecibi\\u00f3 aumento salarial? (asalariados)",
     labs = c("S\\u00ed" = 1, "No" = 2)
   ),
   RECIBIO_CESANTIA = list(
-    lab = "Cuando … fue despedido de su \\u00faltimo trabajo \\u00bfrecibi\\u00f3
+    lab = "Cuando \\u2026 fue despedido de su \\u00faltimo trabajo \\u00bfrecibi\\u00f3
 ayuda por cesant\\u00eda?",
     labs = c("S\\u00ed" = 1, "No" = 2, "En disputa" = 3)
   ),
@@ -1761,7 +1761,7 @@ ayuda por cesant\\u00eda?",
     labs = c("S\\u00ed" = 1, "No" = 2)
   ),
   REGALIA_AP = list(
-    lab = "\\u00bfDurante los \\u00faltimos 12 meses, en el empleo principal ... recibi\\u00f3 regal\\u00eda pascual? (asalariados)",
+    lab = "\\u00bfDurante los \\u00faltimos 12 meses, en el empleo principal \\u2026 recibi\\u00f3 regal\\u00eda pascual? (asalariados)",
     labs = c("S\\u00ed" = 1, "No" = 2)
   ),
   REGALIA_AP_MONTO = list(
@@ -1777,7 +1777,7 @@ ayuda por cesant\\u00eda?",
     lab = "Ingreso por regal\\u00eda pascual de pensi\\u00f3n (mensualizado)"
   ),
   REGALIA_PENSION_NAC_ANO = list(
-    lab = "\\u00bfAdem\\u00e1s recibi\\u00f3 en los \\u00faltimos 12 meses ... ingresos por concepto de regal\\u00eda pascual de pensi\\u00f3n?" ,
+    lab = "\\u00bfAdem\\u00e1s recibi\\u00f3 en los \\u00faltimos 12 meses \\u2026 ingresos por concepto de regal\\u00eda pascual de pensi\\u00f3n?" ,
     labs = c("S\\u00ed" = 1, "No" = 2)
   ),
   REGALIA_PENSION_NAC_ANO_MONTO = list(
@@ -1809,21 +1809,21 @@ ayuda por cesant\\u00eda?",
     labs = c("Contibutivo (aporta el empleado y la empresa)" = 1, "Subsidiado (cubierto por el gobierno)" = 2, "Contributivo/subsidiado (aporta el afiliado y el gobierno)" = 3, "Voluntario privado (contratado por la persona o el hogar)" = 4, "No sabe" = 98)
   ),
   REGISTRO_TRANSACCIONES_EMPRESA = list(
-    lab = "En la empresa o negocio donde ... trabaja",
+    lab = "En la empresa o negocio donde \\u2026 trabaja",
     labs = c("Se registran las transacciones o se lleva libros de contabilidad auditables o se acude a los servicios de un contable" = 1, "Solo se utiliza un cuaderno de apuntes personal para llevar las cuentas" = 2, "No se lleva ning\\u00fan registro contable de las transacciones" = 3, "No sabe" = 98)
   ),
   REMESAS_EXT = list(
     lab = "Ingreso mensual por remesas del exterior"
   ),
   REMESAS_NAC = list(
-    lab = "En el mes pasado, \\u00bf... recibi\\u00f3 ingresos por concepto de donaci\\u00f3n o remesa (ayuda) de familiares y no familiares que viven en el pa\\u00eds?",
+    lab = "En el mes pasado, \\u00bf\\u2026 recibi\\u00f3 ingresos por concepto de donaci\\u00f3n o remesa (ayuda) de familiares y no familiares que viven en el pa\\u00eds?",
     labs = c("S\\u00ed" = 1, "No" = 2)
   ),
   REMESAS_NAC_A = list(
     lab = "Ingreso por donaci\\u00f3n o remesa (ayuda) de familiares y no familiares que viven en el pa\\u00eds"
   ),
   REMESAS_NAC_ANO = list(
-    lab = "\\u00bfAdem\\u00e1s recibi\\u00f3 en los \\u00faltimos 12 meses ... ingresos por concepto de donaci\\u00f3n o remesa (ayuda) de familiares y no familiares que viven en el pa\\u00eds?",
+    lab = "\\u00bfAdem\\u00e1s recibi\\u00f3 en los \\u00faltimos 12 meses \\u2026 ingresos por concepto de donaci\\u00f3n o remesa (ayuda) de familiares y no familiares que viven en el pa\\u00eds?",
     labs = c("S\\u00ed" = 1, "No" = 2)
   ),
   REMESAS_NAC_ANO_MONTO = list(
@@ -1868,7 +1868,7 @@ ayuda por cesant\\u00eda?",
     labs = c('Hombre' = 1, 'Mujer' = 2)
   ),
   SIGUIO_RECIBIENDO_SUELDO = list(
-    lab = "\\u00bfDurante este per\\u00edodo que no trabaj\\u00f3 ... sigui\\u00f3 recibiendo sueldo o ganancias? No incluye los ingresos provenientes \\u00fanicamente del programa de ayuda del gobierno (FASE)",
+    lab = "\\u00bfDurante este per\\u00edodo que no trabaj\\u00f3 \\u2026 sigui\\u00f3 recibiendo sueldo o ganancias? No incluye los ingresos provenientes \\u00fanicamente del programa de ayuda del gobierno (FASE)",
     labs = c("S\\u00ed" = 1, "No" = 2)
   ),
   SUBOCUPADO = list(
@@ -1876,7 +1876,7 @@ ayuda por cesant\\u00eda?",
     labs = c("S\\u00ed" = 1, "No" = 0)
   ),
   SUELDO_BRUTO_AP = list(
-    lab = "En el mes pasado, \\u00bfCu\\u00e1nto fue el salario o sueldo bruto de ... sin ning\\u00fan tipo de descuento en su empleo principal? (asalariados)",
+    lab = "En el mes pasado, \\u00bfCu\\u00e1nto fue el salario o sueldo bruto de \\u2026 sin ning\\u00fan tipo de descuento en su empleo principal? (asalariados)",
     labs = c("Inform\\u00f3" = 1, "Se neg\\u00f3" = 2)
   ),
   SUELDO_BRUTO_AP_MONEDA = list(
@@ -1888,7 +1888,7 @@ ayuda por cesant\\u00eda?",
   ),
   SUELDO_BRUTO_AS = list(
     lab = "En el mes pasado, \\u00bfCu\\u00e1nto fue el salario o sueldo bruto
-de … sin ning\\u00fan tipo de descuento en su empleo secundario? (asalariados)",
+de \\u2026 sin ning\\u00fan tipo de descuento en su empleo secundario? (asalariados)",
     labs = c("Inform\\u00f3" = 1, "Se neg\\u00f3" = 2)
   ),
   SUELDO_BRUTO_AS_MONEDA = list(
@@ -1968,7 +1968,7 @@ de … sin ning\\u00fan tipo de descuento en su empleo secundario? (asalariados)
     labs = c("Menos de 6 meses" = 1, "De 6 meses a menos de 1 a\\u00f1o" = 2, "1 a\\u00f1o y m\\u00e1s" = 3, "Nunca ha realizado alguna gesti\\u00f3n" = 4, "No sabe" = 98)
   ),
   TIEMPO_VUELVE_TRABAJO = list(
-    lab = "\\u00bfEn cu\\u00e1nto tiempo ... regresar\\u00e1 o continuar\\u00e1 en esa misma actividad de trabajo?",
+    lab = "\\u00bfEn cu\\u00e1nto tiempo \\u2026 regresar\\u00e1 o continuar\\u00e1 en esa misma actividad de trabajo?",
     labs = c("Ya reinici\\u00f3 sus labores o regresar\\u00e1 a trabajar en esta semana" = 1, "En tres meses o menos" = 2, "En m\\u00e1s de tres meses" = 3, "Cuando le contacten o le soliciten" = 4, "No regresar\\u00e1" = 5, "Al levantarse las restricciones del COVID-19" = 90, "No sabe" = 98)
   ),
   TIENE_AGUA_RED_PUBLICA = list(
@@ -1980,7 +1980,7 @@ de … sin ning\\u00fan tipo de descuento en su empleo secundario? (asalariados)
     labs = c("S\\u00ed" = 1, "No" = 2)
   ),
   TIENE_CONTRATO = list(
-    lab = "\\u00bfEn ese trabajo … tiene alg\\u00fan tipo de contrato?",
+    lab = "\\u00bfEn ese trabajo \\u2026 tiene alg\\u00fan tipo de contrato?",
     labs = c("S\\u00ed" = 1, "No" = 2, "No sabe" = 98)
   ),
   TIPO_AFILIADO = list(
@@ -2021,7 +2021,7 @@ de … sin ning\\u00fan tipo de descuento en su empleo secundario? (asalariados)
     lab = "\\u00bfCu\\u00e1ntos hogares ocupan esta vivienda?"
   ),
   TOTAL_PERSONAS_TRABAJAN_EMP = list(
-    lab = "\\u00bfCu\\u00e1ntas personas en total, incluyendo al due\\u00f1o (a) del establecimiento y usted mismo trabajan regularmente donde ... labora?",
+    lab = "\\u00bfCu\\u00e1ntas personas en total, incluyendo al due\\u00f1o (a) del establecimiento y usted mismo trabajan regularmente donde \\u2026 labora?",
     labs = c("De 1 a 10 personas" = 1, "De 11 a 19 personas" = 2, "De 20 a 30 personas" = 3, "De 31 a 50 personas" = 4, "De 51 a 99 personas" = 5, "100 personas y m\\u00e1s" = 6, "No sabe" = 98)
   ),
   TRABAJO_ANTES = list(
@@ -2029,15 +2029,15 @@ de … sin ning\\u00fan tipo de descuento en su empleo secundario? (asalariados)
     labs = c("S\\u00ed" = 1, "No" = 2)
   ),
   TRABAJO_DISTANCIA_TELE_TRABAJO = list(
-    lab = "\\u00bfActualmente ... realiza su trabajo a distancia (teletrabajo)?",
+    lab = "\\u00bfActualmente \\u2026 realiza su trabajo a distancia (teletrabajo)?",
     labs = c("S\\u00ed" = 1, "No" = 2)
   ),
   TRABAJO_SEMANA_PASADA = list(
-    lab = "\\u00bfDurante la semana pasada ... trabaj\\u00f3 por lo menos una hora a cambio de un salario o con fines de generar ingresos en dinero o en especie?",
+    lab = "\\u00bfDurante la semana pasada \\u2026 trabaj\\u00f3 por lo menos una hora a cambio de un salario o con fines de generar ingresos en dinero o en especie?",
     labs = c("S\\u00ed" = 1, "No" = 2)
   ),
   TRANSPORTE_ESPECIE_AP = list(
-    lab = "\\u00bfDurante el mes pasado en su empleo principal ... recibi\\u00f3 pagos en especie por servicio de transporte? (asalariados)",
+    lab = "\\u00bfDurante el mes pasado en su empleo principal \\u2026 recibi\\u00f3 pagos en especie por servicio de transporte? (asalariados)",
     labs = c("S\\u00ed" = 1, "No" = 2)
   ),
   TRANSPORTE_ESPECIE_AP_MONTO = list(
@@ -2047,7 +2047,7 @@ de … sin ning\\u00fan tipo de descuento en su empleo secundario? (asalariados)
     lab = "Trimestre de la encuesta"
   ),
   TURNO_HABITUAL_TRABAJO = list(
-    lab = "El turno o jornada habitual de trabajo de … es: (ocupaci\\u00f3n principal)",
+    lab = "El turno o jornada habitual de trabajo de \\u2026 es: (ocupaci\\u00f3n principal)",
     labs = c("Ma\\u00f1ana" = 1, "Ma\\u00f1ana - tarde" = 2, "Ma\\u00f1ana - tarde - noche" = 3, "Tarde" = 4, "Tarde - noche" = 5, "Noche" = 6, "Rotativo" = 7)
   ),
   UBICACION_COCINA = list(
@@ -2055,11 +2055,11 @@ de … sin ning\\u00fan tipo de descuento en su empleo secundario? (asalariados)
     labs = c("Dentro" = 1, "Fuera" = 2, "No tiene" = 3)
   ),
   UBICACION_EMPRESA = list(
-    lab = "\\u00bfD\\u00f3nde ... realiza principalmente su trabajo?",
+    lab = "\\u00bfD\\u00f3nde \\u2026 realiza principalmente su trabajo?",
     labs = c("En un local, oficina, f\\u00e1brica o industria" = 1, "En una obra en construcci\\u00f3n" = 2, "En la vivienda o local anexo o en la vivienda del socio o patr\\u00f3n (incluye patio y jard\\u00edn)" = 3, "A domicilio o en local de los clientes" = 4, "En un puesto fijo en la calle" = 5, "M\\u00f3vil, callejero, ambulante" = 6, "En el campo, finca o conuco" = 7, "En veh\\u00edculo terrestre o mar\\u00edtimo para transporte de personas o mercader\\u00edas" = 8, "Otro (especifique)" = 99)
   ),
   UBICACION_EMPRESA_ESP = list(
-    lab = "\\u00bfD\\u00f3nde ... realiza principalmente su trabajo?: Otro (especifique)"
+    lab = "\\u00bfD\\u00f3nde \\u2026 realiza principalmente su trabajo?: Otro (especifique)"
   ),
   ULTIMO_ANO_APROBADO = list(
     lab = "\\u00bfCu\\u00e1l es el \\u00faltimo a\\u00f1o o curso que aprob\\u00f3?"
@@ -2068,14 +2068,14 @@ de … sin ning\\u00fan tipo de descuento en su empleo secundario? (asalariados)
     lab = "Unidad primaria de muestreo"
   ),
   UTILIDAD_EMPRESARIAL_AP = list(
-    lab = "\\u00bfDurante los \\u00faltimos 12 meses, en el empleo principal ... recibi\\u00f3 utilidades empresariales? (asalariados)",
+    lab = "\\u00bfDurante los \\u00faltimos 12 meses, en el empleo principal \\u2026 recibi\\u00f3 utilidades empresariales? (asalariados)",
     labs = c("S\\u00ed" = 1, "No" = 2)
   ),
   UTILIDAD_EMPRESARIAL_AP_MONTO = list(
     lab = "Monto recibido por utilidades empresariales durante los \\u00faltimos 12 meses, en empleo principal (asalariados)"
   ),
   VACACIONES_AP = list(
-    lab = "\\u00bfDurante los \\u00faltimos 12 meses, en el empleo principal ... recibi\\u00f3 vacaciones bonificadas? (asalariados)",
+    lab = "\\u00bfDurante los \\u00faltimos 12 meses, en el empleo principal \\u2026 recibi\\u00f3 vacaciones bonificadas? (asalariados)",
     labs = c("S\\u00ed" = 1, "No" = 2)
   ),
   VACACIONES_AP_MONTO = list(
@@ -2085,7 +2085,7 @@ de … sin ning\\u00fan tipo de descuento en su empleo secundario? (asalariados)
     lab = "N\\u00famero de vivienda"
   ),
   VIVIENDA_ESPECIE_AP = list(
-    lab = "\\u00bfDurante el mes pasado en su empleo principal ... recibi\\u00f3 pagos en especie por vivienda? (asalariados)",
+    lab = "\\u00bfDurante el mes pasado en su empleo principal \\u2026 recibi\\u00f3 pagos en especie por vivienda? (asalariados)",
     labs = c("S\\u00ed" = 1, "No" = 2)
   ),
   VIVIENDA_ESPECIE_AP_MONTO = list(
@@ -2128,7 +2128,7 @@ dict1 <- list(
     lab = "Nivel de hacinamiento del hogar"
   ),
   icv_siuben = list(
-    lab = "Índice de Calidad de Vida 2A (ICV 2A) del SIUBEN",
+    lab = "\\u00cdndice de Calidad de Vida 2A (ICV 2A) del SIUBEN",
     labs = c("ICV 1" = 1, "ICV 2" = 2, "ICV 3" = 3, "ICV 4" = 4)
   ),
   matriculacion_escolar = list(

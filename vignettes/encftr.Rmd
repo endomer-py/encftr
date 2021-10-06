@@ -16,7 +16,7 @@ knitr::opts_chunk$set(
 
 "_El objetivo general de la Encuesta Nacional Continua de Fuerza de Trabajo (ENCFT) consiste en proporcionar información estadística amplia y precisa sobre las distintas variables laborales, sociodemográficas y económicas que permita caracterizar y analizar la dinámica y heterogeneidad del mercado de trabajo en la República Dominicana y por consiguiente fortalecer y mejorar el diseño y formulación de las políticas y programas socio laborales del país. Además, tiene el propósito de dar seguimiento a la estimación de la pobreza monetaria estimada a través del ingreso de los hogares y las líneas oficiales de pobreza consensuadas para medir la misma en el país._" (BCRD, 2016)
 
-A continuación, se presentan una tabla resumen con algunos detalles de interés acerca de la encuesta. Para mayor especificiada consulta el [Diseño muestral](https://github.com/endomer/encftr/tree/master/Files)  y el [Manual del Encuestador](https://github.com/endomer/encftr/tree/master/Files). También están disponibles las [Presetaciones de lanzamiento](https://github.com/endomer/encftr/tree/master/Files) de la encuesta donde además podrás encontrar la forma correcta de realizar algunos cálculos, aunque la mayoría, sino todos, ya se encuentran implementados en las funciones de esta librería.
+A continuación, se presentan una tabla resumen con algunos detalles de interés acerca de la encuesta. Para mayor especificidad consulta el [Diseño muestral](https://github.com/endomer/encftr/tree/master/Files)  y el [Manual del Encuestador](https://github.com/endomer/encftr/tree/master/Files). También están disponibles las [Presetaciones de lanzamiento](https://github.com/endomer/encftr/tree/master/Files) de la encuesta donde además podrás encontrar la forma correcta de realizar algunos cálculos, aunque la mayoría, sino todos, ya se encuentran implementados en las funciones de esta librería.
 
 |Especificaciones del Diseño					              |Encuesta Nacional Continua de Fuerza de Trabajo (ENCFT)                                                                                                   |
 |---------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -53,7 +53,7 @@ library(encftr)
 library(dplyr)
 ```
 
-Para mostrar algunas funcionalidades de la librería utilizaremos un pequeña data.frame que simulará los datos de la encuesta. El archivo tiene la siguiente estructura.
+Para mostrar algunas funcionalidades de la librería utilizaremos un pequeño data.frame que simulará los datos de la encuesta. El archivo tiene la siguiente estructura.
 ```{r}
 encft <- encftr::encft
 glimpse(encft)
@@ -90,7 +90,7 @@ encft %>%
   )
 ```
 
-En el primer caso, que usa el factor trimestral, el total poblacional está resultando en más de 40 millones de personas, mientras que en el segundo caso optenemos un total representativo de 10 millones aproximadamente.
+En el primer caso, que usa el factor trimestral, el total poblacional está resultando en más de 40 millones de personas, mientras que en el segundo caso obtenemos un total representativo de 10 millones aproximadamente.
 
 También puedes asignar y utilizar etiquetas de datos para la variables. Lea más sobre las [Etiquetas de datos](https://endomer.github.io/endomer/articles/labels.html) en el ecosistema `endomer`.
 ```{r}
@@ -104,5 +104,5 @@ encft %>%
   ftc_compute_factor_exp_anual() %>% 
   group_by(ANO, SEXO) %>% 
   summarise(sum(factor_exp_anual)) %>% 
-  ftc_useLabels()
+  ftc_use_labels()
 ```
