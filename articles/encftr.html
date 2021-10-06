@@ -44,7 +44,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">encftr</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.1.0.9000</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.5.0</span>
       </span>
     </div>
 
@@ -94,7 +94,7 @@
     
     
 <p>“<em>El objetivo general de la Encuesta Nacional Continua de Fuerza de Trabajo (ENCFT) consiste en proporcionar información estadística amplia y precisa sobre las distintas variables laborales, sociodemográficas y económicas que permita caracterizar y analizar la dinámica y heterogeneidad del mercado de trabajo en la República Dominicana y por consiguiente fortalecer y mejorar el diseño y formulación de las políticas y programas socio laborales del país. Además, tiene el propósito de dar seguimiento a la estimación de la pobreza monetaria estimada a través del ingreso de los hogares y las líneas oficiales de pobreza consensuadas para medir la misma en el país.</em>” (BCRD, 2016)</p>
-<p>A continuación, se presentan una tabla resumen con algunos detalles de interés acerca de la encuesta. Para mayor especificiada consulta el <a href="https://github.com/endomer/encftr/tree/master/Files">Diseño muestral</a> y el <a href="https://github.com/endomer/encftr/tree/master/Files">Manual del Encuestador</a>. También están disponibles las <a href="https://github.com/endomer/encftr/tree/master/Files">Presetaciones de lanzamiento</a> de la encuesta donde además podrás encontrar la forma correcta de realizar algunos cálculos, aunque la mayoría, sino todos, ya se encuentran implementados en las funciones de esta librería.</p>
+<p>A continuación, se presentan una tabla resumen con algunos detalles de interés acerca de la encuesta. Para mayor especificidad consulta el <a href="https://github.com/endomer/encftr/tree/master/Files">Diseño muestral</a> y el <a href="https://github.com/endomer/encftr/tree/master/Files">Manual del Encuestador</a>. También están disponibles las <a href="https://github.com/endomer/encftr/tree/master/Files">Presetaciones de lanzamiento</a> de la encuesta donde además podrás encontrar la forma correcta de realizar algunos cálculos, aunque la mayoría, sino todos, ya se encuentran implementados en las funciones de esta librería.</p>
 <table class="table">
 <caption><strong>Diseño de Muestra de la Encuesta Nacional Continua de Fuerza de Trabajo (ENCFT)</strong></caption>
 <colgroup>
@@ -207,7 +207,7 @@
 <span class="co">#&gt; The following objects are masked from 'package:base':</span>
 <span class="co">#&gt; </span>
 <span class="co">#&gt;     intersect, setdiff, setequal, union</span></code></pre></div>
-<p>Para mostrar algunas funcionalidades de la librería utilizaremos un pequeña data.frame que simulará los datos de la encuesta. El archivo tiene la siguiente estructura.</p>
+<p>Para mostrar algunas funcionalidades de la librería utilizaremos un pequeño data.frame que simulará los datos de la encuesta. El archivo tiene la siguiente estructura.</p>
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="va">encft</span> <span class="op">&lt;-</span> <span class="fu">encftr</span><span class="fu">::</span><span class="va"><a href="../reference/encft.html">encft</a></span>
 <span class="fu"><a href="https://pillar.r-lib.org/reference/glimpse.html">glimpse</a></span><span class="op">(</span><span class="va">encft</span><span class="op">)</span>
@@ -223,7 +223,7 @@
 <div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="va">res</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/ftc_compute_region.html">ftc_compute_region</a></span><span class="op">(</span><span class="va">encft</span><span class="op">)</span>
 <span class="fu"><a href="https://rdrr.io/r/utils/head.html">head</a></span><span class="op">(</span><span class="va">res</span><span class="op">)</span>
-<span class="co">#&gt; # A tibble: 6 x 6</span>
+<span class="co">#&gt; # A tibble: 6 × 6</span>
 <span class="co">#&gt; # Groups:   TRIMESTRE, ANO, SEXO [1]</span>
 <span class="co">#&gt;   TRIMESTRE   ANO  SEXO ID_PROVINCIA FACTOR_EXPANSION region</span>
 <span class="co">#&gt;       &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;        &lt;dbl&gt;            &lt;dbl&gt;  &lt;dbl&gt;</span>
@@ -239,7 +239,7 @@
 <span class="va">encft</span> <span class="op">%&gt;%</span> 
   <span class="fu"><a href="../reference/ftc_compute_region.html">ftc_compute_region</a></span><span class="op">(</span><span class="op">)</span> <span class="op">%&gt;%</span> 
   <span class="fu"><a href="https://rdrr.io/r/utils/head.html">head</a></span><span class="op">(</span><span class="op">)</span>
-<span class="co">#&gt; # A tibble: 6 x 6</span>
+<span class="co">#&gt; # A tibble: 6 × 6</span>
 <span class="co">#&gt; # Groups:   TRIMESTRE, ANO, SEXO [1]</span>
 <span class="co">#&gt;   TRIMESTRE   ANO  SEXO ID_PROVINCIA FACTOR_EXPANSION region</span>
 <span class="co">#&gt;       &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;        &lt;dbl&gt;            &lt;dbl&gt;  &lt;dbl&gt;</span>
@@ -254,9 +254,9 @@
 <code class="sourceCode R"><span class="va">encft</span> <span class="op">%&gt;%</span> 
   <span class="fu"><a href="https://dplyr.tidyverse.org/reference/group_by.html">group_by</a></span><span class="op">(</span><span class="va">TRIMESTRE</span><span class="op">)</span> <span class="op">%&gt;%</span> 
   <span class="fu"><a href="https://dplyr.tidyverse.org/reference/summarise.html">summarise</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/sum.html">sum</a></span><span class="op">(</span><span class="va">FACTOR_EXPANSION</span><span class="op">)</span><span class="op">)</span>
-<span class="co">#&gt; # A tibble: 4 x 2</span>
+<span class="co">#&gt; # A tibble: 4 × 2</span>
 <span class="co">#&gt;   TRIMESTRE `sum(FACTOR_EXPANSION)`</span>
-<span class="co">#&gt; *     &lt;dbl&gt;                   &lt;dbl&gt;</span>
+<span class="co">#&gt;       &lt;dbl&gt;                   &lt;dbl&gt;</span>
 <span class="co">#&gt; 1     20161               10039487.</span>
 <span class="co">#&gt; 2     20162               10062657.</span>
 <span class="co">#&gt; 3     20163               10086474.</span>
@@ -270,11 +270,11 @@
     <span class="fu"><a href="https://rdrr.io/r/base/sum.html">sum</a></span><span class="op">(</span><span class="va">FACTOR_EXPANSION</span><span class="op">)</span>,
     <span class="fu"><a href="https://rdrr.io/r/base/sum.html">sum</a></span><span class="op">(</span><span class="va">factor_exp_anual</span><span class="op">)</span>
   <span class="op">)</span>
-<span class="co">#&gt; # A tibble: 1 x 3</span>
+<span class="co">#&gt; # A tibble: 1 × 3</span>
 <span class="co">#&gt;     ANO `sum(FACTOR_EXPANSION)` `sum(factor_exp_anual)`</span>
-<span class="co">#&gt; * &lt;dbl&gt;                   &lt;dbl&gt;                   &lt;dbl&gt;</span>
+<span class="co">#&gt;   &lt;dbl&gt;                   &lt;dbl&gt;                   &lt;dbl&gt;</span>
 <span class="co">#&gt; 1  2016               40298761.               10074690.</span></code></pre></div>
-<p>En el primer caso, que usa el factor trimestral, el total poblacional está resultando en más de 40 millones de personas, mientras que en el segundo caso optenemos un total representativo de 10 millones aproximadamente.</p>
+<p>En el primer caso, que usa el factor trimestral, el total poblacional está resultando en más de 40 millones de personas, mientras que en el segundo caso obtenemos un total representativo de 10 millones aproximadamente.</p>
 <p>También puedes asignar y utilizar etiquetas de datos para la variables. Lea más sobre las <a href="https://endomer.github.io/endomer/articles/labels.html">Etiquetas de datos</a> en el ecosistema <code>endomer</code>.</p>
 <div class="sourceCode" id="cb6"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="va">encft</span> <span class="op">%&gt;%</span> 
@@ -282,7 +282,7 @@
   <span class="fu"><a href="https://dplyr.tidyverse.org/reference/group_by.html">group_by</a></span><span class="op">(</span><span class="va">ANO</span>, <span class="va">SEXO</span><span class="op">)</span> <span class="op">%&gt;%</span> 
   <span class="fu"><a href="https://dplyr.tidyverse.org/reference/summarise.html">summarise</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/sum.html">sum</a></span><span class="op">(</span><span class="va">factor_exp_anual</span><span class="op">)</span><span class="op">)</span>
 <span class="co">#&gt; `summarise()` has grouped output by 'ANO'. You can override using the `.groups` argument.</span>
-<span class="co">#&gt; # A tibble: 2 x 3</span>
+<span class="co">#&gt; # A tibble: 2 × 3</span>
 <span class="co">#&gt; # Groups:   ANO [1]</span>
 <span class="co">#&gt;     ANO  SEXO `sum(factor_exp_anual)`</span>
 <span class="co">#&gt;   &lt;dbl&gt; &lt;dbl&gt;                   &lt;dbl&gt;</span>
@@ -294,14 +294,14 @@
   <span class="fu"><a href="../reference/ftc_compute_factor_exp_anual.html">ftc_compute_factor_exp_anual</a></span><span class="op">(</span><span class="op">)</span> <span class="op">%&gt;%</span> 
   <span class="fu"><a href="https://dplyr.tidyverse.org/reference/group_by.html">group_by</a></span><span class="op">(</span><span class="va">ANO</span>, <span class="va">SEXO</span><span class="op">)</span> <span class="op">%&gt;%</span> 
   <span class="fu"><a href="https://dplyr.tidyverse.org/reference/summarise.html">summarise</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/sum.html">sum</a></span><span class="op">(</span><span class="va">factor_exp_anual</span><span class="op">)</span><span class="op">)</span> <span class="op">%&gt;%</span> 
-  <span class="fu"><a href="../reference/ftc_useLabels.html">ftc_useLabels</a></span><span class="op">(</span><span class="op">)</span>
+  <span class="fu"><a href="../reference/ftc_use_labels.html">ftc_use_labels</a></span><span class="op">(</span><span class="op">)</span>
 <span class="co">#&gt; `summarise()` has grouped output by 'ANO'. You can override using the `.groups` argument.</span>
-<span class="co">#&gt; # A tibble: 2 x 3</span>
+<span class="co">#&gt; # A tibble: 2 × 3</span>
 <span class="co">#&gt; # Groups:   ANO [1]</span>
-<span class="co">#&gt;     ANO SEXO      `sum(factor_exp_anual)`</span>
-<span class="co">#&gt;   &lt;dbl&gt; &lt;fct&gt;                       &lt;dbl&gt;</span>
-<span class="co">#&gt; 1  2016 Masculino                4956106.</span>
-<span class="co">#&gt; 2  2016 Femenino                 5118584.</span></code></pre></div>
+<span class="co">#&gt;     ANO SEXO   `sum(factor_exp_anual)`</span>
+<span class="co">#&gt;   &lt;dbl&gt; &lt;fct&gt;                    &lt;dbl&gt;</span>
+<span class="co">#&gt; 1  2016 Hombre                4956106.</span>
+<span class="co">#&gt; 2  2016 Mujer                 5118584.</span></code></pre></div>
 </div>
   </div>
 
