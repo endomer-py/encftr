@@ -2135,7 +2135,7 @@ dict1 <- list(
     lab = "\\u00bfSe matricul\\u00f3 en un centro educativo este a\\u00f1o?"
   ),
   perceptores_ingresos = list(
-    lab = "Población ocupada perceptora de ingresos",
+    lab = "Poblaci\\u00f3n ocupada perceptora de ingresos",
     labs = c("No" = 0, "Si" = 1)
   ),
   pobreza_zona = list(
