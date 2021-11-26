@@ -26,7 +26,7 @@ ftc_set_labels <- function(tbl, vars = NULL) {
   labeler::set_labels(tbl, vars, encftr::dict)
 }
 ftc_setLabels <- function(tbl, vars = NULL) {
-  deprecate_warn("0.1.1", "encftr::ftc_SetLabels", "ftc_set_labels()")
+  deprecate_warn("0.1.1", "encftr::ftc_SetLabels()", "ftc_set_labels()")
   ftc_set_labels(tbl, vars)
 }
 
@@ -57,7 +57,7 @@ ftc_use_labels <- function(tbl, vars = NULL) {
   labeler::use_labels(tbl, vars, encftr::dict)
 }
 ftc_useLabels <- function(tbl, vars = NULL) {
-  deprecate_warn("0.1.1", "encftr::ftc_useLabels", "ftc_use_labels()")
+  deprecate_warn("0.1.1", "encftr::ftc_useLabels()", "ftc_use_labels()")
   ftc_use_labels(tbl, vars)
 }
 

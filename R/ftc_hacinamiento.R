@@ -20,9 +20,9 @@
 #'
 #' @examples
 #' \dontrun{
-#' encft <- ftc_compute_hacinamiento(encft)
+#' encft <- ftc_hacinamiento(encft)
 #' }
-ftc_compute_hacinamiento <- function(tbl, breaks = NULL, labels = NULL) {
+ftc_hacinamiento <- function(tbl, breaks = NULL, labels = NULL) {
   TRIMESTRE <- NULL
   VIVIENDA <- NULL
   CANT_DORMITORIOS_VIVIENDA <- NULL
@@ -38,4 +38,12 @@ ftc_compute_hacinamiento <- function(tbl, breaks = NULL, labels = NULL) {
   }
 
   tbl
+}
+
+
+#' @rdname ftc_hacinamiento
+#' @export
+ftc_compute_hacinamiento_ <- function(tbl, breaks = NULL, labels = NULL) {
+  deprecate_warn("0.5.0", "ftc_compute_hacinamiento()", "ftc_hacinamiento()")
+  ftc_hacinamiento(tbl, breaks, labels)
 }

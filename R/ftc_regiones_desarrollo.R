@@ -13,9 +13,9 @@
 #'
 #' @examples
 #' \dontrun{
-#'   encft <- ftc_compute_region(encft)
+#'   encft <- ftc_regiones_desarrollo(encft)
 #' }
-ftc_compute_region <- function(tbl){
+ftc_regiones_desarrollo <- function(tbl){
   ID_PROVINCIA <- NULL
   tbl %>%
     dplyr::mutate(
@@ -32,4 +32,10 @@ ftc_compute_region <- function(tbl){
         ID_PROVINCIA %in% c(1, 32) ~ 10
       )
     )
+}
+#' @rdname ftc_regiones_desarrollo
+#' @export
+ftc_compute_region <- function(tbl) {
+  deprecate_warn("0.5.0", "ftc_compute_region()", "ftc_regiones_desarrollo()")
+  ftc_regiones_desarrollo(tbl)
 }

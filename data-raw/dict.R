@@ -744,7 +744,41 @@ descontar los gastos exclusivos de la producci\\u00f3n o negocio? (ocupaci\\u00f
     lab = "ID del miembro del hogar"
   ),
   ID_PROVINCIA = list(
-    lab = "N\\u00famero de provincia de residencia"
+    lab = "N\\u00famero de provincia de residencia",
+    labs = c(
+      "Distrito Nacional" = 1,
+      "Azua" = 2,
+      "Bahoruco" = 3,
+      "Barahona" = 4,
+      "Dajab\\u00f3n" = 5,
+      "Duarte" = 6,
+      "El\\u00edas Pi\\u00f1a" = 7,
+      "El Seibo" = 8,
+      "Espaillat" = 9,
+      "Independencia" = 10,
+      "La Altagracia" = 11,
+      "La Romana" = 12,
+      "La Vega" = 13,
+      "Mar\\u00eda Trinidad S\\u00e1nchez" = 14,
+      "Monte Cristi" = 15,
+      "Pedernales" = 16,
+      "Peravia" = 17,
+      "Puerto Plata" = 18,
+      "Salcedo" = 19,
+      "Saman\\u00e1" = 20,
+      "San Crist\\u00f3bal" = 21,
+      "San Juan" = 22,
+      "San Pedro de Macor\\u00eds" = 23,
+      "S\\u00e1nchez Ram\\u00edrez" = 24,
+      "Santiago" = 25,
+      "Santiago Rodr\\u00edguez" = 26,
+      "Valverde" = 27,
+      "Monse\\u00f1or Nouel" = 28,
+      "Monte Plata" = 29,
+      "Hato Mayor" = 30,
+      "San Jos\\u00e9 de Ocoa" = 31,
+      "Santo Domingo" = 32
+    )
   ),
   INACTIVO = list(
     lab = "Poblaci\\u00f3n fuera de la fuerza de trabajo (inactivos)",
@@ -2121,6 +2155,10 @@ dict1 <- list(
   factor_exp_anual = list(
     lab = "Factor de expansi\\u00f3n anual"
   ),
+  fuerza_trabajo_potencial = list(
+    lab = "Fuerza de trabajo potencial",
+    labs = c("Fuerza de trabajo potencia" = 1, "Fuera de la fuerza de trabajo potencial" = 0)
+  ),
   grupos_edad = list(
     lab = "Grupos de edad"
   ),
@@ -2165,6 +2203,10 @@ dict1 <- list(
   region = list(
     lab = "Regiones de desarrollo",
     labs = c('Cibao Norte' = 1, 'Cibao Sur' = 2, 'Cibao Nordeste' = 3, 'Cibao Noroeste' = 4, 'Valdesia' = 5, 'Enriquillo' = 6, 'El Valle' = 7, 'Yuma' = 8, 'Higuamo' = 9, 'Ozama o Metropolitana' = 10)
+  ),
+  sexo_jefe = list(
+    lab = "Sexo del jefe de hogar",
+    labs = c("Hombre" = 1, "Mujer" = 2)
   ),
   tasa_alfabetizacion_hogar = list(
     lab = "Tasa de alfabetizacion del hogar"

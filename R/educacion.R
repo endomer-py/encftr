@@ -17,9 +17,9 @@
 #'
 #' @examples
 #' \dontrun{
-#' encft <- ftc_compute_tasa_alfabetizacion_hogar(encft)
+#' encft <- ftc_tasa_alfabetizacion_hogar(encft)
 #' }
-ftc_compute_tasa_alfabetizacion_hogar <- function(tbl, min_edad = 0, max_edad = Inf){
+ftc_tasa_alfabetizacion_hogar <- function(tbl, min_edad = 0, max_edad = Inf){
   TRIMESTRE <- NULL
   VIVIENDA <- NULL
   HOGAR <- NULL
@@ -39,6 +39,14 @@ ftc_compute_tasa_alfabetizacion_hogar <- function(tbl, min_edad = 0, max_edad = 
     ) %>%
     dplyr::ungroup() %>%
     dplyr::select(-alfabetizacion)
+}
+
+# make a function rename
+#' @rdname ftc_tasa_alfabetizacion_hogar
+#' @export
+ftc_compute_tasa_alfabetizacion_hogar <- function(tbl, min_edad = 0, max_edad = Inf){
+  deprecate_warn("0.5.0", "ftc_compute_tasa_alfabetizacion_hogar()", "ftc_tasa_alfabetizacion_hogar()")
+  ftc_tasa_alfabetizacion_hogar(tbl, min_edad, max_edad)
 }
 
 
@@ -66,9 +74,9 @@ ftc_compute_tasa_alfabetizacion_hogar <- function(tbl, min_edad = 0, max_edad = 
 #'
 #' @examples
 #' \dontrun{
-#'   encft <- ftc_compute_sobreedad_escolar(encft)
+#'   encft <- ftc_sobreedad_escolar(encft)
 #' }
-ftc_compute_sobreedad_escolar <- function(tbl, nrezagos = 2){
+ftc_sobreedad_escolar <- function(tbl, nrezagos = 2){
   tbl %>%
     ftc_compute_anos_educacion() %>%
     dplyr::mutate(
@@ -77,6 +85,15 @@ ftc_compute_sobreedad_escolar <- function(tbl, nrezagos = 2){
         dplyr::between(NIVEL_SE_MATRICULO, 2, 4) ~ 0
       )
     )
+}
+
+
+# make a function rename
+#' @rdname ftc_sobreedad_escolar
+#' @export
+ftc_compute_sobreedad_escolar <- function(tbl, nrezagos = 2){
+  deprecate_warn("0.5.0", "ftc_compute_sobreedad_escolar()", "ftc_sobreedad_escolar()")
+  ftc_compute_sobreedad_escolar(tbl, nrezagos)
 }
 
 
@@ -105,17 +122,17 @@ ftc_compute_sobreedad_escolar <- function(tbl, nrezagos = 2){
 #' @examples
 #'   encft <- data.frame(EDAD = c(10, 12, 9), NIVEL_SE_MATRICULO = c(2, 9, 9),
 #'                       MES = c(1, 4, 7), PORQUE_NO_ESTUDIA = c(3, 7, 1))
-#'  ftc_compute_matriculacion_escolar(encft)
-#'  ftc_compute_matriculacion_escolar(encft, summer_fix = TRUE)
-ftc_compute_matriculacion_escolar <- function(tbl, min_edad = 6, max_edad = 17, summer_fix = FALSE){
+#'  ftc_matriculacion_escolar(encft)
+#'  ftc_matriculacion_escolar(encft, summer_fix = TRUE)
+ftc_matriculacion_escolar <- function(tbl, min_edad = 6, max_edad = 17, summer_fix = FALSE){
   EDAD <- NULL
   NIVEL_SE_MATRICULO <- NULL
   PORQUE_NO_ESTUDIA <- NULL
   if(min_edad > max_edad){
-    stop(glue::glue("ftc_compute_matriculacion_escolar: Edad m\u00EDnima ({min_edad}) mayor que edad m\u00E1xima ({max_edad})"))
+    stop(glue::glue("ftc_matriculacion_escolar: Edad m\u00EDnima ({min_edad}) mayor que edad m\u00E1xima ({max_edad})"))
   }
   if(min_edad < 3){
-    warning("ftc_compute_matriculacion_escolar: La encuesta solo recoge informaci\u00F3n educativa para miembros mayores de 2 a\u00F1os.")
+    warning("ftc_matriculacion_escolar: La encuesta solo recoge informaci\u00F3n educativa para miembros mayores de 2 a\u00F1os.")
   }
   tbl %>%
     dplyr::mutate(
@@ -125,6 +142,14 @@ ftc_compute_matriculacion_escolar <- function(tbl, min_edad = 6, max_edad = 17, 
         dplyr::between(EDAD, min_edad, max_edad) ~ 0
       )
     )
+}
+
+
+#' @rdname ftc_matriculacion_escolar
+#' @export
+ftc_compute_matriculacion_escolar <- function(tbl, min_edad = 6, max_edad = 17, summer_fix = FALSE){
+  deprecate_warn("0.5.0", "ftc_compute_matriculacion_escolar_summer_fix()", "ftc_matriculacion_escolar()")
+  ftc_matriculacion_escolar(tbl, min_edad, max_edad, summer_fix = FALSE)
 }
 
 
@@ -143,7 +168,6 @@ ftc_compute_matriculacion_escolar <- function(tbl, min_edad = 6, max_edad = 17, 
 #'   la asistencia escolar
 #' @param summer_fix [logical]: Indica si se ajusta por las personas que están
 #'   esperando el inicio de un nuevo año escolar.
-#' @param ... Not in use
 #'
 #' @return Los datos suministrados en el input \code{tbl} con la variable
 #'   \code{asistencia_escolar} adicionada.
@@ -179,7 +203,11 @@ ftc_asistencia_escolar <- function(tbl, min_edad = 6, max_edad = 17, summer_fix 
 
 #' @rdname ftc_asistencia_escolar
 #' @export
-ftc_compute_asistencia_escolar <- function(...) ftc_asistencia_escolar(...)
+ftc_compute_asistencia_escolar <- function(tbl, min_edad = 6, max_edad = 17, summer_fix = FALSE){
+  deprecate_warn("0.5.0", "ftc_compute_asistencia_escolar()", "ftc_asistencia_escolar()")
+  ftc_asistencia_escolar(tbl, min_edad, max_edad, summer_fix)
+}
+
 
 #' Años de educación
 #'
@@ -199,9 +227,9 @@ ftc_compute_asistencia_escolar <- function(...) ftc_asistencia_escolar(...)
 #'
 #' @examples
 #' \dontrun{
-#'   encft <- ftc_compute_anos_educacion(encft)
+#'   encft <- ftc_anos_educacion(encft)
 #' }
-ftc_compute_anos_educacion <- function(tbl, breaks = NULL, labels = NULL) {
+ftc_anos_educacion <- function(tbl, breaks = NULL, labels = NULL) {
   EDAD <- NULL
   ULTIMO_ANO_APROBADO <- NULL
   anos_educacion <- NULL
@@ -227,6 +255,14 @@ ftc_compute_anos_educacion <- function(tbl, breaks = NULL, labels = NULL) {
 }
 
 
+#' @rdname ftc_anos_educacion
+#' @export
+ftc_compute_anos_educacion <- function(tbl, breaks = NULL, labels = NULL) {
+  deprecate_warn("0.5.0", "ftc_compute_anos_educacion()", "ftc_anos_educacion()")
+  ftc_anos_educacion(tbl, breaks, labels)
+}
+
+
 
 #' Alfabetización de la población
 #'
@@ -247,9 +283,9 @@ ftc_compute_anos_educacion <- function(tbl, breaks = NULL, labels = NULL) {
 #'
 #' @examples
 #' \dontrun{
-#' encft <- ftc_compute_alfabetizacion(encft)
+#' encft <- ftc_alfabetizacion(encft)
 #' }
-ftc_compute_alfabetizacion <- function(tbl, min_edad = 0, max_edad = Inf){
+ftc_alfabetizacion <- function(tbl, min_edad = 0, max_edad = Inf){
   SABE_LEER_ESCRIBIR <- NULL
   EDAD <- NULL
   if(min_edad > max_edad){
@@ -262,4 +298,12 @@ ftc_compute_alfabetizacion <- function(tbl, min_edad = 0, max_edad = Inf){
         dplyr::between(EDAD, min_edad, max_edad) ~ 0
       )
     )
+}
+
+
+#' @rdname ftc_alfabetizacion
+#' @export
+ftc_compute_alfabetizacion <- function(tbl, min_edad = 0, max_edad = Inf){
+  deprecate_warn("0.5.0", "ftc_compute_alfabetizacion()", "ftc_alfabetizacion()")
+  ftc_compute_alfabetizacion(tbl, min_edad, max_edad)
 }
