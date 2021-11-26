@@ -2,12 +2,12 @@
 % Please edit documentation in R/ftc_hacinamiento.R
 \name{ftc_hacinamiento}
 \alias{ftc_hacinamiento}
-\alias{ftc_compute_hacinamiento_}
+\alias{ftc_compute_hacinamiento}
 \title{Nivel de hacinamiento del hogar}
 \usage{
 ftc_hacinamiento(tbl, breaks = NULL, labels = NULL)
 
-ftc_compute_hacinamiento_(tbl, breaks = NULL, labels = NULL)
+ftc_compute_hacinamiento(tbl, breaks = NULL, labels = NULL)
 }
 \arguments{
 \item{tbl}{\link{data.frame}: Conexión a base de datos o data.frame con los datos}

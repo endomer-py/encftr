@@ -43,7 +43,7 @@ ftc_hacinamiento <- function(tbl, breaks = NULL, labels = NULL) {
 
 #' @rdname ftc_hacinamiento
 #' @export
-ftc_compute_hacinamiento_ <- function(tbl, breaks = NULL, labels = NULL) {
+ftc_compute_hacinamiento <- function(tbl, breaks = NULL, labels = NULL) {
   deprecate_warn("0.5.0", "ftc_compute_hacinamiento()", "ftc_hacinamiento()")
   ftc_hacinamiento(tbl, breaks, labels)
 }
