@@ -53,11 +53,12 @@ ftc_setLabels <- function(tbl, vars = NULL) {
 #'   encft
 #'   ftc_useLabels(encft)
 #'}
-ftc_use_labels <- function(tbl, vars = NULL) {
-  labeler::use_labels(tbl, vars, encftr::dict)
+ftc_use_labels <- function(tbl, vars = NULL, dict = encftr::dict, ...) {
+  labeler::use_labels(tbl, vars, dict, ...)
 }
-ftc_useLabels <- function(tbl, vars = NULL) {
+
+ftc_useLabels <- function(tbl, vars = NULL, dict = encftr::dict, ...) {
   deprecate_warn("0.1.1", "encftr::ftc_useLabels()", "ftc_use_labels()")
-  ftc_use_labels(tbl, vars)
+  ftc_use_labels(tbl, vars, dict, ...)
 }
 

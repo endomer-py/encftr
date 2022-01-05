@@ -16,7 +16,7 @@ knitr::opts_chunk$set(
 
 "_El objetivo general de la Encuesta Nacional Continua de Fuerza de Trabajo (ENCFT) consiste en proporcionar información estadística amplia y precisa sobre las distintas variables laborales, sociodemográficas y económicas que permita caracterizar y analizar la dinámica y heterogeneidad del mercado de trabajo en la República Dominicana y por consiguiente fortalecer y mejorar el diseño y formulación de las políticas y programas socio laborales del país. Además, tiene el propósito de dar seguimiento a la estimación de la pobreza monetaria estimada a través del ingreso de los hogares y las líneas oficiales de pobreza consensuadas para medir la misma en el país._" (BCRD, 2016)
 
-A continuación, se presentan una tabla resumen con algunos detalles de interés acerca de la encuesta. Para mayor especificidad consulta el [Diseño muestral](https://github.com/endomer/encftr/tree/master/Files)  y el [Manual del Encuestador](https://github.com/endomer/encftr/tree/master/Files). También están disponibles las [Presetaciones de lanzamiento](https://github.com/endomer/encftr/tree/master/Files) de la encuesta donde además podrás encontrar la forma correcta de realizar algunos cálculos, aunque la mayoría, sino todos, ya se encuentran implementados en las funciones de esta librería.
+A continuación, se presentan una tabla resumen con algunos detalles de interés acerca de la encuesta. Para mayor especificidad consulta el [Diseño muestral](https://github.com/endomer/encftr/tree/master/Files), el [Manual del Encuestador](https://github.com/endomer/encftr/tree/master/Files) y el [Boletín informativo No. I de la ENFT](https://github.com/endomer/encftr/tree/master/Files). También están disponibles las [Presetaciones de lanzamiento](https://github.com/endomer/encftr/tree/master/Files) de la encuesta donde además podrás encontrar la forma correcta de realizar algunos cálculos, aunque la mayoría, sino todos, ya se encuentran implementados en las funciones de esta librería.
 
 |Especificaciones del Diseño					              |Encuesta Nacional Continua de Fuerza de Trabajo (ENCFT)                                                                                                   |
 |---------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -44,7 +44,7 @@ Table: **Diseño de Muestra de la Encuesta Nacional Continua de Fuerza de Trabaj
 
 ### ¿Dónde puedo conseguir los datos de la encuesta? {-}
 
-Para conseguir los datos de la encuesta es necesario hacer una solicitud vía correo electrónico al Banco Central de la República Dominicana.
+Para conseguir los datos de la encuesta es necesario hacer una solicitud vía correo electrónico a la Oficina de Libre Acceso a la Información Pública del Banco Central de la República Dominicana.
 
 ## Algunos cruces básicos y detalles finales utilizando la librería
 
@@ -61,16 +61,6 @@ glimpse(encft)
 
 
 Para el procesamiento de la encuesta puedes utilizar las funiones suministradas de la forma convencional o utilizar operadores pipe como ` %>%`.
-```{r}
-res <- ftc_compute_region(encft)
-head(res)
-
-
-
-encft %>% 
-  ftc_compute_region() %>% 
-  head()
-```
 
 Como se mencionó antes la ENCFT es una encuestra trimestral por lo que el factor de expansión<!-- ^[Si quieres leer sobre como trabajar con datos de encuesta en R. Lee la siguiente publicación: []()] --> es trimestral.
 ```{r}
@@ -90,9 +80,9 @@ encft %>%
   )
 ```
 
-En el primer caso, que usa el factor trimestral, el total poblacional está resultando en más de 40 millones de personas, mientras que en el segundo caso obtenemos un total representativo de 10 millones aproximadamente.
+En el primer caso, que usa el factor trimestral, por lo que el total poblacional está resultando en más de 40 millones de personas, mientras que en el segundo caso obtenemos un total representativo de 10 millones aproximadamente.
 
-También puedes asignar y utilizar etiquetas de datos para la variables. Lea más sobre las [Etiquetas de datos](https://endomer.github.io/endomer/articles/labels.html) en el ecosistema `endomer`.
+También puedes asignar y utilizar etiquetas de datos para la variables. Lea más sobre las [Etiquetas de datos en R](https://adatar-do.github.io/labeler/articles/labels.html).
 ```{r}
 encft %>% 
   ftc_compute_factor_exp_anual() %>% 

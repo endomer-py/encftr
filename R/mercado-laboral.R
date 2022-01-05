@@ -235,3 +235,32 @@ ftc_tiempo_total_empleo_anos <- function(tbl) {
       tiempo_total_empleo_anos = tiempo_total_empleo_meses / 12
     )
 }
+
+
+
+
+ftc_grupo_rama_pib <- function(tbl) {
+    tbl %>%
+        mutate(
+            grupo_rama_pib = dplyr::case_when(
+                dplyr::between(RAMA_PRINCIPAL_COD, 111, 322) ~ 1,
+                dplyr::between(RAMA_PRINCIPAL_COD, 510, 990) ~ 2,
+                dplyr::between(RAMA_PRINCIPAL_COD, 1010, 3320) &
+                CATEGORIA_PRINCIPAL == 4 ~ 3,
+                dplyr::between(RAMA_PRINCIPAL_COD, 1010, 3320) &
+                CATEGORIA_PRINCIPAL != 4 ~ 4,
+                dplyr::between(RAMA_PRINCIPAL_COD, 3510, 3900) ~ 5,
+                dplyr::between(RAMA_PRINCIPAL_COD, 4100, 4390) ~ 6,
+                dplyr::between(RAMA_PRINCIPAL_COD, 4510, 4799) ~ 7,
+                dplyr::between(RAMA_PRINCIPAL_COD, 4911, 5320) ~ 8,
+                dplyr::between(RAMA_PRINCIPAL_COD, 5510, 5630) ~ 9,
+                dplyr::between(RAMA_PRINCIPAL_COD, 5811, 6399) ~ 10,
+                dplyr::between(RAMA_PRINCIPAL_COD, 6411, 6630) ~ 11,
+                dplyr::between(RAMA_PRINCIPAL_COD, 6810, 8299) ~ 15,
+                dplyr::between(RAMA_PRINCIPAL_COD, 8411, 8430) ~ 12,
+                dplyr::between(RAMA_PRINCIPAL_COD, 8510, 8550) ~ 13,
+                dplyr::between(RAMA_PRINCIPAL_COD, 8610, 8890) ~ 14,
+                dplyr::between(RAMA_PRINCIPAL_COD, 9000, 9900) ~ 15
+            )
+        )
+}

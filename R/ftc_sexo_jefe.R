@@ -19,9 +19,11 @@ ftc_sexo_jefe <- function(tbl){
     PARENTESCO <- NULL
     sexo_jefe <- NULL
     tbl %>%
+    dplyr::mutate(
+        sexo_jefe = dplyr::case_when(PARENTESCO == 1 ~ SEXO)
+    ) %>%
     dplyr::group_by(PERIODO, VIVIENDA, HOGAR) %>%
     dplyr::mutate(
-        sexo_jefe = dplyr::case_when(PARENTESCO == 1 ~ SEXO),
         sexo_jefe = min(sexo_jefe, na.rm = TRUE)
     ) %>%
     dplyr::ungroup()

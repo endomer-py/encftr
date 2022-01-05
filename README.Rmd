@@ -53,8 +53,12 @@ remotes::install_github("endomer/encftr")
 1. Completar el diccionario.
 
 ```{r echo=FALSE, message=FALSE}
+#devtools::load_all("G:/My Drive/Projects/labeler/")
+#devtools::load_all("G:/My Drive/Projects/Dmisc/")
+
 source("data-raw/dict.R")
 Dmisc::progress_bar(length(dict), 603+length(dict1))
+
 rm(dict, dict0, dict1)
 ```
 

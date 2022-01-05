@@ -236,11 +236,11 @@ ftc_anos_educacion <- function(tbl, breaks = NULL, labels = NULL) {
   tbl <- tbl %>%
     dplyr::mutate(
       anos_educacion = dplyr::case_when(
-        EDAD >= 3 & NIVEL_SE_MATRICULO %in% c(0, 1, 9, 10) ~ 0,
-        EDAD >= 3 & NIVEL_SE_MATRICULO == 2 ~ ULTIMO_ANO_APROBADO,
-        EDAD >= 3 & NIVEL_SE_MATRICULO %in% c(3, 4) ~ 8 + ULTIMO_ANO_APROBADO,
-        EDAD >= 3 & NIVEL_SE_MATRICULO == 5 ~ 12 + ULTIMO_ANO_APROBADO,
-        EDAD >= 3 & NIVEL_SE_MATRICULO %in% c(6, 7, 8) ~ 16 + ULTIMO_ANO_APROBADO
+        NIVEL_ULTIMO_ANO_APROBADO %in% c(0, 1, 9, 10) ~ 0,
+        NIVEL_ULTIMO_ANO_APROBADO == 2 ~ ULTIMO_ANO_APROBADO,
+        NIVEL_ULTIMO_ANO_APROBADO %in% c(3, 4) ~ 8 + ULTIMO_ANO_APROBADO,
+        NIVEL_ULTIMO_ANO_APROBADO == 5 ~ 12 + ULTIMO_ANO_APROBADO,
+        NIVEL_ULTIMO_ANO_APROBADO %in% c(6, 7, 8) ~ 16 + ULTIMO_ANO_APROBADO
       )
     )
 

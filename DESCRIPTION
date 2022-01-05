@@ -1,11 +1,13 @@
 Package: encftr
 Title: Funciones para trabajar con la ENCFT
-Version: 0.6.1
+Version: 0.7.0
 Authors@R: 
-    person(given = "Daniel E.",
+    c(person(given = "Daniel E.",
            family = "de la Rosa",
            role = c("aut", "cre"),
-           email = "drdsdaniel@gmail.com")
+           email = "drdsdaniel@gmail.com"),
+    person(given = "Adatar",
+           role = "cph"))
 Description: Este paquete contiene funciones para trabajar con los datos de la 
   Encuesta Nacional Continua de Fuerza de Trabajo (ENCFT) del Banco Central de
   la República Dominicana.
