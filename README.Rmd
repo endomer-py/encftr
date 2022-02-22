@@ -19,12 +19,12 @@ source("contributors.R")
 <!-- badges: start -->
 [![Project Status: WIP – Initial development is in progress, but there has not yet been a stable, usable release suitable for the public.](https://www.repostatus.org/badges/latest/wip.svg)](https://www.repostatus.org/#wip)
 [![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
-[![R build status](https://github.com/endomer/encftr/workflows/R-CMD-check/badge.svg)](https://github.com/endomer/encftr/actions)
-[![Codecov test coverage](https://codecov.io/gh/endomer/encftr/branch/master/graph/badge.svg)](https://codecov.io/gh/endomer/encftr?branch=master)
+[![R build status](https://github.com/endomer-py/encftr/workflows/R-CMD-check/badge.svg)](https://github.com/endomer-py/encftr/actions)
+[![Codecov test coverage](https://codecov.io/gh/endomer-py/encftr/branch/master/graph/badge.svg)](https://codecov.io/gh/endomer-py/encftr?branch=master)
 [![CRAN status](https://www.r-pkg.org/badges/version/encftr)](https://CRAN.R-project.org/package=encftr)
 <!-- badges: end -->
 
-`encftr` es una interfaz para trabajar con la base de datos de la Encuesta Nacional Continua de Fuerza de Trabajo (ENCFT) en R. Este paquete es parte de [endomer](https://endomer.github.io/) un proyecto de código abierto que busca ofrecer interfaces en R para las principales encuestas de la República Dominicana.
+`encftr` es una interfaz para trabajar con la base de datos de la Encuesta Nacional Continua de Fuerza de Trabajo (ENCFT) en R. Este paquete es parte de [endomer-py](https://endomer-py.github.io/) un proyecto de código abierto que busca ofrecer interfaces en R para las principales encuestas de la República Dominicana.
 
 ## Instalación
 
@@ -36,7 +36,7 @@ source("contributors.R")
 <!-- install.packages("encftr") -->
 <!-- ``` -->
 
-Pero puedes intalar la versión de desarrollo desde [GitHub](https://github.com/) con:
+Pero puedes instalar la versión de desarrollo desde [GitHub](https://github.com/) con:
 
 ``` r
 tryCatch(
@@ -45,7 +45,7 @@ tryCatch(
     install.packages('remotes')
   }
 )
-remotes::install_github("endomer/encftr")
+remotes::install_github("endomer-py/encftr")
 ```
 
 ## Roadmap
@@ -72,7 +72,7 @@ rm(dict, dict0, dict1)
 
 Tienes comentarios o quieres contribuir?
 
-Por favor, revisa las [gias de contribución (en inglés)](https://endomer.github.io/encftr/CONTRIBUTING.html).
+Por favor, revisa las [gias de contribución (en inglés)](https://endomer-py.github.io/encftr/CONTRIBUTING.html).
 
 Ten en cuenta que el proyecto `encftr` está sujeto a un [Código del contribuyente](https://contributor-covenant.org/es/version/2/0/CODE_OF_CONDUCT.html). Contribuyendo con el proyecto aceptas los términos y condiciones.
 

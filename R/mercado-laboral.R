@@ -138,8 +138,8 @@ ftc_compute_trabajo_infantil <- function(...) ftc_trabajo_infantil(...)
 
 
 #' Calcula la condición de Fuerza de Trabajo Potencial
-#' 
-#'   Comprende las personas que buscan trabajo pero no están disponible para trabajar, 
+#'
+#'   Comprende las personas que buscan trabajo pero no están disponible para trabajar,
 #'   o aquellos que no buscan y están disponibles para trabajar.
 #'
 #' @param tbl [data.frame]: Conexión a base de datos o data.frame con los datos.
@@ -239,9 +239,22 @@ ftc_tiempo_total_empleo_anos <- function(tbl) {
 
 
 
+#' Ramas de actividad utilizadas por el Banco Central en la clasificación del PIB
+#'
+#' @param tbl [data.frame]: Conexión a base de datos o data.frame con los datos.
+#'
+#' @return Los datos suministrados en el input \code{tbl} con la variable
+#' \code{grupo_rama_pib} adicionada.
+#'
+#' @export
+#'
+#' @examples
+#' \dontrun{
+#' encft <- ftc_grupo_rama_pib(encft)
+#' }
 ftc_grupo_rama_pib <- function(tbl) {
     tbl %>%
-        mutate(
+        dplyr::mutate(
             grupo_rama_pib = dplyr::case_when(
                 dplyr::between(RAMA_PRINCIPAL_COD, 111, 322) ~ 1,
                 dplyr::between(RAMA_PRINCIPAL_COD, 510, 990) ~ 2,

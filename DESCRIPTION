@@ -1,11 +1,11 @@
 Package: encftr
 Title: Funciones para trabajar con la ENCFT
-Version: 0.7.0
+Version: 0.8.0
 Authors@R: 
     c(person(given = "Daniel E.",
            family = "de la Rosa",
            role = c("aut", "cre"),
-           email = "drdsdaniel@gmail.com"),
+           email = "me@dnldelarosa.com"),
     person(given = "Adatar",
            role = "cph"))
 Description: Este paquete contiene funciones para trabajar con los datos de la 
@@ -29,8 +29,8 @@ Remotes:
     adatar-do/labeler
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.2
-URL: https://github.com/endomer/encftr
-BugReports: https://github.com/endomer/encftr/issues
+URL: https://github.com/endomer-py/encftr
+BugReports: https://github.com/endomer-py/encftr/issues
 VignetteBuilder: knitr
 RdMacros: lifecycle
 Depends: 

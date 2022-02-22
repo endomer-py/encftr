@@ -4,12 +4,16 @@
 \alias{ftc_use_labels}
 \title{Utiliza las etiquetas de datos de una variable}
 \usage{
-ftc_use_labels(tbl, vars = NULL)
+ftc_use_labels(tbl, dict = encftr::dict, vars = NULL, ...)
 }
 \arguments{
 \item{tbl}{\link{data.frame}: Conexión a base de datos o dataframe con los datos}
 
+\item{dict}{\link{list}: Diccionario con las etiquetas de las variables}
+
 \item{vars}{\link{character}: Si especificado, solo se asignaran las etiquetas a esas variables.}
+
+\item{...}{otros argumentos de la función \code{labeler::get_labels()}}
 }
 \value{
 Los datos suministrados en el argumento \code{tbl}, pero en lugar de
