@@ -4,10 +4,12 @@
 \alias{ftc_perceptores_ingresos}
 \title{Población ocupada perceptora de ingresos}
 \usage{
-ftc_perceptores_ingresos(tbl)
+ftc_perceptores_ingresos(tbl, min_edad = 15)
 }
 \arguments{
 \item{tbl}{\link{data.frame}: Conexión a base de datos o data.frame con los datos.}
+
+\item{min_edad}{\link{integer}: min age to consider in the indicator construction}
 }
 \value{
 Los datos suministrados en el input \code{tbl} con la variable

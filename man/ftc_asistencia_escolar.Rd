@@ -7,7 +7,12 @@
 \usage{
 ftc_asistencia_escolar(tbl, min_edad = 6, max_edad = 17, summer_fix = FALSE)
 
-ftc_compute_asistencia_escolar(...)
+ftc_compute_asistencia_escolar(
+  tbl,
+  min_edad = 6,
+  max_edad = 17,
+  summer_fix = FALSE
+)
 }
 \arguments{
 \item{tbl}{\link{data.frame}: Conexión a base de datos o data.frame con los datos.}
@@ -20,8 +25,6 @@ la asistencia escolar}
 
 \item{summer_fix}{\link{logical}: Indica si se ajusta por las personas que están
 esperando el inicio de un nuevo año escolar.}
-
-\item{...}{Not in use}
 }
 \value{
 Los datos suministrados en el input \code{tbl} con la variable

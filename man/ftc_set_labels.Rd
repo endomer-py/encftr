@@ -4,10 +4,12 @@
 \alias{ftc_set_labels}
 \title{Asigna etiquetas de datos a las variables especificadas}
 \usage{
-ftc_set_labels(tbl, vars = NULL)
+ftc_set_labels(tbl, dict = encftr::dict, vars = NULL)
 }
 \arguments{
 \item{tbl}{\link{data.frame}: Conexión a base de datos o dataframe con los datos}
+
+\item{dict}{\link{list}: Diccionario con las etiquetas de las variables}
 
 \item{vars}{\link{character}: Si especificado, solo se asignaran las etiquetas a esas variables.}
 }

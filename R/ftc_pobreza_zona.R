@@ -18,13 +18,21 @@
 #'
 #' @examples
 #' \dontrun{
-#'   encft <- ftc_compute_pobreza_zona(encft, conn)
+#'   encft <- ftc_pobreza_zona(encft, conn)
 #' }
 #'
-ftc_compute_pobreza_zona <- function(tbl, conn, tbl_name = 'pobreza_monetaria'){
+ftc_pobreza_zona <- function(tbl, conn, tbl_name = 'pobreza_monetaria'){
   tbl %>%
     dplyr::left_join(
       dplyr::tbl(conn, tbl_name),
       copy = TRUE
     )
+}
+
+
+#' @rdname ftc_pobreza_zona
+#' @export
+ftc_compute_pobreza_zona <- function(tbl, conn, tbl_name = 'pobreza_zona') {
+  deprecate_warn("0.5.0", "ftc_compute_pobreza_zona()", "ftc_pobreza_zona()")
+  ftc_pobreza_zona(tbl, conn, tbl_name)
 }

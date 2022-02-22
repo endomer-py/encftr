@@ -2,7 +2,7 @@
 
 library(tidyverse)
 contribs_all_json <- gh::gh("/repos/:owner/:repo/contributors",
-  owner = "endomer",
+  owner = "endomer-py",
   repo = "encftr",
   .limit = Inf
 )

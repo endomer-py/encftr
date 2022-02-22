@@ -18,9 +18,18 @@
 #'
 #' @examples
 #'   encft <- data.frame(EDAD = c(0:100))
-#'   ftc_compute_grupos_edad(encft)
-ftc_compute_grupos_edad <- function(tbl, breaks = 10, labels = NULL){
+#'   ftc_grupos_edad(encft)
+ftc_grupos_edad <- function(tbl, breaks = 10, labels = NULL){
   EDAD <- NULL
   tbl <- dplyr::mutate(tbl, grupos_edad = EDAD)
   Dmisc::cut3(tbl, "grupos_edad", breaks, labels = labels)
 }
+
+
+#' @rdname ftc_grupos_edad
+#' @export
+ftc_compute_grupos_edad <- function(tbl, breaks = 10, labels = NULL){
+  deprecate_warn("0.5.0", "ftc_compute_grupos_edad()", "ftc_grupos_edad()")
+  ftc_grupos_edad(tbl, breaks, labels)
+}
+

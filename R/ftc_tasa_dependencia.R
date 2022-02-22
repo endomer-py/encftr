@@ -28,9 +28,9 @@
 #'
 #' @examples
 #' \dontrun{
-#' encft <- ftc_compute_tasa_dependencia(encft)
+#' encft <- ftc_tasa_dependencia(encft)
 #' }
-ftc_compute_tasa_dependencia <- function(tbl,
+ftc_tasa_dependencia <- function(tbl,
                                          min_edad = 15,
                                          max_edad = 64,
                                          limit = c("both", "above", "below"),
@@ -74,4 +74,22 @@ ftc_compute_tasa_dependencia <- function(tbl,
   }
 
   tbl
+}
+
+
+#' @rdname ftc_tasa_dependencia
+#' @export
+ftc_compute_tasa_dependencia <- function(tbl,
+                                 min_edad = 15,
+                                 max_edad = 64,
+                                 limit = c("both", "above", "below"),
+                                 breaks = NULL,
+                                 labels = NULL) {
+                                   deprecate_warn("0.5.0", "ftc_compute_tasa_dependencia()", "ftc_tasa_dependencia()")
+  ftc_tasa_dependencia(tbl,
+                               min_edad,
+                               max_edad,
+                               limit,
+                               breaks,
+                               labels)
 }
