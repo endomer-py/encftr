@@ -1,7 +1,10 @@
 pandoc: 2.7.3
-pkgdown: 1.6.1
+pkgdown: 2.0.2
 pkgdown_sha: ~
 articles:
   encftr: encftr.html
-last_built: 2021-10-07T03:01Z
+last_built: 2022-03-07T15:33Z
+urls:
+  reference: https://endomer-py.github.io/encftr/reference
+  article: https://endomer-py.github.io/encftr/articles
 
